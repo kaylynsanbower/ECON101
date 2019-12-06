@@ -22,4 +22,4 @@ Before going much further, please be sure to read the [syllabus](Syllabus/Econ37
 
 3. Homework 3:
 
-4. \[[Case Study](case-study/instructions.html)\]
+4. \[[Case Study](case-study/instructions.html)\]: Due on the date of our scheduled final exam (Wednesday, May 6th). But to reiterate...this is a semester-long project. Please start as early as possible!

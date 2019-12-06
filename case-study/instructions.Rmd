@@ -20,36 +20,52 @@ In this case study, you will take the role of an analyst for a hospital system. 
 
 # Analysis
 Your analysis should proceed in the following steps:
+
 1. Calculate the average 60-day cost of care
+
 2. Assess the potential profitability of a new care model designed to reduce the costs of this patient population by 10% **in your hospitals**. In other words, this new care model will save your hospital money, but it will have no impact on the cost structure of other hospitals that your patients may visit.
+
 3. What if we could adopt policies to ensure people only visit our hospitals and not other hospitals in the area (i.e., increase patient loyalty). How much would we be willing to spend on this effort?
 
 # Qualitative questions
 In addition to the analysis, please address the following issues based on our discussions in class:
+
 1. What effects might a bundled payment model have on hospital quality?
+
 2. What might happen to competition in the hospital market if everyone is payed based on a bundled payment?
+
 3. What might happen to prices for commercial insurance patients?
+
 4. Describe at least one barrier to successfully implementing a bundled payment model.
+
 5. What effects should a bundled payment model have on quantity of care?
 
 
 # Data
 The accompanying datasets are organized as follows:
+
 1. [Beneficiary dataset](data/bene_data.rds): Unique beneficiaries and some basic demographic variables such as gender, race, ethnicity, and age. 
+
 2. [Inpatient utilization and cost dataset](data/hosp_util_data.rds): Hospital admissions among the beneficiaries, along with the dates, costs, and Medicare payments for each inpatient stay.
+
 3. [Physician (outpatient) utilization and cost dataset](data/phy_util_data.rds): Physician visits among beneficiaries, along with the dates, costs, and Medicare payments for each visit.
 
 The beneficiary IDs in the utilization and cost datasets match to the IDs in the beneficiary dataset. This is a highly simplified structure based on the type of data you might actually see from a hospital. In these data, there are 10 hospitals. Your system operates hospital IDs 1-5, while the remaining hospital IDs represent other hospitals in the area. Your patients can of course visit those other hospitals, but you cannot control the costs of the care received at those institutions.
 
 # Final Product
-You must submit a report summarizing your objectives, data, analysis/findings, and a brief conclusion. Your final report should be submitted in PDF format, no longer than 8 pages including all tables and figures, with minimum 1 inch margins and 1.5 spacing. The report is due by our scheduled final exam date (May 6th at 2:00pm). 
+You must submit a report summarizing your objectives, data, analysis/findings, and a brief conclusion. Your final report should be submitted in PDF format, no longer than 8 pages including all tables and figures, with minimum 0.5 inch margins and 1.5 spacing. The report is due by our scheduled final exam date (May 6th at 2:00pm). 
 
 Your report should be organized as follows:
+
 1. **Introduction/motivation:** Overview of bundled payments and their intended purpose.
+
 2. **Current financial position:** Summary of profits currently earned in a fee-for-service environment.
+
 3. **Financial effects of bundled payments:** Analyis of primary objectives (discussed above).
+
 4. **Qualitative discussion of bundled payments:** Answers to qualitative questions (discussed above).
-5. **Final suggestions:** Based on your empirical analysis and qualitative discussion, do you think that your hospital should adopt a bundled payment model? What about in terms of Medicare more generally -- should they move to a bundled payment model instead of fee-for-service?
+
+5. **Final suggestions:** Based on your empirical analysis and qualitative discussion, do you think that your hospital should adopt a bundled payment model? What about in terms of Medicare more generally -- should they move to a bundled payment model instead of fee-for-service? Support your final answer with at least two published, peer-reviewed papers.
 
 
 # Evaluation
