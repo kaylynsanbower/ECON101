@@ -1,6 +1,6 @@
 ---
 title: "Section 1: Introduction"
-subtitle: "<html><div style='float:left'></div><hr color='#EB811B' size=1px width=1050px></html>"
+subtitle: "<html><div style='float:left'></div><hr color='#EB811B' size=1px width=0px></html>"
 author: Ian McCarthy | Emory University
 date: Econ 372 #"`r format(Sys.time(), '%d %B %Y')`"
 output:
@@ -70,7 +70,7 @@ name: welcome
 
 # Motivation
 
-<html><div style='float:left'></div><hr color='#EB811B' size=1px width=796px></html>
+<html><div style='float:left'></div><hr color='#EB811B' size=1px width=1055px></html>
 
 
 ---
@@ -236,7 +236,7 @@ oecd.dat %>% filter(year>=1970) %>% group_by(country) %>% fill(c(tot_exp, mort_i
 # Spending and maternal mortality
 ```{r spend-mat-mort, echo=FALSE}
 oecd.dat %>% filter(year>=1970 & year<=2012) %>% group_by(country) %>% fill(c(tot_exp, mort_mat), .direction="updown") %>%
-  ggplot(aes(tot_exp, mort_inf, label=country)) +
+  ggplot(aes(tot_exp, mort_mat, label=country)) +
   geom_text(aes(size=3), show.legend=FALSE) + theme_bw() + 
   labs(title = 'Year: {frame_time}', x = 'Health Care Spending (%GDP)', y = 'Maternal Mortality') +
   transition_time(year) +
@@ -266,7 +266,7 @@ name: syllabus
 
 # Course overview
 
-<html><div style='float:left'></div><hr color='#EB811B' size=1px width=796px></html>
+<html><div style='float:left'></div><hr color='#EB811B' size=1px width=1055px></html>
 
 (Read the full document [here](Syllabus/Econ372-Syllabus.pdf).)
 
@@ -325,7 +325,7 @@ name: us_health
 
 # U.S. Health Care
 
-<html><div style='float:left'></div><hr color='#EB811B' size=1px width=796px></html>
+<html><div style='float:left'></div><hr color='#EB811B' size=1px width=1055px></html>
 
 
 ---

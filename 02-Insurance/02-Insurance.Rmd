@@ -1,6 +1,6 @@
 ---
 title: "Section 2: Health Insurance"
-subtitle: "<html><div style='float:left'></div><hr color='#EB811B' size=1px width=1050px></html>"
+subtitle: "<html><div style='float:left'></div><hr color='#EB811B' size=1px width=0px></html>"
 author: Ian McCarthy | Emory University
 date: Econ 372 #"`r format(Sys.time(), '%d %B %Y')`"
 output:
@@ -51,7 +51,7 @@ knitr::opts_hooks$set(fig.callout = function(options) {
 if (!require("pacman")) install.packages("pacman")
 pacman::p_load(tidyverse, ggplot2, dplyr, lubridate, readr, readxl, hrbrthemes,
                scales, gganimate, gapminder, gifski, png, tufte, plotly, OECD,
-               ggrepel)
+               ggrepel, survey, foreign, devtools)
 ```
 
 
@@ -79,7 +79,7 @@ name: motivate
 
 # Motivation
 
-<html><div style='float:left'></div><hr color='#EB811B' size=1px width=796px></html>
+<html><div style='float:left'></div><hr color='#EB811B' size=1px width=1055px></html>
 
 ---
 # Humana exits the ACA exchanges
@@ -94,6 +94,21 @@ In 2008, Humana exited the ACA exchanges due to an "unbalanced risk pool based o
 
 Fun fact: Humana and Aetna's merger deal had just been blocked. [NPR Article](https://www.npr.org/sections/thetwo-way/2017/02/14/515167491/aetna-and-humana-call-off-merger-after-court-decision)
 
+---
+# Managing risk is really important
+
+.pull-left[
+  ![:scale 450px](pics/meps-visits.png)
+]
+
+.pull-right[
+  ![:scale 450px](pics/meps-expenditure.png)
+]
+
+<div class="smalltext">Source: <a href="https://meps.ahrq.gov/mepstrends/hc_use/">Medical Expenditure Panel Survey</a></div>
+
+
+
 <!-- New Section -->
 ---
 class: inverse, center, middle
@@ -101,7 +116,7 @@ name: risk
 
 # Insurance and Risk
 
-<html><div style='float:left'></div><hr color='#EB811B' size=1px width=796px></html>
+<html><div style='float:left'></div><hr color='#EB811B' size=1px width=1055px></html>
 
 
 <!-- New Section -->
@@ -111,7 +126,7 @@ name: demand
 
 # Demand for Health Insurance
 
-<html><div style='float:left'></div><hr color='#EB811B' size=1px width=796px></html>
+<html><div style='float:left'></div><hr color='#EB811B' size=1px width=1055px></html>
 
 
 <!-- New Section -->
@@ -121,7 +136,7 @@ name: selection
 
 # Adverse Selection
 
-<html><div style='float:left'></div><hr color='#EB811B' size=1px width=796px></html>
+<html><div style='float:left'></div><hr color='#EB811B' size=1px width=1055px></html>
 
 
 
@@ -132,4 +147,4 @@ name: policy
 
 # U.S. Health Insurance Policy
 
-<html><div style='float:left'></div><hr color='#EB811B' size=1px width=796px></html>
+<html><div style='float:left'></div><hr color='#EB811B' size=1px width=1055px></html>
