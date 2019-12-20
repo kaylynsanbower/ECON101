@@ -83,8 +83,16 @@ name: motivate
 
 ---
 # Humana exits the ACA exchanges
-<iframe src="https://money.cnn.com/2017/02/14/news/economy/humana-obamacare-insurer" width="800" height="500" scrolling="yes" seamless="seamless" frameBorder="0"> </iframe>
+In 2008, Humana exited the ACA exchanges due to an "unbalanced risk pool based on the results of the 2017 open enrollment period". [CNN Money Article](https://money.cnn.com/2017/02/14/news/economy/humana-obamacare-insurer)<br>
 
+--
+
+- What do you think this means?
+- What is the underlying business reason here?<br>
+
+--
+
+Fun fact: Humana and Aetna's merger deal had just been blocked. [NPR Article](https://www.npr.org/sections/thetwo-way/2017/02/14/515167491/aetna-and-humana-call-off-merger-after-court-decision)
 
 <!-- New Section -->
 ---
