@@ -105,6 +105,77 @@ name: risk
 
 &lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=1055px&gt;&lt;/html&gt;
 
+---
+# Describing risk
+We need three things to define risk in this class:
+1. Probability
+2. Expected value
+3. Preferences (i.e., a utility function)
+
+---
+# 1. Probability
+Definition: The likelihood that a given outcome will occur.&lt;br&gt;
+
+--
+
+Important to note the timing here...probability applies to an uncertain event that may have several possible outcomes. For example, I may have a heart attack or I may not. [Risk Calculator](http://www.cvriskcalculator.com/).
+
+---
+# 2. Expected value
+Definition: The probability weighted average of the payoffs (or costs) associated with all possible outcomes.&lt;br&gt;
+
+--
+
+For two potential outcomes, `\(x_{1}\)` and `\(x_{2}\)`, with probabilities `\(p_{1}\)` and `\(p_{2}\)`:&lt;br&gt;
+
+`\(E[x] = p_{1}x_{1} + p_{2}x_{2}\)`
+
+---
+# Example
+- Two possible outcomes: heart attack or no heart attack
+- 10% chance of having a heart attack
+- Cost of $100,000 if I have a heart attack (but I will survive and recover)&lt;br&gt;
+
+--
+
+What is my expected cost?
+
+---
+# 3. Preferences
+Definition: Preferences take the form of a utility function, `\(u(x)\)`, which tells us how much we benefit get from some consumption bundle, `\(x\)`.&lt;br&gt;
+
+--
+
+Expected utility the combines expected value and utility...&lt;br&gt;
+`\(E[x] = p_{1}u(x_{1}) + p_{2}u(x_{2})\)`
+
+---
+# Risk preferences
+With probabilities, expected values, and utilities/preferences, we can now measure preferences toward risk. &lt;br&gt;
+
+--
+
+- &lt;b&gt;Risk averse:&lt;/b&gt; We prefer to avoid the risky situation. You would rather have the same (or slightly less) with certainty than a lottery over two risky outcomes.
+
+- &lt;b&gt;Risk neutral:&lt;/b&gt; Indifferent between the risky situation or that of certainty.
+
+- &lt;b&gt;Risk loving:&lt;/b&gt; Prefer the risky situation. 
+
+---
+# Risk aversion
+Most common assumption is that individuals are risk averse. Mathematically, this follows from diminishing marginal utility.&lt;br&gt;
+
+--
+
+`\(u'(x_{1}) &gt; u'(x_{2})\)` for `\(x_{1} &lt; x_{2}\)`&lt;br&gt;
+What does this mean in words?
+
+---
+# Risk aversion
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="02-Insurance_files/figure-html/tikz-ex-1.png" alt="Tikz Fun"  /&gt;
+&lt;p class="caption"&gt;Tikz Fun&lt;/p&gt;
+&lt;/div&gt;
 
 &lt;!-- New Section --&gt;
 ---

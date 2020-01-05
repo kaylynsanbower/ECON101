@@ -3,6 +3,13 @@ title: "Section 2: Health Insurance"
 subtitle: "<html><div style='float:left'></div><hr color='#EB811B' size=1px width=0px></html>"
 author: Ian McCarthy | Emory University
 date: Econ 372 #"`r format(Sys.time(), '%d %B %Y')`"
+header-includes: 
+  - \usepackage{tikz}
+  - \usepackage{amsmath}
+  - \usepackage{pgf}
+  - \usepackage[xcolor=pst]{pstricks}
+  - \usepackage{pgfshade}
+  - \usepackage{pdftools}
 output:
   xaringan::moon_reader:
     css: [default, metropolis, metropolis-fonts, custom.css] 
@@ -51,7 +58,7 @@ knitr::opts_hooks$set(fig.callout = function(options) {
 if (!require("pacman")) install.packages("pacman")
 pacman::p_load(tidyverse, ggplot2, dplyr, lubridate, readr, readxl, hrbrthemes,
                scales, gganimate, gapminder, gifski, png, tufte, plotly, OECD,
-               ggrepel, survey, foreign, devtools)
+               ggrepel, survey, foreign, devtools, pdftools)
 ```
 
 
@@ -118,6 +125,102 @@ name: risk
 
 <html><div style='float:left'></div><hr color='#EB811B' size=1px width=1055px></html>
 
+---
+# Describing risk
+We need three things to define risk in this class:
+1. Probability
+2. Expected value
+3. Preferences (i.e., a utility function)
+
+---
+# 1. Probability
+Definition: The likelihood that a given outcome will occur.<br>
+
+--
+
+Important to note the timing here...probability applies to an uncertain event that may have several possible outcomes. For example, I may have a heart attack or I may not. [Risk Calculator](http://www.cvriskcalculator.com/).
+
+---
+# 2. Expected value
+Definition: The probability weighted average of the payoffs (or costs) associated with all possible outcomes.<br>
+
+--
+
+For two potential outcomes, $x_{1}$ and $x_{2}$, with probabilities $p_{1}$ and $p_{2}$:<br>
+
+$E[x] = p_{1}x_{1} + p_{2}x_{2}$
+
+---
+# Example
+- Two possible outcomes: heart attack or no heart attack
+- 10% chance of having a heart attack
+- Cost of $100,000 if I have a heart attack (but I will survive and recover)<br>
+
+--
+
+What is my expected cost?
+
+---
+# 3. Preferences
+Definition: Preferences take the form of a utility function, $u(x)$, which tells us how much we benefit get from some consumption bundle, $x$.<br>
+
+--
+
+Expected utility the combines expected value and utility...<br>
+$E[x] = p_{1}u(x_{1}) + p_{2}u(x_{2})$
+
+---
+# Risk preferences
+With probabilities, expected values, and utilities/preferences, we can now measure preferences toward risk. <br>
+
+--
+
+- <b>Risk averse:</b> We prefer to avoid the risky situation. You would rather have the same (or slightly less) with certainty than a lottery over two risky outcomes.
+
+- <b>Risk neutral:</b> Indifferent between the risky situation or that of certainty.
+
+- <b>Risk loving:</b> Prefer the risky situation. 
+
+---
+# Risk aversion
+Most common assumption is that individuals are risk averse. Mathematically, this follows from diminishing marginal utility.<br>
+
+--
+
+$u'(x_{1}) > u'(x_{2})$ for $x_{1} < x_{2}$<br>
+What does this mean in words?
+
+---
+# Risk aversion
+```{tikz echo=FALSE, fig.ext='png', cache=TRUE, tikz-ex, fig.cap="Tikz Fun"}
+\usetikzlibrary{calc}
+\begin{tikzpicture}[my plot/.style={
+                        thick,
+                        smooth,
+                        samples=100,
+                        domain=0.1:5},
+                    my grid/.style={dashed,opacity=0.5, every node/.style={black,opacity=1}},
+                    my axis/.style={latex-latex}]
+\draw[my plot] (0,0) plot (\x,{ln(\x)});
+\coordinate (start plot) at (0.1,{ln(0.1)}); % domain start
+\coordinate (end plot) at (5,{ln(5)}); % domain end
+%\draw[my axis] ([shift={(-0.5cm,0.5cm)}]start plot |- end plot) node[left] {$u(\cdot)$} |- node[coordinate](origin){} ([shift={(0.5cm,-0.5cm)}]start plot -| end plot) node[below] {$\cdot$};
+\draw[my axis] ([shift={(-0.5cm,0.5cm)}]start plot |- end plot) |- node[coordinate](origin){} ([shift={(0.5cm,-0.5cm)}]start plot -| end plot);
+%creates the axis a little bigger than the plot and also sepatared
+\def\x{0.5}\def\y{4}\def\p{0.55} % define the x, y and p values
+\coordinate (Ux) at (\x,{ln(\x)}); % set the u(x) coordinate
+\coordinate (Uy) at (\y,{ln(\y)}); % set the u(y) coordinate
+\coordinate (Up) at ({\p*\x+(1-\p)*\y},{ln(\p*\x+(1-\p)*\y)}); % set the u(p*x+(1-p)*y) coordinate
+\draw (Ux) -- coordinate[pos=1-\p] (Up-mid) (Uy); % set the coordinate on the linear curve
+\path let \p1=(Up-mid), \n1={pow(e,\y1*0.03514)} in (28.4576*\n1,\y1) coordinate (Up-mid2); %this is the most tricky part explained in the answer
+% with everything set, just draw the lines:
+\draw[my grid] (Ux) |- node[below]{$x_{1}$} (origin) |- node[left]{$u(x_{1})$} cycle;
+\draw[my grid] (Uy) |- node[below]{$x_{2}$} (origin) |- node[left]{$u(x_{2})$} cycle;
+\draw[my grid] (Up) |- node[below,font=\scriptsize]{$p_{1}x_{1}+p_{2}x_{2}$} (origin) |- node[left,font=\scriptsize]{$u(p_{1}x_{1}+p_{2}x_{2})$} cycle;
+%\draw[my grid] (Up-mid2) |- node[below,font=\scriptsize]{$c(F,u)$} (origin) |- node[left]{$pu(x)+(1-p)u(y)$} cycle;
+%\draw[my grid] (Up-mid) -- (Up-mid2);
+\end{tikzpicture}
+```
 
 <!-- New Section -->
 ---
