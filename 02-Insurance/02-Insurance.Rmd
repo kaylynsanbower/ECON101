@@ -192,7 +192,7 @@ What does this mean in words?
 
 ---
 # Risk aversion
-```{tikz echo=FALSE, fig.ext='png', cache=TRUE, tikz-ex, fig.cap="Tikz Fun"}
+```{tikz echo=FALSE, fig.ext='png', cache=TRUE, tikz-aversion, fig.cap="Risk Aversion", fig.width=3}
 \usetikzlibrary{calc}
 \begin{tikzpicture}[my plot/.style={
                         thick,
@@ -206,14 +206,12 @@ What does this mean in words?
 \coordinate (end plot) at (5,{ln(5)}); % domain end
 %\draw[my axis] ([shift={(-0.5cm,0.5cm)}]start plot |- end plot) node[left] {$u(\cdot)$} |- node[coordinate](origin){} ([shift={(0.5cm,-0.5cm)}]start plot -| end plot) node[below] {$\cdot$};
 \draw[my axis] ([shift={(-0.5cm,0.5cm)}]start plot |- end plot) |- node[coordinate](origin){} ([shift={(0.5cm,-0.5cm)}]start plot -| end plot);
-%creates the axis a little bigger than the plot and also sepatared
 \def\x{0.5}\def\y{4}\def\p{0.55} % define the x, y and p values
 \coordinate (Ux) at (\x,{ln(\x)}); % set the u(x) coordinate
 \coordinate (Uy) at (\y,{ln(\y)}); % set the u(y) coordinate
 \coordinate (Up) at ({\p*\x+(1-\p)*\y},{ln(\p*\x+(1-\p)*\y)}); % set the u(p*x+(1-p)*y) coordinate
 \draw (Ux) -- coordinate[pos=1-\p] (Up-mid) (Uy); % set the coordinate on the linear curve
-\path let \p1=(Up-mid), \n1={pow(e,\y1*0.03514)} in (28.4576*\n1,\y1) coordinate (Up-mid2); %this is the most tricky part explained in the answer
-% with everything set, just draw the lines:
+\path let \p1=(Up-mid), \n1={pow(e,\y1*0.03514)} in (28.4576*\n1,\y1) coordinate (Up-mid2); 
 \draw[my grid] (Ux) |- node[below]{$x_{1}$} (origin) |- node[left]{$u(x_{1})$} cycle;
 \draw[my grid] (Uy) |- node[below]{$x_{2}$} (origin) |- node[left]{$u(x_{2})$} cycle;
 \draw[my grid] (Up) |- node[below,font=\scriptsize]{$p_{1}x_{1}+p_{2}x_{2}$} (origin) |- node[left,font=\scriptsize]{$u(p_{1}x_{1}+p_{2}x_{2})$} cycle;
@@ -231,6 +229,113 @@ name: demand
 
 <html><div style='float:left'></div><hr color='#EB811B' size=1px width=1055px></html>
 
+---
+# Why purchase health insurance?
+Say your utility function is $u(w)=\sqrt{w}$ and that you're starting with $w=$ <span>&#36;</span>100. I propose a lottery in which I flip a coin...heads you win <span>&#36;</span>20 and tails you lose <span>&#36;</span>20. <br>
+
+--
+
+1. What is the expected monetary value of this lottery? 
+
+2. What is your utility at this expected value? 
+
+3. What is the expected utility from this lottery?
+
+
+---
+# Risk premium
+
+The maximum amount of money that a risk-averse person is willing to pay to avoid the risky scenario. In other words, the amount of money that makes a person indifferent between the certain and uncertain situations.<br>
+
+--
+
+This is part of how we measure willingness-to-pay for health insurance.
+
+
+---
+# Risk Premium
+```{tikz echo=FALSE, fig.ext='png', cache=TRUE, tikz-premium, fig.cap="Risk Premium"}
+\usetikzlibrary{calc}
+\begin{tikzpicture}[my plot/.style={
+                        thick,
+                        smooth,
+                        samples=100,
+                        domain=0.1:5},
+                    my grid/.style={dashed,opacity=0.5, every node/.style={black,opacity=1}},
+                    my axis/.style={latex-latex}]
+\draw[my plot] (0,0) plot (\x,{ln(\x)});
+\coordinate (start plot) at (0.1,{ln(0.1)}); % domain start
+\coordinate (end plot) at (5,{ln(5)}); % domain end
+\draw[my axis] ([shift={(-0.5cm,0.5cm)}]start plot |- end plot) |- node[coordinate](origin){} ([shift={(0.5cm,-0.5cm)}]start plot -| end plot);
+\def\x{0.5}\def\y{4}\def\p{0.55} % define the x, y and p values
+\coordinate (Ux) at (\x,{ln(\x)}); % set the u(x) coordinate
+\coordinate (Uy) at (\y,{ln(\y)}); % set the u(y) coordinate
+\coordinate (Up) at ({\p*\x+(1-\p)*\y},{ln(\p*\x+(1-\p)*\y)}); % set the u(p*x+(1-p)*y) coordinate
+\draw (Ux) -- coordinate[pos=1-\p] (Up-mid) (Uy); % set the coordinate on the linear curve
+\path let \p1=(Up-mid), \n1={pow(e,\y1*0.03514)} in (28.4576*\n1,\y1) coordinate (Up-mid2); 
+\draw[my grid] (Ux) |- node[below]{$x_{1}$} (origin) |- node[left]{$u(x_{1})$} cycle;
+\draw[my grid] (Uy) |- node[below]{$x_{2}$} (origin) |- node[left]{$u(x_{2})$} cycle;
+%\draw[my grid] (Up) |- (origin) |- cycle;
+\draw[my grid] (Up) |- (origin);
+%\draw[my grid] (Up-mid2) |- node[below,font=\scriptsize]{$c(F,u)$} (origin) |- node[left]{$pu(x)+(1-p)u(y)$} cycle;
+\draw[my grid] (Up-mid2) |- node[below right]{\hspace{.05cm} $\pi$} (origin) |- node[left,font=\scriptsize]{$E[u(x)]$} cycle;
+\draw[my grid] (Up-mid) -- (Up-mid2);
+\end{tikzpicture}
+```
+
+---
+# Risk premium example
+Consider the utility function, $u(w)=\ln(w)$. An individual starts with a wealth of <span>&#36;</span>100,000. With probability 0.25, this person will get sick and incur a cost of <span>&#36;</span>20,000. Their wealth in the sick state is therefore <span>&#36;</span>80,000. What is the maximum amount this person is willing to pay for health insurance?<br>
+
+--
+
+1. Calculate expected wealth, $E[w]$.
+2. Calculate expected utility, $E[U(w)]$.
+3. Calculate value of wealth that gives you $u=E[U(w)]$ (based on the utility function).
+4. Calculate the risk premium as the difference between (1) and (3).
+5. Calculate maximum willingness to pay by adding the risk premium and the expected cost.
+
+
+---
+# What affects the risk premium?
+
+Based on the graph, what do you think are some things that might affect the risk premium?<br>
+
+--
+
+1. Curvature of the demand function
+
+2. Probability of illness
+
+3. Cost of illness
+
+
+---
+# High risk pools
+
+- A "high-risk pool" is a way to put people that are more likely to incur high medical costs all in one plan. 
+- Recalling the curvature of demand function, probability of illness, and cost of illness...do you think a high-risk pool is sustainable (think about the profit to the insurer)?<br>
+
+--
+
+Let's look at this in practice, [KFF High-risk Pools](https://www.kff.org/health-reform/issue-brief/high-risk-pools-for-uninsurable-individuals/)
+
+
+---
+# Other reasons to buy health insurance
+
+1. Increase bargaining power with providers
+
+2. Manage where care is delivered (due to information problems in health care decisions)
+
+
+---
+# Main takeaways
+
+1. Explain and show graphically how changes in the utility function, probability of illness, and the cost of illness affect the risk premium
+
+2. Calculate amount of insurance individuals would purchase under given assumptions
+
 
 <!-- New Section -->
 ---
@@ -242,6 +347,70 @@ name: selection
 <html><div style='float:left'></div><hr color='#EB811B' size=1px width=1055px></html>
 
 
+---
+# Adverse selection
+In practice, people know more about their health than insurers. This is a form of <b>asymmetric information</b>.
+
+
+---
+# Textbook adverse selection
+```{tikz echo=FALSE, fig.ext='png', cache=TRUE, tikz-selection, fig.cap="Adverse Selection"}
+\usetikzlibrary{calc}
+\usetikzlibrary{arrows}
+\begin{tikzpicture}
+\draw[thick,->] (0,0) -- (0,6) node[anchor=north west] {$p$};
+\draw[thick,->] (0,0) -- (8,0) node[anchor=south east] {$q$};
+\draw (0,5) -- (6,1) node[anchor=north] {Demand};
+\draw (0,3) -- (6,2) node[anchor=north] {AC};
+\draw (0,3) -- (6,0.5) node[anchor=south] {MC};
+\draw (0,6) -- (6,6) node[anchor=north] {$\bar{q}$};
+\end{tikzpicture}
+```
+
+---
+# Possible outcomes
+
+1. Demand above MC: full insurance and no problems from adverse selection
+2. Demand intersects MC at some point: underinsurance from people willing and able but ultimately not purchasing
+3. Demand below MC: death spiral! (or, less dramatic, unraveling)<br>
+
+--
+
+Show this on your own with three different graphs.
+
+
+---
+# Examples
+Assume the insurer's cost function is $C=100q - 2q^{2}$, where $q$ denotes the number of people enrolled in the plan. Further assume that demand is given by $D=110-3q$. Assuming the insurer enters the market with $p_{1}=65$,<br>
+
+1. what is the next year's price (if profits are <span>&#36;</span>0)? 
+2. What is the equilibrium price?
+
+
+---
+# Some potential policy solutions
+
+1. Subsidize consumers
+2. Subsidize insurers
+3. Mandate purchases<br>
+
+--
+
+Can you show each of these solutions graphically?
+
+
+---
+# Advantageous selection
+What if individuals who are high risk are also less risk-averse? In this case, individuals who are willing to pay the most for health insurance (the most risk averse) are actually less risky and therefore the cheapest to insure. Very different policy implications (e.g., individual mandate is bad in this case). 
+
+
+---
+# Main takeaways
+1. Explain, using a graph, how unravelling could occur in a market with adverse selection.
+
+2. Discuss and show graphically how an individual mandate or subsidies could help to alleviate or minimize the adverse selection problem.
+
+
 
 <!-- New Section -->
 ---
@@ -251,3 +420,37 @@ name: policy
 # U.S. Health Insurance Policy
 
 <html><div style='float:left'></div><hr color='#EB811B' size=1px width=1055px></html>
+
+
+---
+# History of health insurance in the U.S.
+Only developed country to rely on employer provided insurance market - why?<br>
+
+--
+
+1. Stabalization act of 1942 (wages frozen but not benefits)
+
+2. Tax exemption for insurance expenditures (1954)
+
+---
+# Current policy
+1. Increasingly reliant on private market, even for public insurance programs, where adverse selection is most salient
+
+2. [Health insurance exchanges](https://www.cms.gov/CCIIO/Programs-and-Initiatives/Health-Insurance-Marketplaces/index.html)
+
+3. [Individual mandate](https://www.healthcare.gov/fees/fee-for-not-being-covered/)
+
+4. [Premium and cost-sharing subsidies](http://www.kff.org/health-reform/issue-brief/explaining-health-care-reform-questions-about-health/)
+
+5. [Insurer subsidies](http://www.kff.org/health-reform/issue-brief/explaining-health-care-reform-risk-adjustment-reinsurance-and-risk-corridors/)
+
+
+---
+# Current debate
+
+1. Individual mandate went to the supreme court, as did the (originally) mandatory Medicaid expansion
+
+2. Penalty for individual mandate has since been reduced to $0 (so really no mandate anymore). 
+
+3. Trump administration refused to pay cost-sharing subsidies
+

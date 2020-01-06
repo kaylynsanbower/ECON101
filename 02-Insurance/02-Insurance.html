@@ -173,8 +173,8 @@ What does this mean in words?
 ---
 # Risk aversion
 &lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="02-Insurance_files/figure-html/tikz-ex-1.png" alt="Tikz Fun"  /&gt;
-&lt;p class="caption"&gt;Tikz Fun&lt;/p&gt;
+&lt;img src="02-Insurance_files/figure-html/tikz-aversion-1.png" alt="Risk Aversion"  /&gt;
+&lt;p class="caption"&gt;Risk Aversion&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;!-- New Section --&gt;
@@ -185,6 +185,89 @@ name: demand
 # Demand for Health Insurance
 
 &lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=1055px&gt;&lt;/html&gt;
+
+---
+# Why purchase health insurance?
+Say your utility function is `\(u(w)=\sqrt{w}\)` and that you're starting with `\(w=\)` &lt;span&gt;&amp;#36;&lt;/span&gt;100. I propose a lottery in which I flip a coin...heads you win &lt;span&gt;&amp;#36;&lt;/span&gt;20 and tails you lose &lt;span&gt;&amp;#36;&lt;/span&gt;20. &lt;br&gt;
+
+--
+
+1. What is the expected monetary value of this lottery? 
+
+2. What is your utility at this expected value? 
+
+3. What is the expected utility from this lottery?
+
+
+---
+# Risk premium
+
+The maximum amount of money that a risk-averse person is willing to pay to avoid the risky scenario. In other words, the amount of money that makes a person indifferent between the certain and uncertain situations.&lt;br&gt;
+
+--
+
+This is part of how we measure willingness-to-pay for health insurance.
+
+
+---
+# Risk Premium
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="02-Insurance_files/figure-html/tikz-premium-1.png" alt="Risk Premium"  /&gt;
+&lt;p class="caption"&gt;Risk Premium&lt;/p&gt;
+&lt;/div&gt;
+
+---
+# Risk premium example
+Consider the utility function, `\(u(w)=\ln(w)\)`. An individual starts with a wealth of &lt;span&gt;&amp;#36;&lt;/span&gt;100,000. With probability 0.25, this person will get sick and incur a cost of &lt;span&gt;&amp;#36;&lt;/span&gt;20,000. Their wealth in the sick state is therefore &lt;span&gt;&amp;#36;&lt;/span&gt;80,000. What is the maximum amount this person is willing to pay for health insurance?&lt;br&gt;
+
+--
+
+1. Calculate expected wealth, `\(E[w]\)`.
+2. Calculate expected utility, `\(E[U(w)]\)`.
+3. Calculate value of wealth that gives you `\(u=E[U(w)]\)` (based on the utility function).
+4. Calculate the risk premium as the difference between (1) and (3).
+5. Calculate maximum willingness to pay by adding the risk premium and the expected cost.
+
+
+---
+# What affects the risk premium?
+
+Based on the graph, what do you think are some things that might affect the risk premium?&lt;br&gt;
+
+--
+
+1. Curvature of the demand function
+
+2. Probability of illness
+
+3. Cost of illness
+
+
+---
+# High risk pools
+
+- A "high-risk pool" is a way to put people that are more likely to incur high medical costs all in one plan. 
+- Recalling the curvature of demand function, probability of illness, and cost of illness...do you think a high-risk pool is sustainable (think about the profit to the insurer)?&lt;br&gt;
+
+--
+
+Let's look at this in practice, [KFF High-risk Pools](https://www.kff.org/health-reform/issue-brief/high-risk-pools-for-uninsurable-individuals/)
+
+
+---
+# Other reasons to buy health insurance
+
+1. Increase bargaining power with providers
+
+2. Manage where care is delivered (due to information problems in health care decisions)
+
+
+---
+# Main takeaways
+
+1. Explain and show graphically how changes in the utility function, probability of illness, and the cost of illness affect the risk premium
+
+2. Calculate amount of insurance individuals would purchase under given assumptions
 
 
 &lt;!-- New Section --&gt;
@@ -197,6 +280,62 @@ name: selection
 &lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=1055px&gt;&lt;/html&gt;
 
 
+---
+# Adverse selection
+In practice, people know more about their health than insurers. This is a form of &lt;b&gt;asymmetric information&lt;/b&gt;.
+
+
+---
+# Textbook adverse selection
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="02-Insurance_files/figure-html/tikz-selection-1.png" alt="Adverse Selection"  /&gt;
+&lt;p class="caption"&gt;Adverse Selection&lt;/p&gt;
+&lt;/div&gt;
+
+---
+# Possible outcomes
+
+1. Demand above MC: full insurance and no problems from adverse selection
+2. Demand intersects MC at some point: underinsurance from people willing and able but ultimately not purchasing
+3. Demand below MC: death spiral! (or, less dramatic, unraveling)&lt;br&gt;
+
+--
+
+Show this on your own with three different graphs.
+
+
+---
+# Examples
+Assume the insurer's cost function is `\(C=100q - 2q^{2}\)`, where `\(q\)` denotes the number of people enrolled in the plan. Further assume that demand is given by `\(D=110-3q\)`. Assuming the insurer enters the market with `\(p_{1}=65\)`,&lt;br&gt;
+
+1. what is the next year's price (if profits are &lt;span&gt;&amp;#36;&lt;/span&gt;0)? 
+2. What is the equilibrium price?
+
+
+---
+# Some potential policy solutions
+
+1. Subsidize consumers
+2. Subsidize insurers
+3. Mandate purchases&lt;br&gt;
+
+--
+
+Can you show each of these solutions graphically?
+
+
+---
+# Advantageous selection
+What if individuals who are high risk are also less risk-averse? In this case, individuals who are willing to pay the most for health insurance (the most risk averse) are actually less risky and therefore the cheapest to insure. Very different policy implications (e.g., individual mandate is bad in this case). 
+
+
+---
+# Main takeaways
+1. Explain, using a graph, how unravelling could occur in a market with adverse selection.
+
+2. Discuss and show graphically how an individual mandate or subsidies could help to alleviate or minimize the adverse selection problem.
+
+
 
 &lt;!-- New Section --&gt;
 ---
@@ -206,6 +345,39 @@ name: policy
 # U.S. Health Insurance Policy
 
 &lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=1055px&gt;&lt;/html&gt;
+
+
+---
+# History of health insurance in the U.S.
+Only developed country to rely on employer provided insurance market - why?&lt;br&gt;
+
+--
+
+1. Stabalization act of 1942 (wages frozen but not benefits)
+
+2. Tax exemption for insurance expenditures (1954)
+
+---
+# Current policy
+1. Increasingly reliant on private market, even for public insurance programs, where adverse selection is most salient
+
+2. [Health insurance exchanges](https://www.cms.gov/CCIIO/Programs-and-Initiatives/Health-Insurance-Marketplaces/index.html)
+
+3. [Individual mandate](https://www.healthcare.gov/fees/fee-for-not-being-covered/)
+
+4. [Premium and cost-sharing subsidies](http://www.kff.org/health-reform/issue-brief/explaining-health-care-reform-questions-about-health/)
+
+5. [Insurer subsidies](http://www.kff.org/health-reform/issue-brief/explaining-health-care-reform-risk-adjustment-reinsurance-and-risk-corridors/)
+
+
+---
+# Current debate
+
+1. Individual mandate went to the supreme court, as did the (originally) mandatory Medicaid expansion
+
+2. Penalty for individual mandate has since been reduced to $0 (so really no mandate anymore). 
+
+3. Trump administration refused to pay cost-sharing subsidies
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
