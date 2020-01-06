@@ -192,14 +192,15 @@ What does this mean in words?
 
 ---
 # Risk aversion
-```{tikz echo=FALSE, fig.ext='png', cache=TRUE, tikz-aversion, fig.cap="Risk Aversion", fig.width=3}
+```{tikz echo=FALSE, fig.ext='png', cache=TRUE, tikz-aversion}
 \usetikzlibrary{calc}
 \begin{tikzpicture}[my plot/.style={
                         thick,
                         smooth,
                         samples=100,
                         domain=0.1:5},
-                    my grid/.style={dashed,opacity=0.5, every node/.style={black,opacity=1}},
+                    scale=0.75,
+                    my grid/.style={dashed,opacity=0.5, every node/.style={black,opacity=1, transform shape}},
                     my axis/.style={latex-latex}]
 \draw[my plot] (0,0) plot (\x,{ln(\x)});
 \coordinate (start plot) at (0.1,{ln(0.1)}); % domain start
@@ -254,14 +255,15 @@ This is part of how we measure willingness-to-pay for health insurance.
 
 ---
 # Risk Premium
-```{tikz echo=FALSE, fig.ext='png', cache=TRUE, tikz-premium, fig.cap="Risk Premium"}
+```{tikz echo=FALSE, fig.ext='png', cache=TRUE, tikz-premium}
 \usetikzlibrary{calc}
 \begin{tikzpicture}[my plot/.style={
                         thick,
                         smooth,
                         samples=100,
                         domain=0.1:5},
-                    my grid/.style={dashed,opacity=0.5, every node/.style={black,opacity=1}},
+                    scale=0.75,
+                    my grid/.style={dashed,opacity=0.5, every node/.style={black,opacity=1}, transform shape},
                     my axis/.style={latex-latex}]
 \draw[my plot] (0,0) plot (\x,{ln(\x)});
 \coordinate (start plot) at (0.1,{ln(0.1)}); % domain start
@@ -354,16 +356,16 @@ In practice, people know more about their health than insurers. This is a form o
 
 ---
 # Textbook adverse selection
-```{tikz echo=FALSE, fig.ext='png', cache=TRUE, tikz-selection, fig.cap="Adverse Selection"}
+```{tikz echo=FALSE, fig.ext='png', cache=TRUE, tikz-selection}
 \usetikzlibrary{calc}
 \usetikzlibrary{arrows}
-\begin{tikzpicture}
+\begin{tikzpicture}[scale=0.7, every node/.style={transform shape}]
 \draw[thick,->] (0,0) -- (0,6) node[anchor=north west] {$p$};
 \draw[thick,->] (0,0) -- (8,0) node[anchor=south east] {$q$};
-\draw (0,5) -- (6,1) node[anchor=north] {Demand};
-\draw (0,3) -- (6,2) node[anchor=north] {AC};
-\draw (0,3) -- (6,0.5) node[anchor=south] {MC};
-\draw (0,6) -- (6,6) node[anchor=north] {$\bar{q}$};
+\draw (0,5) node[anchor=north east]{Demand} -- (6,1);
+\draw (0,3) node[anchor=north east]{AC} -- (6,2);
+\draw (0,3) node[anchor=south west]{MC} -- (6,0.5);
+\draw (6,0) -- (6,6) node[anchor=north east] {$\bar{q}$};
 \end{tikzpicture}
 ```
 
