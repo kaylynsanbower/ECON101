@@ -52,7 +52,7 @@ class: center, middle, inverse, title-slide
 
 ---
 .center[
-  ![](https://media.giphy.com/media/3orifb9GcyGZ8ClIuk/giphy.gif)
+  ![:scale 700px](https://media.giphy.com/media/3orifb9GcyGZ8ClIuk/giphy.gif)
 ]
 
 &lt;!-- New Section --&gt;
@@ -68,18 +68,18 @@ name: motivate
 # Variation in care
 
 .pull-left[
-  ![:scale 450px](pics/dartmouth_map.png)
+  ![:scale 475px](pics/dartmouth_map.png)
 ]
 
 .pull-right[
-  ![:scale 450px](pics/dartmouth_dist.png)
+  ![:scale 375px](pics/dartmouth_dist.png)
 ]
 
 &lt;div class="smalltext"&gt;Source: &lt;a href="https://www.dartmouthatlas.org"&gt;Dartmouth Atlas of Health Care&lt;/a&gt;&lt;/div&gt;
 
 ---
 # Wasteful?
-- Estimates are that more than 30% of health care expenditures are "wasteful": [The Atlantic, 2013 Article](https://www.theatlantic.com/health/archive/2013/12/youre-getting-too-much-healthcare/281896/)
+- Estimates are that more than 30% of health care expenditures are "wasteful": [(The Atlantic, 2013)](https://www.theatlantic.com/health/archive/2013/12/youre-getting-too-much-healthcare/281896/)
 
 - Some clear areas of waste:
   - Payment differentials by location of treatment (policy quirks)
@@ -89,6 +89,7 @@ name: motivate
   - Arthroscopic knee surgery&lt;br&gt;
   
 --
+
 Many estimates of "waste" are after-the-fact. It's actually very hard to identify waste before-hand. [Report on End-of-life Spending](http://news.mit.edu/2018/value-late-life-health-care-spending-medicare-0628)
 
 &lt;!-- New Section --&gt;
@@ -108,10 +109,15 @@ Physicians are better informed about treatment decisions than patients, and so t
 ---
 # Setup
 - Denote quantity of physician services by `\(x\)`
+
 - Denote benefit of services to patient by `\(B(x)\)`
+
 - Patients pay (and physicians receive) a price of `\(p\)` for each unit of service `\(x\)`
+
 - Physicians incur cost `\(c\)` for each unit of care
+
 - Net benefit to patients is `\(NB(x)=B(x)-px\)`
+
 - Physicians must choose quantity of care at least better than the patient's outside option, `\(NB(x)= B(x)-px \geq NB^{0}\)`.
 
 
@@ -124,6 +130,7 @@ With this framework, how much care will be provided? (i.e., what is the optimal 
 Solve the model in two steps:&lt;br&gt;
 
 1. Physician will provide minimum surplus to keep the patient, `\(NB(x) = B(x)-px = NB^{0}\)`
+
 2. Substitute into physician profit function, `\(\pi=(p-c)x = B(x)-NB^{0} - cx\)`, and solve for `\(x\)`
 
 
@@ -141,7 +148,7 @@ Assume `\(B(x)=8x^{1/2}\)` and `\(NB^{0}=2\)`:&lt;br&gt;
 
 ---
 # Example with fixed price
-An increase in the administratively set price leads to a \textit{decrease} in quantity of services provided. And vice versa, a reduction in price leads to an \textit{increase} in quantity provided. Why?
+An increase in the administratively set price leads to a &lt;b&gt;decrease&lt;/b&gt; in quantity of services provided. And vice versa, a reduction in price leads to an &lt;b&gt;increase&lt;/b&gt; in quantity provided. Why?
 
 --
 `$$\begin{align*}
@@ -154,16 +161,17 @@ b(x)\frac{\mathrm{d}x}{\mathrm{d}p} - x - p\frac{\mathrm{d}x}{\mathrm{d}p} &amp;
 # Agency with capitated payments
 
 - Physician receives fixed ("capitated") amount for each patient, `\(R\)`, along with some price per unit of service, `\(p_{s}\)`
+
 - Physician therefore paid `\(R + (p_{s} - c)x\)` for each patient
+
 - Number of patients for each physician expressed as a positive function of the net benefit offered, `\(n(NB)\)`, where `\(NB=B(x) - p_{d}x\)`. Here, we assume that the insurer sets `\(p_{d}\)` and `\(p_{s}\)` separately (the demand and supply price, respectively).
+
 - Physician again aims to maximize profits, `\(\pi=n(NB)\left[R+(p_{s}-c)x\right]\)`.
 
 
 ---
 # Solution with capitated payments
-.center[
-`\(\frac{B_{x} - p_{d}}{NB} \frac{R + (p_{s} - c)x}{p_{s}-c} = - \frac{1}{\varepsilon_{n,NB}}\)`
-]&lt;br&gt;
+`$$\frac{B_{x} - p_{d}}{NB} \frac{R + (p_{s} - c)x}{p_{s}-c} = - \frac{1}{\varepsilon_{n,NB}}$$`&lt;br&gt;
 
 --
 
