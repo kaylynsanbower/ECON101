@@ -67,8 +67,29 @@ name: motivate
 ---
 # Variation in care
 
-&lt;div class='tableauPlaceholder' id='viz1578419674139' style='position: relative'&gt;&lt;noscript&gt;&lt;a href='https:&amp;#47;&amp;#47;www.dartmouthatlas.org&amp;#47;interactive-apps&amp;#47;medicare-reimbursements&amp;#47;'&gt;&lt;img alt=' ' src='https:&amp;#47;&amp;#47;public.tableau.com&amp;#47;static&amp;#47;images&amp;#47;Me&amp;#47;MedicareReimbursements2016-byHRR&amp;#47;Map&amp;#47;1_rss.png' style='border: none' /&gt;&lt;/a&gt;&lt;/noscript&gt;&lt;object class='tableauViz'  style='display:none;'&gt;&lt;param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /&gt; &lt;param name='embed_code_version' value='3' /&gt; &lt;param name='site_root' value='' /&gt;&lt;param name='name' value='MedicareReimbursements2016-byHRR&amp;#47;Map' /&gt;&lt;param name='tabs' value='yes' /&gt;&lt;param name='toolbar' value='yes' /&gt;&lt;param name='static_image' value='https:&amp;#47;&amp;#47;public.tableau.com&amp;#47;static&amp;#47;images&amp;#47;Me&amp;#47;MedicareReimbursements2016-byHRR&amp;#47;Map&amp;#47;1.png' /&gt; &lt;param name='animate_transition' value='yes' /&gt;&lt;param name='display_static_image' value='yes' /&gt;&lt;param name='display_spinner' value='yes' /&gt;&lt;param name='display_overlay' value='yes' /&gt;&lt;param name='display_count' value='yes' /&gt;&lt;/object&gt;&lt;/div&gt;                &lt;script type='text/javascript'&gt;                    var divElement = document.getElementById('viz1578419674139');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                &lt;/script&gt;
+.pull-left[
+  ![:scale 450px](pics/dartmouth_map.png)
+]
 
+.pull-right[
+  ![:scale 450px](pics/dartmouth_dist.png)
+]
+
+&lt;div class="smalltext"&gt;Source: &lt;a href="https://www.dartmouthatlas.org"&gt;Dartmouth Atlas of Health Care&lt;/a&gt;&lt;/div&gt;
+
+---
+# Wasteful?
+- Estimates are that more than 30% of health care expenditures are "wasteful": [The Atlantic, 2013 Article](https://www.theatlantic.com/health/archive/2013/12/youre-getting-too-much-healthcare/281896/)
+
+- Some clear areas of waste:
+  - Payment differentials by location of treatment (policy quirks)
+  - Better imaging with little benefit
+  - Proton treatment (for some conditions)
+  - Heart stents
+  - Arthroscopic knee surgery&lt;br&gt;
+  
+--
+Many estimates of "waste" are after-the-fact. It's actually very hard to identify waste before-hand. [Report on End-of-life Spending](http://news.mit.edu/2018/value-late-life-health-care-spending-medicare-0628)
 
 &lt;!-- New Section --&gt;
 ---
@@ -79,6 +100,85 @@ name: agency
 
 &lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=1055px&gt;&lt;/html&gt;
 
+---
+# Definition
+
+Physicians are better informed about treatment decisions than patients, and so there exists some &lt;b&gt;agency&lt;/b&gt; relationship between the two. For many conditions, patients can't treat themselves even if they wanted to.
+
+---
+# Setup
+- Denote quantity of physician services by `\(x\)`
+- Denote benefit of services to patient by `\(B(x)\)`
+- Patients pay (and physicians receive) a price of `\(p\)` for each unit of service `\(x\)`
+- Physicians incur cost `\(c\)` for each unit of care
+- Net benefit to patients is `\(NB(x)=B(x)-px\)`
+- Physicians must choose quantity of care at least better than the patient's outside option, `\(NB(x)= B(x)-px \geq NB^{0}\)`.
+
+
+---
+# Solving the model
+With this framework, how much care will be provided? (i.e., what is the optimal value of `\(x\)`) &lt;br&gt;
+
+--
+
+Solve the model in two steps:&lt;br&gt;
+
+1. Physician will provide minimum surplus to keep the patient, `\(NB(x) = B(x)-px = NB^{0}\)`
+2. Substitute into physician profit function, `\(\pi=(p-c)x = B(x)-NB^{0} - cx\)`, and solve for `\(x\)`
+
+
+---
+# Physician agency in a graph
+&lt;img src="03-Agency_files/figure-html/tikz-agency-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+# Example
+Assume `\(B(x)=8x^{1/2}\)` and `\(NB^{0}=2\)`:&lt;br&gt;
+
+1. Find the physician's optimal level of `\(x\)` and `\(p\)`.
+2. Find the patient's optimal level of `\(x\)`.
+3. Draw this graphically.
+
+---
+# Example with fixed price
+An increase in the administratively set price leads to a \textit{decrease} in quantity of services provided. And vice versa, a reduction in price leads to an \textit{increase} in quantity provided. Why?
+
+--
+`$$\begin{align*}
+b(x)\frac{\mathrm{d}x}{\mathrm{d}p} - x - p\frac{\mathrm{d}x}{\mathrm{d}p} &amp;= 0 \\
+\frac{\mathrm{d}x}{\mathrm{d}p} = \frac{-x}{p-b(x)} &amp;&lt; 0.
+\end{align*}$$`
+
+
+---
+# Agency with capitated payments
+
+- Physician receives fixed ("capitated") amount for each patient, `\(R\)`, along with some price per unit of service, `\(p_{s}\)`
+- Physician therefore paid `\(R + (p_{s} - c)x\)` for each patient
+- Number of patients for each physician expressed as a positive function of the net benefit offered, `\(n(NB)\)`, where `\(NB=B(x) - p_{d}x\)`. Here, we assume that the insurer sets `\(p_{d}\)` and `\(p_{s}\)` separately (the demand and supply price, respectively).
+- Physician again aims to maximize profits, `\(\pi=n(NB)\left[R+(p_{s}-c)x\right]\)`.
+
+
+---
+# Solution with capitated payments
+.center[
+`\(\frac{B_{x} - p_{d}}{NB} \frac{R + (p_{s} - c)x}{p_{s}-c} = - \frac{1}{\varepsilon_{n,NB}}\)`
+]&lt;br&gt;
+
+--
+
+1. What happens for `\(R=0\)`?
+2. What about `\(R&gt;0\)`, assuming `\(p_{s}&lt;c\)`?
+
+
+---
+# Takeaways
+Excessive treatment may arise because physicians can choose a level of care, and this choice may derive from incentives that are not perfectly aligned with those of the patients. From this section, you should be able to:&lt;br&gt;
+
+1. Set up and solve the physician's optimization problem and compare the solution to that of the patient's optimum.
+2. Show mathematically how the design of an insurance contract (namely, capitated payments versus fee-for-service payments) may determine the extent to which physicians overprovide care.
+
+
 &lt;!-- New Section --&gt;
 ---
 class: inverse, center, middle
@@ -87,6 +187,17 @@ name: policy
 # Policy Issues
 
 &lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=1055px&gt;&lt;/html&gt;
+
+
+---
+# Current policy
+1. [Value-based Purchasing](https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-Instruments/hospital-value-based-purchasing/index.html)
+
+2. [Bundled Payments](https://innovation.cms.gov/initiatives/bundled-payments/)
+
+3. [Accountable Care Organizations](https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/ACO/)
+
+4. [Information and Consumer Choice](https://www.medicare.gov/hospitalcompare/search.html?)
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
