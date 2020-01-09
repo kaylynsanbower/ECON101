@@ -1,0 +1,64 @@
+---
+title: "Homework 1: Health Insurance"
+author: "Econ 372: Economics of Health Care Markets"
+date: "Due: Wednesday, February 2, 2020"
+output: 
+  bookdown::html_document2:
+    toc: FALSE
+    toc_float: FALSE
+    theme: darkly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+<br>
+This is our first homework assignment of the semester. It covers questions related to health insurance purchasing and health insurance markets. You can turn in handwritten or typed answers, but if you're submitting handwritten answers, please take time to make your work and answers readable. Please also staple all of your answers together. 5 points will be deducted for assignments turned-in without a staple.
+
+<br>
+<br>
+
+1. Consider a risk-averse individual with probability $p$ of getting sick. Let $W_{s}$ be the person's wealth if they are to become sick, and $W_{h}$ the wealth if they stay healthy, where $W_{h}>W_{s}$. In this setup, the person's expected utility would then be:<br>
+$$E\left[u(W)\right] = p u(W_{s}) + (1-p) u(W_{h}).$$<br><br>
+    + Draw the consumer's utility curve under the assumption of diminishing marginal utility of wealth, with wealth on the x-axis and utility on the y-axis. Indicate the person's utility at $W_{h}$ and $W_{s}$. On this same graph, indicate the person's expected utility for $p=0.5$.<br>
+    
+    + Explain in no more than two sentences why the person's expected utility differs from their original utility curve.<br>
+    
+    + Show on a new graph the highest possible amount that the person would be willing to pay in order to avoid the (financial) risk of illness.<br>
+    
+    + Briefly explain how an increase in the probability of sickness, $p$, would impact the risk premium illustrated in part c.
+
+
+<br>
+<br>
+
+2. Consider the utility function, $u(w)=w^\alpha$ for $\alpha \in (0,1)$. An individual starts with a wealth of <span>&#36;</span>80,000. With probability 0.5, this person will get sick and incur a cost of <span>&#36;</span>60,000.<br><br>
+    + What is the risk premium for $\alpha=0.3$?<br>
+    
+    + What is the maximum amount this person is willing to pay for health insurance (again at $\alpha=0.3$)?<br>
+    
+    + Does this amount increase or decrease with $\alpha$? (show your work)
+
+
+<br>
+<br>
+
+3. Based on the model of adverse selection covered in class, assume an insurer's cost function is given by $C=120q - 3q^{2}$, where $q$ denotes the number of people enrolled in the plan. Further assume that demand is given by $D=140-5q$. The total size of the population is $N=20$.<br><br>
+    + Assume the insurer enters this market at time $t=1$ with a price of $p=40$. What is the insurer's profit (or loss) at this price?<br>
+  
+    + If the insurer sets price in the next period ($t=2$) equal to average cost at $t=1$, how many individuals will leave the market?<br>
+    
+    + What is the equilibrium price in this market if insurers earn \$0 profits?<br>
+    
+    + Draw a graph of the marginal cost, average cost, and demand curves in this market. Indicate on this graph the equilibrium price.
+
+<br>
+<br>
+
+
+4. New Jersey's Health Insurance market is sometimes used as an example of a "death spiral." Answer the following questions based on data from the [New Jersey Department of Banking and Insurance](http://www.state.nj.us/dobi/division_insurance/ihcseh/data_ihc.htm).<br><br>
+    + Provide a summary table of monthly premiums and enrollments from 1997 to 2008. Focus only on family premiums for three specific insurers/plans: 1) Horizon Blue Cross / Blue Shield of NJ, Plan B, <span>&#36;</span>1,000 deductible; 2) Aetna Life Insurance Company, Plan D, <span>&#36;</span>1,000 deductible; and 3) Celtic Insurance Company, Plan C, <span>&#36;</span>2,500 deductible. Also focus only on the "Individual Health Coverage" (IHC) Program, so no need to worry about the small employer premiums. Your final table should include the years as rows and the monthly premiums for each plan as the columns. Please include one additional column showing the total number of "standard" enrollments across all plans at year end.<br>
+    
+    + Please graph the premium for all three plans as well as enrollments over time. Are these data suggestive of a "death spiral?" Why or why not?

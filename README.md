@@ -16,7 +16,7 @@ Before going much further, please be sure to read the [syllabus](Syllabus/Econ37
 
 
 ## Assignments
-1. Homework 1:
+1. \[[Homework 1:](homework/hwk-1/hwk1-instructions.html)\]: Due on Wednesday, 2/12.
 
 2. Homework 2:
 
