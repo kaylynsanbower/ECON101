@@ -18,8 +18,10 @@ Before going much further, please be sure to read the [syllabus](Syllabus/Econ37
 ## Assignments
 1. \[[Homework 1:](homework/hwk-1/hwk1-instructions.html)\]: Due on Wednesday, 2/12.
 
-2. Homework 2:
+2. \[[Homework 2:](homework/hwk-2/hwk2-instructions.html)\]: Due on Wednesday, 2/26.
 
-3. Homework 3:
+3. \[[Homework 3:](homework/hwk-3/hwk3-instructions.html)\]: Due on Wednesday, 4/15.
 
 4. \[[Case Study](case-study/instructions.html)\]: Due on the date of our scheduled final exam (Wednesday, May 6th). But to reiterate...this is a semester-long project. Please start as early as possible!
+
+5. Mid-term Exam: April 4, 2020.
