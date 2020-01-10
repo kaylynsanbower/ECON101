@@ -1,0 +1,65 @@
+---
+title: "Homework 3: Hospital Pricing"
+author: "Econ 372: Economics of Health Care Markets"
+date: "Due: Wednesday, April 15, 2020"
+output: 
+  bookdown::html_document2:
+    toc: FALSE
+    toc_float: FALSE
+    theme: darkly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+<br>
+This is our third and final homework assignment of the semester. It covers questions related to hospital pricing and competition. You can turn in handwritten or typed answers, but if you're submitting handwritten answers, please take time to make your work and answers readable. Please also staple all of your answers together. 5 points will be deducted for assignments turned-in without a staple.
+
+<br>
+<br>
+
+1. Consider a for-profit practice facing the following demand and cost curves: $p=75-\frac{1}{2}q$ for private insurance patients and $c(q)=\frac{1}{4}q^{2}$.<br><br>
+    + How many patients will this practice see and at what price?<br>
+    
+    + Now assume that there is also a public market (e.g., Medicaid) where the price is set to $\bar{p}=\$40$ for each patient. Calculate the total number of patients that will be seen by this practice. How many of these patients are private insurance patients and how many are Medicaid patients?<br>
+    
+    + Medicaid is considering lowering their payments to \$30 per visit. What is the new number of patients seen by this practice? How many of these patients are privately insured versus Medicaid?<br>
+    
+    + Find the price at which this practice would exit the Medicaid market altogether and serve only private insurance patients.<br>
+
+<br>
+<br>
+
+2. Suppose Town A and Town B each have four hospitals. The following table gives the bed size and output of each hospital. Based on this information, what is the Hirfindahl-Hirschman Index (HHI) for each town if we define market share as the share of total beds? What if we instead define market share as the share of total discharges? Which market (Town A or Town B) is more concentrated?<br><br>
+
+
+<b>Town A</b><br>
+
+ Hospital     | Bed Size | Discharges
+ -------------| -------- | ---------
+ A            | 250      | 8,000
+ B            | 250      | 7,300
+ C            | 250      | 6,400
+ D            | 250      | 5,400
+ 
+<br>
+<br>
+<b>Town B</b><br>
+
+ Hospital     | Bed Size | Discharges
+ -------------| -------- | ---------
+ A            | 100      | 2,200
+ B            |  50      | 1,100
+ C            | 500      | 6,000
+ D            | 350      | 5,000
+
+
+<br>
+<br>
+
+3. From our Nash bargaining framework, assume that two agents are negotiating over how best to divide their quantity of good $x$. Normalize the value of the good to 1, and assume that player 1 receives utility $u_{1}=x^{\alpha}$ and player 2 receives utility $u_{2}=(1-x)^{\beta}$. If the players fail to reach an agreement, they each receive utility of 0.<br><br>
+    + Find the symmetric Nash bargaining solution to this game and explain how the solution depends on $\alpha$ and $\beta$<br>
+    
+    + What can you conclude about the outcome of bargaining in the case of one risk neutral and one risk averse agent?<br>
