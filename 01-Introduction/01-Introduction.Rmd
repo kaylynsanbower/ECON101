@@ -4,6 +4,7 @@ subtitle: "<html><div style='float:left'></div><hr color='#EB811B' size=1px widt
 author: Ian McCarthy | Emory University
 date: Econ 372 #"`r format(Sys.time(), '%d %B %Y')`"
 output:
+  html_document: default
   xaringan::moon_reader:
     css: [default, metropolis, metropolis-fonts, custom.css] 
     lib_dir: libs
@@ -76,7 +77,7 @@ name: welcome
 ---
 # Health and Health Care
 
-</br>
+<br>
 .center[
   ![](https://media.giphy.com/media/1xK1QRqHENTTW/giphy.gif)
 ]
@@ -147,8 +148,8 @@ ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp)) +
 ---
 # GDP and Health over Time
 
-```{r gganim1, echo=FALSE}
-ggplot(gapminder, aes(gdpPercap, lifeExp, size = pop)) +
+```{r gganim1, message=FALSE, warning=FALSE, include=FALSE}
+anim1 <- ggplot(gapminder, aes(gdpPercap, lifeExp, size = pop)) +
   geom_point(alpha = 0.5, show.legend = FALSE) +
   scale_colour_manual(values = country_colors) +
   scale_size(range = c(2, 12)) +
@@ -157,13 +158,21 @@ ggplot(gapminder, aes(gdpPercap, lifeExp, size = pop)) +
   labs(title = 'Year: {frame_time}', x = 'Log GDP Per Capita ($US)', y = 'Life Expectancy (years)') +
   transition_time(year) +
   ease_aes('linear')
+
+anim_save("anim1.gif",anim1,
+          path="D:/CloudStation/Professional/Teaching Material/Emory/Econ 372 - Health Care Markets/01-Introduction/pics")
 ```
+
+.center[
+  ![:scale 900px](pics/anim1.gif)
+]
+
 
 ---
 # But the US is unique
-```{r us-gap, echo=FALSE}
+```{r us-gap, message=FALSE, warning=FALSE, include=FALSE}
 mycolors <- c("US" = "red", "other" = "grey50")
-gapminder %>% filter(country %in% c("Canada", "France", "Germany", "Italy", "Japan", "United Kingdom", "United States")) %>%
+anim2 <- gapminder %>% filter(country %in% c("Canada", "France", "Germany", "Italy", "Japan", "United Kingdom", "United States")) %>%
   mutate(highlight = ifelse(country=="United States", "US", "other")) %>%
   ggplot(aes(gdpPercap, lifeExp, size = pop)) +
   geom_point(alpha = 0.5, show.legend = FALSE, aes(color=highlight)) +
@@ -173,7 +182,16 @@ gapminder %>% filter(country %in% c("Canada", "France", "Germany", "Italy", "Jap
   labs(title = 'Year: {frame_time}', x = 'GDP Per Capita ($US)', y = 'Life Expectancy (years)') +
   transition_time(year) +
   ease_aes('linear')
+
+anim_save("anim2.gif",anim2,
+          path="D:/CloudStation/Professional/Teaching Material/Emory/Econ 372 - Health Care Markets/01-Introduction/pics")
 ```
+
+.center[
+  ![:scale 900px](pics/anim2.gif)
+]
+
+
 
 ---
 # Health care spending
@@ -202,7 +220,7 @@ oecd.dat <- health.dat %>%
 
 ```
 
-```{r spend, echo=FALSE, warning=FALSE}
+```{r spend, echo=FALSE}
 oecd.dat %>% filter(year>=1970) %>%
   ggplot(aes(x=year,y=tot_exp,color=country)) + 
   geom_line(show.legend = FALSE) + theme_bw() +
@@ -220,28 +238,45 @@ oecd.dat %>% filter(year>=1970) %>%
 ```
 
 
+
+
+
 ---
 # Spending and infant mortality
-```{r spend-inf-mort, echo=FALSE}
-oecd.dat %>% filter(year>=1970) %>% group_by(country) %>% fill(c(tot_exp, mort_inf), .direction="updown") %>%
+```{r spend-inf-mort, message=FALSE, warning=FALSE, include=FALSE}
+anim4 <- oecd.dat %>% filter(year>=1970) %>% group_by(country) %>% fill(c(tot_exp, mort_inf), .direction="updown") %>%
   ggplot(aes(tot_exp, mort_inf, label=country)) +
   geom_text(aes(size=3), show.legend=FALSE) + theme_bw() + 
   labs(title = 'Year: {frame_time}', x = 'Health Care Spending (%GDP)', y = 'Infant Mortality') +
   transition_time(year) +
   ease_aes('linear')
+anim_save("anim4.gif",anim4,
+          path="D:/CloudStation/Professional/Teaching Material/Emory/Econ 372 - Health Care Markets/01-Introduction/pics")
 ```
+
+.center[
+  ![:scale 900px](pics/anim4.gif)
+]
+
 
 
 ---
 # Spending and maternal mortality
-```{r spend-mat-mort, echo=FALSE}
-oecd.dat %>% filter(year>=1970 & year<=2012) %>% group_by(country) %>% fill(c(tot_exp, mort_mat), .direction="updown") %>%
+```{r spend-mat-mort, message=FALSE, warning=FALSE, include=FALSE}
+anim5 <- oecd.dat %>% filter(year>=1970 & year<=2012) %>% group_by(country) %>% fill(c(tot_exp, mort_mat), .direction="updown") %>%
   ggplot(aes(tot_exp, mort_mat, label=country)) +
   geom_text(aes(size=3), show.legend=FALSE) + theme_bw() + 
   labs(title = 'Year: {frame_time}', x = 'Health Care Spending (%GDP)', y = 'Maternal Mortality') +
   transition_time(year) +
   ease_aes('linear')
+anim_save("anim5.gif",anim5,
+          path="D:/CloudStation/Professional/Teaching Material/Emory/Econ 372 - Health Care Markets/01-Introduction/pics")
 ```
+
+.center[
+  ![:scale 900px](pics/anim5.gif)
+]
+
 
 
 ---
