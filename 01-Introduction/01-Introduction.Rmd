@@ -322,7 +322,7 @@ Material typically presented as follows:
 
 1. Traditional lecture and discussion
   - All readings listed in syllabus
-  - Available on *Canvas*
+  - Available on course website or *Canvas* if not publicly available
 2. In-class worksheets
 3. Homework
 4. Exam (mid-term only)
