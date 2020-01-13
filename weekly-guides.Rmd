@@ -1,0 +1,47 @@
+---
+title: "Weekly Guides"
+author: "Econ 372: Economics of Health Care Markets"
+date: "Last Update: 1/13/2020"
+output: 
+  bookdown::html_document2:
+    toc: TRUE
+    toc_float: TRUE
+    toc_depth: 2
+    theme: darkly
+    number_sections: FALSE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+# Overview 
+Here, I provide a guide for each week of class. I will post a new guide each week. The goal of each guide is simply to highlight the material for that week. By the end of the semester, this should be one large file that you can easily navigate to see what was done during each week of class.
+
+# Week 1: Welcome!
+Welcome to Economics of Health Care Markets! We're going to have a great time this semester and learn a ton about economics, health care, and health policy.
+
+### Objectives for this week
+- Recall the total annual expenditures on health and health care in the U.S.
+- Compare U.S. health expenditures and quality to that of other countries
+- Explain the debate surrounding the role of prices in U.S. health care expenditures
+- Summarize some of the unique economic features of the U.S. health care market
+ 
+
+### Activities 
+- Discussion of U.S. health care expenditures and quality
+- Overview of class and introductions
+
+### Resources 
+- [Syllabus](Syllabus/Econ372-Syllabus.pdf)
+- [Class Website](imccart.github.io/Econ-372)
+- [Basic Calculus Review](practice_problems.pdf) and [answers](practice_problems_solution.pdf)
+- Some extra stuff:
+  - Arrow, Kenneth J. 1963. ["Uncertainty and the Welfare Economics of Medical Care."](https://www.jstor.org/stable/1812044?seq=1#metadata_info_tab_contents) American Economic Review, 53(5)
+  - Anderson, G., U. Reinhardt, P. Hussey, and V. Petrosyan. 2003. ["It's the prices, stupid: Why the United States is so different from other countries."](https://www.healthaffairs.org/doi/full/10.1377/hlthaff.22.3.89) Health Affairs, 22(3)
+  - Healthcare triage videos: [The Healthcare System of the United States](https://www.youtube.com/watch?v=yN-MkRcOJjY) and [Why Does the US Spend So Much On Healthcare?](https://www.youtube.com/watch?v=tFtAohYPSFc)
+  - Time, 2013. [Bitter Pill: Why Medical Bills are Killing Us](https://time.com/198/bitter-pill-why-medical-bills-are-killing-us/)
+  - Forbes, 2018. [Healthcare: It's the prices, stupid. Isn't it?](https://www.forbes.com/sites/elliekincaid/2018/03/13/healthcare-its-the-prices-stupid-isnt-it/#52a5fda3198a)
+  - Blog, Random Critical Analysis, November 2018. ["Why everything you have said about the determinants of health expenditure is wrong in one million charts: A response to Noah Smith."](https://randomcriticalanalysis.com/2018/11/19/why-everything-you-know-about-healthcare-is-wrong-in-one-million-charts-a-response-to-noah-smith/)
+  
