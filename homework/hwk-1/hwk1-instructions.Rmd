@@ -35,9 +35,9 @@ $$E\left[u(W)\right] = p u(W_{s}) + (1-p) u(W_{h}).$$<br><br>
 <br>
 
 2. Consider the utility function, $u(w)=w^\alpha$ for $\alpha \in (0,1)$. An individual starts with a wealth of <span>&#36;</span>80,000. With probability 0.5, this person will get sick and incur a cost of <span>&#36;</span>60,000.<br><br>
-    + What is the risk premium for $\alpha=0.3$?<br>
+    + What is the risk premium for $\alpha=0.4$?<br>
     
-    + What is the maximum amount this person is willing to pay for health insurance (again at $\alpha=0.3$)?<br>
+    + What is the maximum amount this person is willing to pay for health insurance (again at $\alpha=0.4$)?<br>
     
     + Does this amount increase or decrease with $\alpha$? (show your work)
 
@@ -46,11 +46,11 @@ $$E\left[u(W)\right] = p u(W_{s}) + (1-p) u(W_{h}).$$<br><br>
 <br>
 
 3. Based on the model of adverse selection covered in class, assume an insurer's cost function is given by $C=120q - 3q^{2}$, where $q$ denotes the number of people enrolled in the plan. Further assume that demand is given by $D=140-5q$. The total size of the population is $N=20$.<br><br>
-    + Assume the insurer enters this market at time $t=1$ with a price of $p=40$. What is the insurer's profit (or loss) at this price?<br>
+    + Assume the insurer enters this market at time $t=1$ with a price of $p=50$. What is the insurer's profit (or loss) at this price?<br>
   
     + If the insurer sets price in the next period ($t=2$) equal to average cost at $t=1$, how many individuals will leave the market?<br>
     
-    + What is the equilibrium price in this market if insurers earn \$0 profits?<br>
+    + What is the equilibrium price in this market if insurers earn <span>&#36;</span>0 profits?<br>
     
     + Draw a graph of the marginal cost, average cost, and demand curves in this market. Indicate on this graph the equilibrium price.
 
