@@ -36,6 +36,7 @@ Welcome to Economics of Health Care Markets! We're going to have a great time th
 ### Resources 
 - [Syllabus](Syllabus/Econ372-Syllabus.pdf)
 - [Class Website](imccart.github.io/Econ-372)
+- [Class Notes](01-Introduction/01-slides.html)
 - [Basic Calculus Review](practice_problems.pdf) and [answers](practice_problems_solution.pdf)
 - Some extra stuff:
   - Arrow, Kenneth J. 1963. ["Uncertainty and the Welfare Economics of Medical Care."](https://www.jstor.org/stable/1812044?seq=1#metadata_info_tab_contents) American Economic Review, 53(5)
@@ -47,4 +48,22 @@ Welcome to Economics of Health Care Markets! We're going to have a great time th
   
   
 # Week 2: Understanding risk
+Welcome back! This week is all about risk and uncertainty. We will eventually use these concepts to study insurance markets and premiums.
+
+### Objectives for this week
+- Calculate expected values
+- Define risk aversion and diminishing marginal utility
+- Calculate and explain graphically the risk premium
+ 
+
+### Activities
+- Discussion forum on Canvas
+- Discussion of the health insurance death spiral 
+- In-class problems (expected values)
+ 
+
+### Resources
+- Textbook: Pindyk and Rubinfeld, Sections 5.1-5.2
+- [Class Notes](02-Insurance/02-slides.html)
+- CNN Business, February 2017, ["Humana pulls out of Obamacare for 2018"](https://money.cnn.com/2017/02/14/news/economy/humana-obamacare-insurer/)
 

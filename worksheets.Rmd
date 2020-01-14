@@ -1,0 +1,69 @@
+---
+title: "In-class Problems"
+author: "Econ 372: Economics of Health Care Markets"
+date: "Last Update: 1/13/2020"
+output: 
+  html_document:
+    toc: TRUE
+    toc_float: TRUE
+    toc_depth: 1
+    theme: darkly
+    number_sections: FALSE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(tidyverse, ggplot2, dplyr, lubridate, readr, readxl, hrbrthemes,
+               scales, gganimate, gapminder, gifski, png, tufte, plotly, OECD,
+               ggrepel)
+
+```
+
+# Overview 
+Here are all of our in-class problems and solutions throughout the semester. They are all in one place for ease of use and access. Note that the problems and solutions are "tabbed". That's so that you can view the problem and work on it on your own without seeing the solution. This is definitely the best way to study!
+
+# Expected values {.tabset}
+
+## Problems
+
+### Question 1:
+An individual starts with a wealth of <span>&#36;</span>100,000. With probability 0.3, they will get sick and incur a cost of <span>&#36;</span>40,000. What is this person's expected cost of illness?
+
+### Question 2:
+Assume this individual has a utility function of the form, $u(w) = w^{0.20}$. What is this person's expected utility?
+
+### Question 3:
+Calculate this person's utility if they were to incur the expected cost of illness with certainty. Is this utility higher or lower than what you found in part (2)?
+
+
+## Solutions
+
+### Question 1:
+An individual starts with a wealth of <span>&#36;</span>100,000. With probability 0.3, they will get sick and incur a cost of <span>&#36;</span>40,000. What is this person's expected cost of illness?<br>
+
+The expected cost is the probability of being ill (0.3) times the cost of being ill (40,000),<br><br>
+$E[cost]=0.3 \times 40,000 =$ `r format(0.3*40000,digits=5,big.mark=",")`.
+
+
+### Question 2:
+Assume this individual has a utility function of the form, $u(w) = w^{0.20}$. What is this person's expected utility?<br>
+
+Expected utility works the same as any expectation...the "tricky" part is that we're using the utility *function* to the find the values over which we form the expectation. In this case, we have two possible outcomes: a) healthy, which gives us a wealth of <span>&#36;</span>100,000; or b) sick, in which case we incur the cost of illness and end up with <span>&#36;</span>60,000. So to find the expected utility, we need to find the utility associated with each possible wealth value, and then we need to take the expectation over those utility values:
+
+<b>Step 1: Find utility values</b><br>
+
+- If healthy: $u(w)|_{w=100,000} = 100,000^{0.2}=$ `r format(100000^(0.2),digits=5,big.mark=",")`
+
+- If sick: $u(w)|_{w=60,000} = 60,000^{0.2}=$ `r format(60000^(0.2),digits=5,big.mark=",")`
+
+<br>
+<b>Step 2: Take the expectation</b><br>
+Taking the expectation over these utility values yields: $E[u]=0.7 \times$ `r format(100000^(0.2),digits=5,big.mark=",")` $+0.3 \times$ `r format(60000^(0.2),digits=5,big.mark=",")` $=$ `r format(.7*(100000^(0.2)) + 0.3*(60000^(0.2)),digits=5,big.mark=",")`.
+
+
+### Question 3:
+Calculate this person's utility if they were to incur the expected cost of illness with certainty. Is this utility higher or lower than what you found in part (2)?<br>
+
+If they are definitely going to be sick (i.e., with probability, $p=1$), then we just need to plug in the wealth value in the sick state (60,000) into the utility function, $u=(60,000)^{0.2}=$ `r format(60000^(0.2),digits=5,big.mark=",")`. As should be the case, this is lower than our expected utility from part (2).
+
