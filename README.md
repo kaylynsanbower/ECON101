@@ -11,11 +11,11 @@ Below are all of the slides that I'll use throughout the class. The slides will 
 
 1. Introduction: Motivation and background, [slides](01-Introduction/01-slides.html) and [simplified view](01-Introduction/01-simple.html)
 
-2. Health Insurance and Adverse Selection, [slides](02-Insurance/02-Insurance.html)
+2. Health Insurance and Adverse Selection, [slides](02-Insurance/02-slides.html) and [simplified view](02-Insurance/02-simple.html)
 
-3. Physicians and Treatment Decisions, [slides](03-Agency/03-Agency.html)
+3. Physicians and Treatment Decisions, [slides](03-Agency/03-slides.html) and [simplified view](03-Agency/03-simple.html)
 
-4. Hospital Pricing and Payments, [slides](04-Pricing/04-Pricing.html)
+4. Hospital Pricing and Payments, [slides](04-Pricing/04-Pricing.html) and [simplified view](04-Pricing/04-simple.html)
 
 
 ## Assignments
