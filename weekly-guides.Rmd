@@ -35,7 +35,7 @@ Welcome to Economics of Health Care Markets! We're going to have a great time th
 
 ### Resources 
 - [Syllabus](Syllabus/Econ372-Syllabus.pdf)
-- [Class Website](imccart.github.io/Econ-372)
+- [Class Website](https://imccart.github.io/Econ-372)
 - [Class Notes](01-Introduction/01-slides.html)
 - [Basic Calculus Review](01-Introduction/practice_problems.pdf) and [answers](01-Introduction/practice_problems_solution.pdf)
 - Some extra stuff:
