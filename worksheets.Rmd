@@ -91,20 +91,91 @@ Explain how these values differ and why. What might this say about the profitabi
 ### Question 1:
 Calculate the risk premium and willingness to pay based on a probability of illness of 0.1.<br>
 
-To find the risk premium, we first need to calculate the 
-
-
-
-
-
+```{r, include=FALSE}
+eu <- .1*log(50) + .9*log(100)
+inv.u <- exp(eu)
+ecost <- .1*50
+rprem <- 100 - inv.u-ecost
+```
+To find the risk premium, we first need to calculate the expected utility: $E[u]=0.1*\ln(50) + 0.9*\ln(100)=$ `r format(eu, digits=4)`. Next, we need to find the monetary value that provides this same level of utility. So we need $y$ such that $u(y)=$ `r format(eu, digits=4)`. Since our utility function is $\ln(x)$, we know that $y =$ exp(`r format(eu, digits=4)`) $=$ `r format(inv.u,digits=4,big.mark=",")`. The risk premium is then the difference between this value and our starting wealth (less the expected cost of care), $\pi =$ 100 - `r format(inv.u,digits=4)` - `r format(ecost, digits=4)` $=$ `r format(rprem, digits=4)`.
 
 
 ### Question 2:
-Repeat part (1) using a probability of illness of 0.2.
+Repeat part (1) using a probability of illness of 0.2.<br>
+
+```{r, include=FALSE}
+eu <- .2*log(50) + .8*log(100)
+inv.u <- exp(eu)
+ecost <- .2*50
+rprem <- 100 - inv.u-ecost
+```
+Repeating that same process yields an expected utility of `r format(eu, digits=4)`. The monetary value that provides this level of utility with certainty is $y =$ exp(`r format(eu, digits=4)`) $=$ `r format(inv.u,digits=4,big.mark=",")`. The risk premium is then the difference between this value and our starting wealth (less the expected cost of care), $\pi =$ 100 - `r format(inv.u,digits=4)` - `r format(ecost, digits=4)` $=$ `r format(rprem, digits=4)`.
+
 
 ### Question 3:
 Repeat part (1) using a probability of illness of 0.5.
 
+```{r, include=FALSE}
+eu <- .3*log(50) + .7*log(100)
+inv.u <- exp(eu)
+ecost <- .3*50
+rprem <- 100 - inv.u-ecost
+```
+Repeating that same process yields an expected utility of `r format(eu, digits=4)`. The monetary value that provides this level of utility with certainty is $y =$ exp(`r format(eu, digits=4)`) $=$ `r format(inv.u,digits=4,big.mark=",")`. The risk premium is then the difference between this value and our starting wealth (less the expected cost of care), $\pi =$ 100 - `r format(inv.u,digits=4)` - `r format(ecost, digits=4)` $=$ `r format(rprem, digits=4)`.
+
+
 ### Question 4:
-Explain how these values differ and why. What might this say about the profitability of insurance in a market with many sick people?
+Explain how these values differ and why. What might this say about the profitability of insurance in a market with many sick people?<br>
+
+We see from these examples that the risk premium is increasing as the amount of uncertainty increases. If people are more certain about being ill, then the risk premium is lower. This means that people are unwilling to pay much more than the expected cost of care, leaving less potential profit for insurers.
+
+
+# Adverse selection {.tabset}
+Assume that the insurer's cost function is given by $C=100q - 2q^{2}$, where $q$ denotes the number of people enrolled in the plan. Further assume that the inverse demand function takes the form, $D=110 - 3q$. 
+
+## Problems
+
+### Question 1:
+If the insurer enters the market at a price of <span>&#36;</span>65, what is the insurer's profit (or loss)?
+
+### Question 2:
+What price does the insurer set next year if they set price equal to average cost in the prior year?
+
+### Question 3:
+What is the equilibrium price in this market?
+
+
+## Solutions
+```{r, include=FALSE}
+demand <- function(q){
+  110 - 3*q
+}
+cost <- function(q){
+  100*q - 2*q^{2}
+}
+mc <- function(q){
+  100 - 4*q
+}
+ac <- function(q){
+  cost(q)/q
+}
+q.demand <- function(p){
+  (110-p)/3
+}
+```
+
+### Question 1:
+If the insurer enters the market at a price of <span>&#36;</span>65, what is the insurer's profit (or loss)?<br>
+
+we need to first calculate the marginal cost curve, $mc=100-4q$, and the average cost curve, $ac=100-2q$. At a price of $p=65$, we know that quantity demanded will be $q=$ `r q.demand(65)`. We can then calculate profit as just total revenue less total cost, $\pi = TR - TC =$ `r 65*q.demand(65)` - `r ac(q.demand(65))*q.demand(65)` = `r 65*q.demand(65) - ac(q.demand(65))*q.demand(65)`.
+
+### Question 2:
+What price does the insurer set next year if they set price equal to average cost in the prior year?<br>
+
+Average cost at $p=65$ is `r ac(q.demand(65))`. So this is next period's price.
+
+### Question 3:
+What is the equilibrium price in this market?<br>
+
+The equlibrium price is such that insurers earn zero profits (under our assumptions). We can find that price by finding the quantity such that $AC=p$. This occurs at $110 - 3q = 100 - 2q$, or $q=10$. The price at this quantity is `r demand(10)`. Note that the zero profit condition isn't necessary to find an equilibrium in this way. We could easily incorporate some minimum "profit" per person by increasing the per unit costs in the cost function.
 

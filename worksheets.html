@@ -1580,6 +1580,89 @@ div.tocify {
 </div>
 </div>
 </div>
+<div id="demand-for-health-insurance" class="section level1 tabset">
+<h1>Demand for health insurance</h1>
+<p>Assume that utility takes the log form, <span class="math inline">\(u(x)=ln(x)\)</span>. If someone is healthy, they maintain their current wealth of <span>$</span>100, and if they become ill, they must incur a cost of <span>$</span>50. Answer the following questions based on this setup.</p>
+<div id="problems-1" class="section level2">
+<h2>Problems</h2>
+<div id="question-1-2" class="section level3">
+<h3>Question 1:</h3>
+<p>Calculate the risk premium and willingness to pay based on a probability of illness of 0.1.</p>
+</div>
+<div id="question-2-2" class="section level3">
+<h3>Question 2:</h3>
+<p>Repeat part (1) using a probability of illness of 0.2.</p>
+</div>
+<div id="question-3-2" class="section level3">
+<h3>Question 3:</h3>
+<p>Repeat part (1) using a probability of illness of 0.5.</p>
+</div>
+<div id="question-4" class="section level3">
+<h3>Question 4:</h3>
+<p>Explain how these values differ and why. What might this say about the profitability of insurance in a market with many sick people?</p>
+</div>
+</div>
+<div id="solutions-1" class="section level2">
+<h2>Solutions</h2>
+<div id="question-1-3" class="section level3">
+<h3>Question 1:</h3>
+<p>Calculate the risk premium and willingness to pay based on a probability of illness of 0.1.<br></p>
+<p>To find the risk premium, we first need to calculate the expected utility: <span class="math inline">\(E[u]=0.1*\ln(50) + 0.9*\ln(100)=\)</span> 4.536. Next, we need to find the monetary value that provides this same level of utility. So we need <span class="math inline">\(y\)</span> such that <span class="math inline">\(u(y)=\)</span> 4.536. Since our utility function is <span class="math inline">\(\ln(x)\)</span>, we know that <span class="math inline">\(y =\)</span> exp(4.536) <span class="math inline">\(=\)</span> 93.3. The risk premium is then the difference between this value and our starting wealth (less the expected cost of care), <span class="math inline">\(\pi =\)</span> 100 - 93.3 - 5 <span class="math inline">\(=\)</span> 1.697.</p>
+</div>
+<div id="question-2-3" class="section level3">
+<h3>Question 2:</h3>
+<p>Repeat part (1) using a probability of illness of 0.2.<br></p>
+<p>Repeating that same process yields an expected utility of 4.467. The monetary value that provides this level of utility with certainty is <span class="math inline">\(y =\)</span> exp(4.467) <span class="math inline">\(=\)</span> 87.06. The risk premium is then the difference between this value and our starting wealth (less the expected cost of care), <span class="math inline">\(\pi =\)</span> 100 - 87.06 - 10 <span class="math inline">\(=\)</span> 2.945.</p>
+</div>
+<div id="question-3-3" class="section level3">
+<h3>Question 3:</h3>
+<p>Repeat part (1) using a probability of illness of 0.5.</p>
+<p>Repeating that same process yields an expected utility of 4.397. The monetary value that provides this level of utility with certainty is <span class="math inline">\(y =\)</span> exp(4.397) <span class="math inline">\(=\)</span> 81.23. The risk premium is then the difference between this value and our starting wealth (less the expected cost of care), <span class="math inline">\(\pi =\)</span> 100 - 81.23 - 15 <span class="math inline">\(=\)</span> 3.775.</p>
+</div>
+<div id="question-4-1" class="section level3">
+<h3>Question 4:</h3>
+<p>Explain how these values differ and why. What might this say about the profitability of insurance in a market with many sick people?<br></p>
+<p>We see from these examples that the risk premium is increasing as the amount of uncertainty increases. If people are more certain about being ill, then the risk premium is lower. This means that people are unwilling to pay much more than the expected cost of care, leaving less potential profit for insurers.</p>
+</div>
+</div>
+</div>
+<div id="adverse-selection-in-health-insurance" class="section level1 tabset">
+<h1>Adverse selection in health insurance</h1>
+<p>Assume that the insurer’s cost function is given by <span class="math inline">\(C=100q - 2q^{2}\)</span>, where <span class="math inline">\(q\)</span> denotes the number of people enrolled in the plan. Further assume that the inverse demand function takes the form, <span class="math inline">\(D=110 - 3q\)</span>.</p>
+<div id="problems-2" class="section level2">
+<h2>Problems</h2>
+<div id="question-1-4" class="section level3">
+<h3>Question 1:</h3>
+<p>If the insurer enters the market at a price of <span>$</span>65, what is the insurer’s profit (or loss)?</p>
+</div>
+<div id="question-2-4" class="section level3">
+<h3>Question 2:</h3>
+<p>What price does the insurer set next year if they set price equal to average cost in the prior year?</p>
+</div>
+<div id="question-3-4" class="section level3">
+<h3>Question 3:</h3>
+<p>What is the equilibrium price in this market?</p>
+</div>
+</div>
+<div id="solutions-2" class="section level2">
+<h2>Solutions</h2>
+<div id="question-1-5" class="section level3">
+<h3>Question 1:</h3>
+<p>If the insurer enters the market at a price of <span>$</span>65, what is the insurer’s profit (or loss)?<br></p>
+<p>we need to first calculate the marginal cost curve, <span class="math inline">\(mc=100-4q\)</span>, and the average cost curve, <span class="math inline">\(ac=100-2q\)</span>. At a price of <span class="math inline">\(p=65\)</span>, we know that quantity demanded will be <span class="math inline">\(q=\)</span> 15. We can then calculate profit as just total revenue less total cost, <span class="math inline">\(\pi = TR - TC =\)</span> 975 - 1050 = -75.</p>
+</div>
+<div id="question-2-5" class="section level3">
+<h3>Question 2:</h3>
+<p>What price does the insurer set next year if they set price equal to average cost in the prior year?<br></p>
+<p>Average cost at <span class="math inline">\(p=65\)</span> is 70. So this is next period’s price.</p>
+</div>
+<div id="question-3-5" class="section level3">
+<h3>Question 3:</h3>
+<p>What is the equilibrium price in this market?<br></p>
+<p>The equlibrium price is such that insurers earn zero profits (under our assumptions). We can find that price by finding the quantity such that <span class="math inline">\(AC=p\)</span>. This occurs at <span class="math inline">\(110 - 3q = 100 - 2q\)</span>, or <span class="math inline">\(q=10\)</span>. The price at this quantity is 80. Note that the zero profit condition isn’t necessary to find an equilibrium in this way. We could easily incorporate some minimum “profit” per person by increasing the per unit costs in the cost function.</p>
+</div>
+</div>
+</div>
 
 
 
