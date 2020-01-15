@@ -179,3 +179,76 @@ What is the equilibrium price in this market?<br>
 
 The equlibrium price is such that insurers earn zero profits (under our assumptions). We can find that price by finding the quantity such that $AC=p$. This occurs at $110 - 3q = 100 - 2q$, or $q=10$. The price at this quantity is `r demand(10)`. Note that the zero profit condition isn't necessary to find an equilibrium in this way. We could easily incorporate some minimum "profit" per person by increasing the per unit costs in the cost function.
 
+
+
+# Physician agency {.tabset}
+Denote the quantity of care consumed by $x$, and denote by $B(x)$ the function that determinesthe benefit of care to the patient. Assume that the patient must pay the full price of care, $px$,  so that their net benefit is $NB=B(x)−px$.  
+
+## Problems
+
+### Question 1:
+Find the patient’s optimal $x$.
+
+### Question 2:
+Draw the marginal benefit on a graph and note the price and patient's optimal quantity.
+
+### Question 3:
+Find the physician's optimal $x$ assuming $NB^{0}=0$. 
+
+### Question 4:
+Add the physician's optimal $x$ to your graph and interpret the difference.
+
+
+## Solutions
+
+### Question 1:
+Find the patient’s optimal $x$.<br>
+
+The patient just wants to maximize their net benefit, $B(x) - px$. Taking the derivative and setting to 0, this means $B'(x) = p$ (i.e., marginal benefit to the patient is equal to the patient's marginal cost).
+
+
+### Question 2:
+Draw the marginal benefit on a graph and note the price and patient's optimal quantity.<br>
+
+```{tikz echo=FALSE, fig.ext='png', cache=TRUE, tikz-agency}
+\usetikzlibrary{calc}
+\begin{tikzpicture}[scale=0.70, every node/.style={black,opacity=1, transform shape}]
+\draw [->] (0,0) node [below] {0} -- (0,0) -- (6,0) node [right] {$x$};
+\draw [->] (0,0) node [below] {0} -- (0,0) -- (0,5.5) node [above] {$NB$};
+\draw (0,5)--(6,1.4);
+\node [right] at (6,1.4) {$b(x)$};
+\draw (0,3.5)--(2.5,3.5);
+\draw[dashed] (2.5,3.5)--(2.5,0);
+\node [left] at (0,3.5) {$p$};
+\node [below] at (2.5,0) {$\bar{x}$};
+\end{tikzpicture}
+```
+
+
+### Question 3:
+Find the physician's optimal $x$ assuming $NB^{0}=0$.<br>
+
+The physician is profit maximizing, subject to the constraint that $NB^{0}=B(x) - px=0$. Plugging this constraint into the profit function yields, $\pi = B(x) - NB^{0} - cx = B(x) - cx$. Taking the derivative and setting it to 0 yields the expression, $B'(x)=c$. So the physician also set's marginal benefit equal to marginal cost...they just focus on their own marginal cost instead of the marginal cost to the patient.
+
+
+### Question 4:
+Add the physician's optimal $x$ to your graph and interpret the difference.<br>
+
+```{tikz echo=FALSE, fig.ext='png', cache=TRUE, tikz-agency2}
+\usetikzlibrary{calc}
+\begin{tikzpicture}[scale=0.70, every node/.style={black,opacity=1, transform shape}]
+\draw [->] (0,0) node [below] {0} -- (0,0) -- (6,0) node [right] {$x$};
+\draw [->] (0,0) node [below] {0} -- (0,0) -- (0,5.5) node [above] {$NB$};
+\draw (0,5)--(6,1.4);
+\node [right] at (6,1.4) {$b(x)$};
+\draw (0,3.5)--(3.4,3.5);
+\draw (0,3)--(3.4,3);
+\draw (3.4,3.5)--(3.4,0);
+\draw[dashed] (2.5,3.5)--(2.5,0);
+\node [left] at (0,3) {$c$};
+\node [left] at (0,3.5) {$p$};
+\node [below] at (3.4,0) {$x^{*}$};
+\node [below] at (2.5,0) {$\bar{x}$};
+\end{tikzpicture}
+```
+
