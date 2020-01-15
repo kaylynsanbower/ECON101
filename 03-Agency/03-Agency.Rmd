@@ -156,6 +156,16 @@ Solve the model in two steps:<br>
 
 
 ---
+# In-class Problem: Physician agency
+Denote the quantity of care consumed by $x$, and denote by $B(x)$ the function that determinesthe benefit of care to the patient. Assume that the patient must pay the full price of care, $px$,  so that their net benefit is $NB=B(x)−px$.  
+
+1. Find the patient’s optimal $x$.
+2. Draw the marginal benefit on a graph and note the price and patient's optimal quantity.
+3. Find the physician's optimal $x$ assuming $NB^{0}=0$. 
+4. Add the physician's optimal $x$ to your graph and interpret the difference.
+
+
+---
 # Physician agency in a graph
 ```{tikz echo=FALSE, fig.ext='png', cache=TRUE, tikz-agency}
 \usetikzlibrary{calc}
@@ -180,11 +190,19 @@ Solve the model in two steps:<br>
 
 ---
 # Example
-Assume $B(x)=8x^{1/2}$ and $NB^{0}=2$:<br>
+Assume $B(x)=8x^{1/2}$, $NB^{0}=2$, anc $c=1$:<br>
 
 1. Find the physician's optimal level of $x$ and $p$.
 2. Find the patient's optimal level of $x$.
 3. Draw this graphically.
+
+---
+# Answer
+First let's re-write the constraint such that $px = 8x^{1/2}$ and $\pi = 8x^{1/2} - 2 - x$. The first order condition for $x$ is then $4x^{-1/2} -1 =0$, which is satisfied at $x^{*}=16$. Substituting this into the constraint, $8x^{1/2} - px=2$ yields $p=\frac{15}{8}$. 
+
+
+But if they could choose on their own, the patient would prefer to maximize their net benefit. This would occur at $4x^{-1/2}=p$, which yields $x=(32/15)^{2} \approx 4.5$ at $p=15/8$.
+
 
 ---
 # Example with fixed price
@@ -196,6 +214,14 @@ b(x)\frac{\mathrm{d}x}{\mathrm{d}p} - x - p\frac{\mathrm{d}x}{\mathrm{d}p} &= 0 
 \frac{\mathrm{d}x}{\mathrm{d}p} = \frac{-x}{p-b(x)} &< 0.
 \end{align*}$$
 
+---
+# In-class Problem: Agency and fixed prices
+
+Assume $B(x)=4x^{1/2}$, $NB^{0}=0$, anc $c=1$. Further assume that prices are fixed administratively at, $\bar{p}=2$.
+
+1. What is the physician's and patient's optimal amount of care provided?
+2. The government is considering increasing the price to $\bar{p}=3$. What are the new optimal levels of care for physicians and patients at this new price?
+3. How would the price change affect the difference between the patient and physician's optimal amounts?
 
 ---
 # Agency with capitated payments

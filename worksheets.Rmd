@@ -252,3 +252,38 @@ Add the physician's optimal $x$ to your graph and interpret the difference.<br>
 \end{tikzpicture}
 ```
 
+
+# Agency and fixed prices {.tabset}
+
+## Problems
+Assume $B(x)=4x^{1/2}$, $NB^{0}=0$, anc $c=1$. Further assume that prices are fixed administratively at, $\bar{p}=2$.
+
+### Question 1:
+What is the physician's and patient's optimal amount of care provided?
+
+### Question 2:
+The government is considering increasing the price to $\bar{p}=3$. What are the new optimal levels of care for physicians and patients at this new price?
+
+### Question 3:
+How would the price change affect the difference between the patient and physician's optimal amounts?
+
+
+## Solutions
+Assume $B(x)=4x^{1/2}$, $NB^{0}=0$, anc $c=1$. Further assume that prices are fixed administratively at, $\bar{p}=2$.
+
+### Question 1:
+What is the physician's and patient's optimal amount of care provided?<br>
+
+The physician maximizes profit, $\pi = px - cx$, subject to the constraint, $4x^{1/2} = px$. Since $p$ is fixed, the physician simply sets $x$ as high as possible, which means they set $x$ to the point where the constraint binds. With $p=2$, this means $4x^{1/2} = 2x$, and solving for $x$ means $16x = 4x^{2} \longrightarrow 16=4x \longrightarrow x=4$. 
+
+The patient cares about maximizing net benefit, $4x^{1/2} - 2x$. This is maximized at $x$ such that $2x^{-1/2}-2=0 \longrightarrow x=1$. 
+
+### Question 2:
+The government is considering increasing the price to $\bar{p}=3$. What are the new optimal levels of care for physicians and patients at this new price?<br>
+
+At this new price, the physician would choose $x$ such that $4x^{1/2} = 3x \longrightarrow 16x = 9x^{2} \longrightarrow 16=9x \longrightarrow x=\frac{16}{9}$. The patient would choose $x$ such that $2x^{-1/2}-3=0 \longrightarrow x=4/9$. 
+
+### Question 3:
+How would the price change affect the difference between the patient and physician's optimal amounts?<br>
+
+First, note that the amount of care decreases as the administrative price increases (opposite of the standard supply curve). Similarly, the deviation between the patient and physician optimal amounts decreases.
