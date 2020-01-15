@@ -435,27 +435,32 @@ Source: <a href="https://meps.ahrq.gov/mepstrends/hc_use/">Medical Expenditure P
 </div>
 <div id="example" class="section level1">
 <h1>Example</h1>
-<ul>
-<li>Two possible outcomes: heart attack or no heart attack</li>
-<li>10% chance of having a heart attack</li>
-<li>Cost of $100,000 if I have a heart attack (but I will survive and recover)<br></li>
-</ul>
-<p>–</p>
-<p>What is my expected cost?</p>
+<p>What is my expected cost? - Two possible outcomes: heart attack or no heart attack - 10% chance of having a heart attack - Cost of <span>$</span>100,000 if I have a heart attack (but I will survive and recover)<br></p>
 </div>
-<div id="risk-preferences" class="section level1">
-<h1>Risk preferences</h1>
-<p>With probabilities, expected values, and utilities/preferences, we can now measure preferences toward risk. <br></p>
+<div id="preferences" class="section level1">
+<h1>3. Preferences</h1>
+<p>Definition: Preferences take the form of a utility function, <span class="math inline">\(u(x)\)</span>, which tells us how much we benefit get from some consumption bundle, <span class="math inline">\(x\)</span>.<br></p>
 <p>–</p>
-<ul>
-<li><p><b>Risk averse:</b> We prefer to avoid the risky situation. You would rather have the same (or slightly less) with certainty than a lottery over two risky outcomes.</p></li>
-<li><p><b>Risk neutral:</b> Indifferent between the risky situation or that of certainty.</p></li>
-<li><p><b>Risk loving:</b> Prefer the risky situation.</p></li>
-</ul>
+<p>Expected utility the combines expected value and utility…<br> <span class="math inline">\(E[x] = p_{1}u(x_{1}) + p_{2}u(x_{2})\)</span></p>
 </div>
 <div id="risk-aversion" class="section level1">
 <h1>Risk aversion</h1>
-<p><img src="data:image/png;base64,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" width="2100" style="display: block; margin: auto;" /></p>
+<p>Most common assumption is that individuals are risk averse. Mathematically, this follows from diminishing marginal utility.<br></p>
+<p>–</p>
+<p><span class="math inline">\(u&#39;(x_{1}) &gt; u&#39;(x_{2})\)</span> for <span class="math inline">\(x_{1} &lt; x_{2}\)</span><br> What does this mean in words?</p>
+</div>
+<div id="example-1" class="section level1">
+<h1>Example</h1>
+<p>Say your utility function is <span class="math inline">\(u(w)=\sqrt{w}\)</span>, and you’re starting with <span class="math inline">\(w=\)</span> <span>$</span>100. I propose a lottery in which I flip a coin…heads you win <span>$</span>20 and tails you lose <span>$</span>20. - What’s the expected monetary value of this lottery? - What is your utility at this expected value? - What’s the expected utility from this lottery?</p>
+</div>
+<div id="in-class-problem-expected-values" class="section level1">
+<h1>In-class Problem: Expected values</h1>
+<p>An individual starts with a wealth of <span>$</span>100,000. With probability 0.3, they will get sick and incur a cost of <span>$</span>40,000.</p>
+<ol style="list-style-type: decimal">
+<li>What is this person’s expected cost of illness?</li>
+<li>Assume this individual has a utility function of the form, <span class="math inline">\(u(w) = w^{0.20}\)</span>. What is this person’s expected utility?</li>
+<li>Calculate this person’s utility if they were to incur the expected cost of illness with certainty. Is this utility higher or lower than what you found in part (2)?</li>
+</ol>
 <div id="section-1" class="section level2">
 <h2><!-- New Section --></h2>
 <p>class: inverse, center, middle name: demand</p>
@@ -476,8 +481,8 @@ Source: <a href="https://meps.ahrq.gov/mepstrends/hc_use/">Medical Expenditure P
 <p>–</p>
 <p>This is part of how we measure willingness-to-pay for health insurance.</p>
 </div>
-<div id="risk-premium-example" class="section level1">
-<h1>Risk premium example</h1>
+<div id="example-2" class="section level1">
+<h1>Example</h1>
 <p>Consider the utility function, <span class="math inline">\(u(w)=\ln(w)\)</span>. An individual starts with a wealth of <span>$</span>100,000. With probability 0.25, this person will get sick and incur a cost of <span>$</span>20,000. Their wealth in the sick state is therefore <span>$</span>80,000. What is the maximum amount this person is willing to pay for health insurance?<br></p>
 <p>–</p>
 <ol style="list-style-type: decimal">
@@ -488,25 +493,23 @@ Source: <a href="https://meps.ahrq.gov/mepstrends/hc_use/">Medical Expenditure P
 <li>Calculate maximum willingness to pay by adding the risk premium and the expected cost.</li>
 </ol>
 </div>
-<div id="high-risk-pools" class="section level1">
-<h1>High risk pools</h1>
-<ul>
-<li>A “high-risk pool” is a way to put people that are more likely to incur high medical costs all in one plan.</li>
-<li>Recalling the curvature of demand function, probability of illness, and cost of illness…do you think a high-risk pool is sustainable (think about the profit to the insurer)?<br></li>
-</ul>
+<div id="what-affects-the-risk-premium" class="section level1">
+<h1>What affects the risk premium?</h1>
+<p>Based on the graph, what do you think are some things that might affect the risk premium?<br></p>
 <p>–</p>
-<p>Let’s look at this in practice, <a href="https://www.kff.org/health-reform/issue-brief/high-risk-pools-for-uninsurable-individuals/">KFF High-risk Pools</a></p>
-</div>
-<div id="main-takeaways" class="section level1">
-<h1>Main takeaways</h1>
 <ol style="list-style-type: decimal">
-<li><p>Explain and show graphically how changes in the utility function, probability of illness, and the cost of illness affect the risk premium</p></li>
-<li><p>Calculate amount of insurance individuals would purchase under given assumptions</p></li>
+<li><p>Curvature of the demand function</p></li>
+<li><p>Probability of illness</p></li>
+<li><p>Cost of illness</p></li>
 </ol>
-<div id="section-2" class="section level2">
-<h2><!-- New Section --></h2>
-<p>class: inverse, center, middle name: selection</p>
 </div>
+<div id="other-reasons-to-buy-health-insurance" class="section level1">
+<h1>Other reasons to buy health insurance</h1>
+<ol style="list-style-type: decimal">
+<li><p>Increase bargaining power with providers</p></li>
+<li><p>Manage where care is delivered (due to information problems in health care decisions)</p></li>
+</ol>
+<p>class: inverse, center, middle name: selection</p>
 </div>
 <div id="adverse-selection" class="section level1">
 <h1>Adverse Selection</h1>
@@ -529,10 +532,26 @@ Source: <a href="https://meps.ahrq.gov/mepstrends/hc_use/">Medical Expenditure P
 <li>What is the equilibrium price?</li>
 </ol>
 </div>
-<div id="advantageous-selection" class="section level1">
-<h1>Advantageous selection</h1>
-<p>What if individuals who are high risk are also less risk-averse? In this case, individuals who are willing to pay the most for health insurance (the most risk averse) are actually less risky and therefore the cheapest to insure. Very different policy implications (e.g., individual mandate is bad in this case).</p>
+<div id="some-potential-policy-solutions" class="section level1">
+<h1>Some potential policy solutions</h1>
+<ol style="list-style-type: decimal">
+<li>Subsidize consumers</li>
+<li>Subsidize insurers</li>
+<li>Mandate purchases<br></li>
+</ol>
+<p>–</p>
+<p>Can you show each of these solutions graphically?</p>
+</div>
+<div id="main-takeaways" class="section level1">
+<h1>Main takeaways</h1>
+<ol style="list-style-type: decimal">
+<li><p>Explain, using a graph, how unravelling could occur in a market with adverse selection.</p></li>
+<li><p>Discuss and show graphically how an individual mandate or subsidies could help to alleviate or minimize the adverse selection problem.</p></li>
+</ol>
+<div id="section-2" class="section level2">
+<h2><!-- New Section --></h2>
 <p>class: inverse, center, middle name: policy</p>
+</div>
 </div>
 <div id="u.s.-health-insurance-policy" class="section level1">
 <h1>U.S. Health Insurance Policy</h1>

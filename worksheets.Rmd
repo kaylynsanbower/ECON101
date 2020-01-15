@@ -67,3 +67,44 @@ Calculate this person's utility if they were to incur the expected cost of illne
 
 If they are definitely going to be sick (i.e., with probability, $p=1$), then we just need to plug in the wealth value in the sick state (60,000) into the utility function, $u=(60,000)^{0.2}=$ `r format(60000^(0.2),digits=5,big.mark=",")`. As should be the case, this is lower than our expected utility from part (2).
 
+
+
+# Demand for health insurance {.tabset}
+Assume that utility takes the log form, $u(x)=ln(x)$. If someone is healthy, they maintain their current wealth of <span>&#36;</span>100, and if they become ill, they must incur a cost of <span>&#36;</span>50. Answer the following questions based on this setup.
+
+## Problems
+
+### Question 1:
+Calculate the risk premium and willingness to pay based on a probability of illness of 0.1.
+
+### Question 2:
+Repeat part (1) using a probability of illness of 0.2.
+
+### Question 3:
+Repeat part (1) using a probability of illness of 0.5.
+
+### Question 4:
+Explain how these values differ and why. What might this say about the profitability of insurance in a market with many sick people?
+
+## Solutions
+
+### Question 1:
+Calculate the risk premium and willingness to pay based on a probability of illness of 0.1.<br>
+
+To find the risk premium, we first need to calculate the 
+
+
+
+
+
+
+
+### Question 2:
+Repeat part (1) using a probability of illness of 0.2.
+
+### Question 3:
+Repeat part (1) using a probability of illness of 0.5.
+
+### Question 4:
+Explain how these values differ and why. What might this say about the profitability of insurance in a market with many sick people?
+
