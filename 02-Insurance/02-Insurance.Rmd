@@ -340,6 +340,16 @@ The person's expected utility with uncertainty is: $E[u]=0.75\times \ln (100000)
 Finally, since the expected cost of care is <span>&#36;</span>`r format(ecost,digits=5,big.mark=",")`, we can break this <span>&#36;</span>`r format(wtp,digits=5,big.mark=",")` into its actuarily fair premium of <span>&#36;</span>`r format(ecost,digits=5,big.mark=",")` plus the loading factor or risk premium of <span>&#36;</span>`r format(wtp-ecost,digits=5,big.mark=",")`.
 
 ---
+# In-class Problem: Demand for insurance
+Assume that utility takes the log form, $u(x)=ln(x)$. If someone is healthy, they maintain their current wealth of <span>&#36;</span>100, and if they become ill, they must incur a cost of <span>&#36;</span>50. Answer the following questions based on this setup.
+
+1. Calculate the risk premium and willingness to pay based on a probability of illness of 0.1.
+2. Repeat part (1) using a probability of illness of 0.2.
+3. Repeat part (1) using a probability of illness of 0.5.
+4. Explain how these values differ and why. What might this say about the profitability of insurance in a market with many sick people?
+
+
+---
 # What affects the risk premium?
 
 Based on the graph, what do you think are some things that might affect the risk premium?<br>
