@@ -37,7 +37,7 @@ Welcome to Economics of Health Care Markets! We're going to have a great time th
 - [Syllabus](Syllabus/Econ372-Syllabus.pdf)
 - [Class Website](https://imccart.github.io/Econ-372)
 - [Class Notes](01-Introduction/01-slides.html)
-- [Basic Calculus Review](01-Introduction/practice_problems.pdf) and [answers](01-Introduction/practice_problems_solution.pdf)
+- [Basic Calculus Review](01-Introduction/practice_problems.pdf) and [answers](01-Introduction/practice_problems_solutions.pdf)
 - Some extra stuff:
   - Arrow, Kenneth J. 1963. ["Uncertainty and the Welfare Economics of Medical Care."](https://www.jstor.org/stable/1812044?seq=1#metadata_info_tab_contents) American Economic Review, 53(5)
   - Anderson, G., U. Reinhardt, P. Hussey, and V. Petrosyan. 2003. ["It's the prices, stupid: Why the United States is so different from other countries."](https://www.healthaffairs.org/doi/full/10.1377/hlthaff.22.3.89) Health Affairs, 22(3)
