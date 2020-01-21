@@ -1,32 +1,33 @@
----
-title: "Section 4: Hospital Pricing"
-subtitle: "<html><div style='float:left'></div><hr color='#EB811B' size=1px width=0px></html>"
-author: Ian McCarthy | Emory University
-date: Econ 372 #"`r format(Sys.time(), '%d %B %Y')`"
-header-includes: 
-  - \usepackage{tikz}
-  - \usepackage{amsmath}
-  - \usepackage{pgf}
-  - \usepackage[xcolor=pst]{pstricks}
-  - \usepackage{pgfshade}
-  - \usepackage{pdftools}
-output:
-  html_document: default  
-  xaringan::moon_reader:
-    css: [default, metropolis, metropolis-fonts, custom.css] 
-    lib_dir: libs
-    nature:
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
-      ratio: "16:9"
-      beforeInit: "macros.js"
-      navigation:
-          touch: false
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Section 4: Hospital Pricing</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ian McCarthy | Emory University" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Section 4: Hospital Pricing
+## <html>
+<div style="float:left">
+
+</div>
+<hr color='#EB811B' size=1px width=0px>
+</html>
+### Ian McCarthy | Emory University
+### Econ 372
+
 ---
 
-<!-- Adjust some CSS code for font size and maintain R code font size -->
-<style type="text/css">
+
+&lt;!-- Adjust some CSS code for font size and maintain R code font size --&gt;
+&lt;style type="text/css"&gt;
 .remark-slide-content {
     font-size: 30px;
     padding: 1em 2em 1em 2em;    
@@ -34,33 +35,11 @@ output:
 .remark-code, .remark-inline-code { 
     font-size: 20px;
 }
-</style>
+&lt;/style&gt;
 
 
-<!-- Set R options for how code chunks are displayed and load packages -->
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
-library(knitr)
-opts_chunk$set(
-  fig.align="center",  
-  fig.height=3, #fig.width=6,
-  # out.width="748px", #out.length="520.75px",
-  dpi=300, #fig.path='Figs/',
-  cache=T#, echo=F, warning=F, message=F
-  )
+&lt;!-- Set R options for how code chunks are displayed and load packages --&gt;
 
-knitr::opts_hooks$set(fig.callout = function(options) {
-  if(options$fig.callout) {
-    options$echo = FALSE
-  }
-  options
-})
-
-if (!require("pacman")) install.packages("pacman")
-pacman::p_load(tidyverse, ggplot2, dplyr, lubridate, readr, readxl, hrbrthemes,
-               scales, gganimate, gapminder, gifski, png, tufte, plotly, OECD,
-               ggrepel, survey, foreign, devtools, pdftools)
-```
 
 
 # Table of contents
@@ -78,14 +57,14 @@ pacman::p_load(tidyverse, ggplot2, dplyr, lubridate, readr, readxl, hrbrthemes,
 5. [Current Policy Issues](#policy)
 
 
-<!-- New Section -->
+&lt;!-- New Section --&gt;
 ---
 class: inverse, center, middle
 name: motivate
 
 # Motivation
 
-<html><div style='float:left'></div><hr color='#EB811B' size=1px width=1055px></html>
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=1055px&gt;&lt;/html&gt;
 
 
 ---
@@ -102,7 +81,7 @@ name: motivate
 
 ---
 # Now
-As we know, we now spend <b>a lot</b> on health care in the U.S., and a big part of that is very high health care prices (and a big part of that is hospital prices)
+As we know, we now spend &lt;b&gt;a lot&lt;/b&gt; on health care in the U.S., and a big part of that is very high health care prices (and a big part of that is hospital prices)
 
 
 ---
@@ -115,7 +94,7 @@ Defining characteristic of hospital services: *it's complicated!*
   ![:scale 800px](pics/BillExample.jpg)
 ]
 
-<div class="smalltext">Brill, Steven. 2013. "Bitter Pill: Why Medical Bills are Killing Us." *Time Magazine*.</div>
+&lt;div class="smalltext"&gt;Brill, Steven. 2013. "Bitter Pill: Why Medical Bills are Killing Us." *Time Magazine*.&lt;/div&gt;
 
 ---
 # What is a hospital price?
@@ -129,7 +108,7 @@ Lots of different payers paying lots of different prices:
 --
 
 .center[
-Price $\neq$ charge $\neq$ cost $\neq$ patient out-of-pocket spending
+Price `\(\neq\)` charge `\(\neq\)` cost `\(\neq\)` patient out-of-pocket spending
 ]
 
 ---
@@ -139,7 +118,7 @@ Price $\neq$ charge $\neq$ cost $\neq$ patient out-of-pocket spending
   ![:scale 600px](pics/DifferentPrices.jpg)
 ]
 
-<div class="smalltext">Source: <a href="https://healthcarepricingproject.org/">Health Care Pricing Project</a></div>
+&lt;div class="smalltext"&gt;Source: &lt;a href="https://healthcarepricingproject.org/"&gt;Health Care Pricing Project&lt;/a&gt;&lt;/div&gt;
 
 
 ---
@@ -183,18 +162,18 @@ We'll get into the real data in a bit, but for now...a few facts:
   ![:scale 450px](pics/HC_var_withinmkt_kmri_ga_atlanta.png)
 ]
 
-<div class="smalltext">Source: <a href="https://healthcarepricingproject.org/">Health Care Pricing Project</a></div>
+&lt;div class="smalltext"&gt;Source: &lt;a href="https://healthcarepricingproject.org/"&gt;Health Care Pricing Project&lt;/a&gt;&lt;/div&gt;
 
 
 
-<!-- New Section -->
+&lt;!-- New Section --&gt;
 ---
 class: inverse, center, middle
 name: objective
 
 # What Do Hospital's Maximize?
 
-<html><div style='float:left'></div><hr color='#EB811B' size=1px width=1055px></html>
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=1055px&gt;&lt;/html&gt;
 
 ---
 # Ownership types
@@ -205,25 +184,25 @@ name: objective
 
 3. State and local gov't: About 20%
 
-<br>
-<div class="smalltext">Source: <a href="https://www.aha.org/statistics/fast-facts-us-hospitals">AHA Fast Facts</a></div>
+&lt;br&gt;
+&lt;div class="smalltext"&gt;Source: &lt;a href="https://www.aha.org/statistics/fast-facts-us-hospitals"&gt;AHA Fast Facts&lt;/a&gt;&lt;/div&gt;
 
 ---
 # Non-profit hospitals
-What does it mean to be a not-for-profit hospital?<br>
+What does it mean to be a not-for-profit hospital?&lt;br&gt;
 
 --
 
 From an economics perspective:
-- Hospital assumed to maximize some objective function, $u(q,z)$, subject to a production constraint
+- Hospital assumed to maximize some objective function, `\(u(q,z)\)`, subject to a production constraint
 
-- $q$ denotes quantity of care and $z$ denotes quality of care
+- `\(q\)` denotes quantity of care and `\(z\)` denotes quality of care
 
 - Production is constrained by the break-even condition
 
 ---
 # Non-profit hospitals
-What does it mean to be a not-for-profit hospital?<br>
+What does it mean to be a not-for-profit hospital?&lt;br&gt;
 
 --
 
@@ -236,11 +215,11 @@ From a practical perspective:
 
 ---
 # Non-profit hospitals and tax benefits
-- <span>&#36;</span>24.6 billion in tax exemptions in 2011
+- &lt;span&gt;&amp;#36;&lt;/span&gt;24.6 billion in tax exemptions in 2011
 
-- <span>&#36;</span>62.4 billion in "community benefits"<br>
+- &lt;span&gt;&amp;#36;&lt;/span&gt;62.4 billion in "community benefits"&lt;br&gt;
 
-- [Washington Post Article](https://www.washingtonpost.com/national/health-science/value-of-tax-breaks-for-nonprofit-hospitals-doubled-in-a-decade/2015/06/17/4162c640-1450-11e5-9ddc-e3353542100c_story.html?utm_term=.4f877a72a09f)<br>
+- [Washington Post Article](https://www.washingtonpost.com/national/health-science/value-of-tax-breaks-for-nonprofit-hospitals-doubled-in-a-decade/2015/06/17/4162c640-1450-11e5-9ddc-e3353542100c_story.html?utm_term=.4f877a72a09f)&lt;br&gt;
 
 --
 
@@ -254,7 +233,7 @@ The real question is...what is the hospital's objective function?
 - For-profit in disguise
 - Output maximizers
 - Tax-benefit maximizers
-- Social welfare maximizers<br>
+- Social welfare maximizers&lt;br&gt;
 
 --
 
@@ -265,37 +244,37 @@ Most empirical evidence doesn't find much of a difference between FP and NFP hos
 # For-profit hospitals
 These are easier to study theoretically...just a standard profit maximizing firm.
 
-- $\pi=P(q)q - C(q),$ where $q$ denotes quantity of care
+- `\(\pi=P(q)q - C(q),\)` where `\(q\)` denotes quantity of care
 
 - Firm has some market power and so faces a downward sloping demand curve
 
 
 
-<!-- New Section -->
+&lt;!-- New Section --&gt;
 ---
 class: inverse, center, middle
 name: pricing
 
 # Pricing and Negotiations
 
-<html><div style='float:left'></div><hr color='#EB811B' size=1px width=1055px></html>
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=1055px&gt;&lt;/html&gt;
 
 
 ---
 # Pricing for NFP hospitals
-Objective is to maximize some function of profits and quantity of care provided, denoted by<br>
+Objective is to maximize some function of profits and quantity of care provided, denoted by&lt;br&gt;
 
-$U\left( \pi_{j} = \pi_{i,j} + \pi_{g,j},D_{i,j}, D_{g,j} \right)$<br>
+`\(U\left( \pi_{j} = \pi_{i,j} + \pi_{g,j},D_{i,j}, D_{g,j} \right)\)`&lt;br&gt;
 
-where $\pi_{j}$ denotes total profits for hospital $j$ and $D_{i,j}$ denotes hospital demand from insurer $i$. We assume that $p_{j}$ is exogenous and determined by a public payer, so the hospital need only set its price for private insurance customers, $p_{i}$.
+where `\(\pi_{j}\)` denotes total profits for hospital `\(j\)` and `\(D_{i,j}\)` denotes hospital demand from insurer `\(i\)`. We assume that `\(p_{j}\)` is exogenous and determined by a public payer, so the hospital need only set its price for private insurance customers, `\(p_{i}\)`.
 
 ---
 # Solution for NFP hospital
-The hospital chooses $p_{i}$ such that<br>
+The hospital chooses `\(p_{i}\)` such that&lt;br&gt;
 
-$\frac{\mathrm{d}U}{\mathrm{d}p_{i}} = U_{1} \pi_{1}^{i} + U_{2} \frac{\mathrm{d}D_{i}}{\mathrm{d}p_{i}}=0$,<br>
+`\(\frac{\mathrm{d}U}{\mathrm{d}p_{i}} = U_{1} \pi_{1}^{i} + U_{2} \frac{\mathrm{d}D_{i}}{\mathrm{d}p_{i}}=0\)`,&lt;br&gt;
 
-where $U_{1}$ denotes the derivative of $U(\cdot)$ with respect to its first argument and similarly for $U_{2}$.<br>
+where `\(U_{1}\)` denotes the derivative of `\(U(\cdot)\)` with respect to its first argument and similarly for `\(U_{2}\)`.&lt;br&gt;
 
 --
 
@@ -304,24 +283,12 @@ In general, we can't solve this directly without knowing the hospital's utility 
 
 ---
 # Assuming pure profit maximization
-```{tikz echo=FALSE, fig.ext='png', cache=TRUE, tikz-fp-pricing}
-\usetikzlibrary{calc}
-\begin{tikzpicture}[scale=0.40, every node/.style={black,opacity=1, transform shape}]
-\draw [thick](0,9) node [left,align=center] {\small Costs and\\ \small Revenue} -- (0,0) node [below left] {$0$} -- (10,0) node [below, align=center] {\small Quantity};
-\draw [thick, blue!90](0,7)-- (8,2)node[right, black, align=center]{\small Demand};
-\draw [thick, purple!90](0,7)-- (6,1)node[black, right]{\small Marginal Revenue};
-\draw [thick, blue!90](1,4) to [out=300, in=240] (7,5)node[right,black]{\small Average total cost};
-\draw [thick, purple!90](2,1) node[black, left, align=center]{\small Marginal \\cost}--(5.25, 6);
-\draw[fill] (3.6,3.4) node[right] {$A$} circle [radius=0.1];
-\draw[fill] (3.6,4.75) node[above] {$B$} circle [radius=0.1];
-\draw[dashed](0,4.75) node[left, align=center]{\small Monopoly\\ \small price}--(3.6,4.75)--(3.6,0)node[below]{$q^{*}$};
-\end{tikzpicture}
-```
+&lt;img src="03-slides_files/figure-html/tikz-fp-pricing-1.png" style="display: block; margin: auto;" /&gt;
 
 ---
 # Example
 
-Consider the firm's demand curve, $d=16-q$, and cost curve, $c(q)=5+q^{2}$. Where will the firm produce and at what price? What is the firm's markup over marginal cost?
+Consider the firm's demand curve, `\(d=16-q\)`, and cost curve, `\(c(q)=5+q^{2}\)`. Where will the firm produce and at what price? What is the firm's markup over marginal cost?
 
 
 ---
@@ -333,7 +300,7 @@ Consider the firm's demand curve, $d=16-q$, and cost curve, $c(q)=5+q^{2}$. Wher
 
 ---
 # Understanding the outside option
-Key part of understanding effect on price is to understand the "outside option". What does this mean?<br>
+Key part of understanding effect on price is to understand the "outside option". What does this mean?&lt;br&gt;
 
 --
 
@@ -348,7 +315,7 @@ At least 2 related issues in studying hospital competitiveness:
 
 ---
 # Measuring competitiveness
-- Common measure is Herfindahl-Hirschman Index (HHI), $\sum_{i=1}^{N} s_{i}^{2}$.
+- Common measure is Herfindahl-Hirschman Index (HHI), `\(\sum_{i=1}^{N} s_{i}^{2}\)`.
   - 2,500 is considered **highly concentrated**
   - 1,800 is considered **unconcentrated**
 - "Willingness to pay" is more recent measure (theoretically supported)
@@ -380,7 +347,7 @@ Almost any way you define it, hospital markets are more and more concentrated (l
   ![:scale 450px](pics/GHT2.png)
 ]
 
-<div class="smalltext">Source: <a href="https://www.aeaweb.org/articles?id=10.1257/jel.53.2.235">Gaynor, Ho, and Town (2015). The Industrial Organization of Health Care Markets. Journal of Economic Literature.</a></div>
+&lt;div class="smalltext"&gt;Source: &lt;a href="https://www.aeaweb.org/articles?id=10.1257/jel.53.2.235"&gt;Gaynor, Ho, and Town (2015). The Industrial Organization of Health Care Markets. Journal of Economic Literature.&lt;/a&gt;&lt;/div&gt;
 
 ---
 # Hospital concentration over time
@@ -397,21 +364,21 @@ Historical perception of hospital competition as "wasteful" and assumption that 
 # Effects of reduced competition
 1. Higher prices
 2. Lower quality, [2020 NEJM Paper](https://www.nejm.org/doi/full/10.1056/NEJMsa1901383)
-3. Maybe lower costs (but not passed on to lower prices)<br>
+3. Maybe lower costs (but not passed on to lower prices)&lt;br&gt;
 
 --
 
 Effects for both "in-market" and "out-of-market" mergers
 
 
-<!-- New Section -->
+&lt;!-- New Section --&gt;
 ---
 class: inverse, center, middle
 name: public
 
 # Fixed Prices
 
-<html><div style='float:left'></div><hr color='#EB811B' size=1px width=1055px></html>
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=1055px&gt;&lt;/html&gt;
 
 
 ---
@@ -469,14 +436,14 @@ name: public
 - Accounts for nearly 40% of total Medicare enrollees
 - Some early difficulties with adverse selection and risk-adjustment
 - Still slightly sicker people staying in traditional Medicare
-- Could be a <b>big</b> part of any future "Medicare-for-all" type program
+- Could be a &lt;b&gt;big&lt;/b&gt; part of any future "Medicare-for-all" type program
 
 ---
 # Medicare payments
 - Prospective payment system
 - Begin with two "base" rates:
-  - Operating base payment rates, <span>&#36;</span>5,797 in 2020
-  - Capital base payment rates, <span>&#36;</span>462 in 2020
+  - Operating base payment rates, &lt;span&gt;&amp;#36;&lt;/span&gt;5,797 in 2020
+  - Capital base payment rates, &lt;span&gt;&amp;#36;&lt;/span&gt;462 in 2020
 - Adjustments:
   - Diagnosis Related Group (higher adjustments for more complicated things)
   - Academic Medical Center
@@ -522,32 +489,32 @@ name: public
 
 
 
-<!-- New Section -->
+&lt;!-- New Section --&gt;
 ---
 class: inverse, center, middle
 name: twoprice
 
 # Two-price Market
 
-<html><div style='float:left'></div><hr color='#EB811B' size=1px width=1055px></html>
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=1055px&gt;&lt;/html&gt;
 
 
 ---
 # Relationship between prices
 In health care, providers usually face two prices:
 
-1. A price fixed by Medicare and Medicaid, $p_{m}$.
-2. A price that is negotiated with insurers, $p_{n}$.
+1. A price fixed by Medicare and Medicaid, `\(p_{m}\)`.
+2. A price that is negotiated with insurers, `\(p_{n}\)`.
 
-How does $p_{m}$ affect $p_{n}$?<br>
+How does `\(p_{m}\)` affect `\(p_{n}\)`?&lt;br&gt;
 
 ---
 # Two price market and NFP
-Although we don't know the general solution for the private price, we can find how it varies with the public price...<br>
+Although we don't know the general solution for the private price, we can find how it varies with the public price...&lt;br&gt;
 
 --
 
-$$\frac{\mathrm{d}p_{i}}{\mathrm{d}p_{j}} = - \frac{U_{11}\pi_{1}^{i}\pi_{1}^{j} + \frac{\mathrm{d}D_{i}}{\mathrm{d}p_{i}}U_{12}\pi_{1}^{j}}{\frac{\mathrm{d}^{2}U}{\mathrm{d}p_{i}^{2}}}$$
+`$$\frac{\mathrm{d}p_{i}}{\mathrm{d}p_{j}} = - \frac{U_{11}\pi_{1}^{i}\pi_{1}^{j} + \frac{\mathrm{d}D_{i}}{\mathrm{d}p_{i}}U_{12}\pi_{1}^{j}}{\frac{\mathrm{d}^{2}U}{\mathrm{d}p_{i}^{2}}}$$`
 
 ---
 # Two price market and FP
@@ -557,61 +524,47 @@ $$\frac{\mathrm{d}p_{i}}{\mathrm{d}p_{j}} = - \frac{U_{11}\pi_{1}^{i}\pi_{1}^{j}
 ]
 
 .pull-right[
-```{tikz echo=FALSE, fig.ext='png', cache=TRUE, tikz-fp-twoprice}
-\usetikzlibrary{calc}
-\begin{tikzpicture}[scale=0.40, every node/.style={black,opacity=1, transform shape}]
-\draw [thick](0,9) node [left,align=center] {\small Costs and\\ \small Revenue} -- (0,0) node [below left] {$0$} -- (10,0) node [below, align=center] {\small Quantity};
-\draw [thick, blue!90](0,7)-- (8,2)node[right, black, align=center]{\small Demand};
-\draw [thick, purple!90](0,7)-- (4,1)node[black, right]{\small Marginal Revenue};
-\draw [thick, purple!90](1.5,1) node[black, left, align=center]{\small Marginal \\cost}--(5.75, 6.5);
-\draw (0,4) node[black, left]{$p_{m}$} -- (7,4);
-\draw[fill] (2,4) node[above right] {$m$} circle [radius=0.1];
-\draw[fill] (2,5.8) node[above right] {$n$} circle [radius=0.1];
-\draw[fill] (3.8,4) node[below right] {$t$} circle [radius=0.1];
-\draw[dashed](0,5.8) node[left, align=center]{$p_{n}$}--(2,5.8)--(2,0)node[below]{$q^{n}$};
-\draw[dashed](3.8,0) node[below]{$q_{tot}$} -- (3.8,4);
-\end{tikzpicture}
-```
+&lt;img src="03-slides_files/figure-html/tikz-fp-twoprice-1.png" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
 # Two price market example
-Consider the firm's demand curve in the private insurance market, $d=16-q$, and costs, $c(q)=5+q^{2}$. Assume that there exists a public insurer that pays a fixed price of $\bar{p}=10$. How many private patients will the provider serve? How many public patients? What if $\bar{p}$ drops to <span>&#36;</span>9.
+Consider the firm's demand curve in the private insurance market, `\(d=16-q\)`, and costs, `\(c(q)=5+q^{2}\)`. Assume that there exists a public insurer that pays a fixed price of `\(\bar{p}=10\)`. How many private patients will the provider serve? How many public patients? What if `\(\bar{p}\)` drops to &lt;span&gt;&amp;#36;&lt;/span&gt;9.
 
 ---
 # Cost-shifting
 - Relationship between public and private price is important
 - Speaks to anticipated effects of a change in Medicaid or Medicare rates
-- Do hospitals "make up" the difference?<br>
+- Do hospitals "make up" the difference?&lt;br&gt;
 
 --
 
-The idea that hospitals will increase private prices following a decrease in the public price is called <b>cost shifting</b>. 
+The idea that hospitals will increase private prices following a decrease in the public price is called &lt;b&gt;cost shifting&lt;/b&gt;. 
 
 ---
 # Cost-shifting
-But how could it happen?<br>
+But how could it happen?&lt;br&gt;
 
 --
 
 Assumes that hospitals could have increased private prices earlier but chose not too. This is technically possible if, for example:
 - Hospital has very low margins (maybe negative with a lower public price)
 - Insurer wants to prop up the hospital for competitive reasons
-- Hospital has diminishing returns to profits<br>
+- Hospital has diminishing returns to profits&lt;br&gt;
 
 --
 
 but economists usually see this as a smaller effect than most policy makers.
 
 
-<!-- New Section -->
+&lt;!-- New Section --&gt;
 ---
 class: inverse, center, middle
 name: policy
 
 # Current Policy Issues
 
-<html><div style='float:left'></div><hr color='#EB811B' size=1px width=1055px></html>
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=1055px&gt;&lt;/html&gt;
 
 ---
 # Pay for performance
@@ -625,4 +578,116 @@ There are three main pay for performance programs employed in Medicare right now
 There are two forms of capitated payments in Medicare now:
 1. Bundled Payments
 2. Accountable Care Organizations
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"navigation": {
+"touch": false
+}
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
 
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
