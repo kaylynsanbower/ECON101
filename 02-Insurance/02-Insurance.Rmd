@@ -91,7 +91,7 @@ name: motivate
 
 ---
 # Humana exits the ACA exchanges
-In 2008, Humana exited the ACA exchanges due to an "unbalanced risk pool based on the results of the 2017 open enrollment period". [CNN Money Article](https://money.cnn.com/2017/02/14/news/economy/humana-obamacare-insurer)<br>
+In 2018, Humana exited the ACA exchanges due to an "unbalanced risk pool based on the results of the 2017 open enrollment period". [CNN Money Article](https://money.cnn.com/2017/02/14/news/economy/humana-obamacare-insurer)<br>
 
 --
 
@@ -170,7 +170,7 @@ Definition: Preferences take the form of a utility function, $u(x)$, which tells
 --
 
 Expected utility the combines expected value and utility...<br>
-$E[x] = p_{1}u(x_{1}) + p_{2}u(x_{2})$
+$E[u(x)] = p_{1}u(x_{1}) + p_{2}u(x_{2})$
 
 ---
 # Risk preferences

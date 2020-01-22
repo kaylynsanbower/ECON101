@@ -58,10 +58,32 @@ Welcome back! This week is all about risk and uncertainty. We will eventually us
 
 ### Activities
 - Discussion of the health insurance *death spiral*
-- In-class problems (expected values)
+- In-class problem (expected values)
  
 
 ### Resources
 - Textbook: Pindyk and Rubinfeld, Sections 5.1-5.2
 - [Class Notes](02-Insurance/02-slides.html)
 - CNN Business, February 2017, ["Humana pulls out of Obamacare for 2018"](https://money.cnn.com/2017/02/14/news/economy/humana-obamacare-insurer/)
+
+
+# Week 3: Insurance demand
+Welcome back! This week we'll finish our discussion of risk premiums and apply these tools to examine demand for health insurance (i.e., willingness to pay for health insurance).
+
+ 
+### Objectives for this week
+- Explain and draw graphically how the risk premium varies with the curvature of the utility function, probability of illness, and amount of potential loss
+- Calculate risk premium and willingness-to-pay for health insurance
+- Discuss viability of high-risk pools
+ 
+
+### Activities
+- Discussion forum on *Canvas*
+- In-class problem (demand for health insurance)
+
+
+### Resources
+- Textbook: Sloan and Hsieh, Sections 4.1-4.7 (Chapter 4 available on *Canvas*)
+- Kaiser Family Foundation, February 2017, ["High-Risk Pools for Uninsurable Individuals"](https://www.kff.org/health-reform/issue-brief/high-risk-pools-for-uninsurable-individuals/)
+- ESPN, January 2019, ["A New Threat: An Evaporating Insurance Market"](https://www.espn.com/espn/story/_/id/25776964/insurance-market-football-evaporating-causing-major-threat-nfl-pop-warner-colleges-espn)
+ 
