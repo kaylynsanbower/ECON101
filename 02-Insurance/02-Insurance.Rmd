@@ -225,29 +225,12 @@ What does this mean in words?
 ```
 
 ---
-# Example
-
-Say your utility function is $u(w)=\sqrt{w}$, and you're starting with $w=$ <span>&#36;</span>100. I propose a lottery in which I flip a coin...heads you win <span>&#36;</span>20 and tails you lose <span>&#36;</span>20. 
-- What's the expected monetary value of this lottery? 
-- What is your utility at this expected value? 
-- What's the expected utility from this lottery?
-
----
-# Answer
-```{r include=FALSE}
-ew <- .5*80+.5*120
-eu <- .5*sqrt(80) + .5*sqrt(120)
-
-```
-Expected wealth is simply $\frac{1}{2} \times 80 + \frac{1}{2} \times 120 =$ `r format(ew,digits=3)`, which yields a utility of $u(w)=$ `r format(sqrt(ew),digits=3)`. But your expected utility is $\frac{1}{2} \times u(w_{heads}) + \frac{1}{2} \times u(w_{tails}) = \frac{1}{2} \times \sqrt{80} + \frac{1}{2} \times \sqrt{120} =$ `r format(eu, digits=3)`.
-
----
 # In-class Problem: Expected values
 An individual starts with a wealth of <span>&#36;</span>100,000. With probability 0.3, they will get sick and incur a cost of <span>&#36;</span>40,000.
 
 1. What is this person's expected cost of illness?
 2. Assume this individual has a utility function of the form, $u(w) = w^{0.20}$. What is this person's expected utility?
-3. Calculate this person's utility if they were to incur the expected cost of illness with certainty. Is this utility higher or lower than what you found in part (2)?
+3. Calculate this person's utility if they were to incur the cost of illness with certainty. Is this utility higher or lower than what you found in part (2)?
 
 <!-- New Section -->
 ---
@@ -270,6 +253,15 @@ Say your utility function is $u(w)=\sqrt{w}$ and that you're starting with $w=$ 
 
 3. What is the expected utility from this lottery?
 
+---
+# Answer
+```{r include=FALSE}
+ew <- .5*80+.5*120
+eu <- .5*sqrt(80) + .5*sqrt(120)
+
+```
+Expected wealth is simply $\frac{1}{2} \times 80 + \frac{1}{2} \times 120 =$ `r format(ew,digits=3)`, which yields a utility of $u(w)=$ `r format(sqrt(ew),digits=3)`. But your expected utility is $\frac{1}{2} \times u(w_{heads}) + \frac{1}{2} \times u(w_{tails}) = \frac{1}{2} \times \sqrt{80} + \frac{1}{2} \times \sqrt{120} =$ `r format(eu, digits=3)`.
+
 
 ---
 # Risk premium
@@ -279,7 +271,6 @@ The maximum amount of money that a risk-averse person is willing to pay to avoid
 --
 
 This is part of how we measure willingness-to-pay for health insurance.
-
 
 ---
 # Risk Premium

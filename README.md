@@ -14,6 +14,7 @@ Below are all of the slides that I'll use throughout the class. The slides will 
 2. Health Insurance and Adverse Selection, [slides](02-Insurance/02-slides.html) and [simplified view](02-Insurance/02-simple.html). 
     + [Recorded notes on hospital bills](https://drive.google.com/open?id=1Fh9jy0PAtYeGgOzdHygZXL9eLm5ge0lD)
     + [Recorded notes on expected value](https://drive.google.com/open?id=1JP2mpVfXpJ8H3muEFQkbRuiIXOQw8Ibl)
+    + [Recorded notes on expected value and expected utility](https://drive.google.com/file/d/1A68I7BhufZdGdiubUOS9JP3LqIP8jc8E/view)
 
 3. Physicians and Treatment Decisions, [slides](03-Agency/03-slides.html) and [simplified view](03-Agency/03-simple.html)
 
