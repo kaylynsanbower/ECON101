@@ -116,9 +116,9 @@ Repeating that same process yields an expected utility of `r format(eu, digits=4
 Repeat part (1) using a probability of illness of 0.5.
 
 ```{r, include=FALSE}
-eu <- .3*log(50) + .7*log(100)
+eu <- .5*log(50) + .5*log(100)
 inv.u <- exp(eu)
-ecost <- .3*50
+ecost <- .5*50
 rprem <- 100 - inv.u-ecost
 ```
 Repeating that same process yields an expected utility of `r format(eu, digits=4)`. The monetary value that provides this level of utility with certainty is $y =$ exp(`r format(eu, digits=4)`) $=$ `r format(inv.u,digits=4,big.mark=",")`. The risk premium is then the difference between this value and our starting wealth (less the expected cost of care), $\pi =$ 100 - `r format(inv.u,digits=4)` - `r format(ecost, digits=4)` $=$ `r format(rprem, digits=4)`.
