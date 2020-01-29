@@ -87,6 +87,7 @@ Repeat part (1) using a probability of illness of 0.5.
 Explain how these values differ and why. What might this say about the profitability of insurance in a market with many sick people?
 
 ## Solutions
+The work we did in-class on the "white board" can be found [here](notes/health_insurance_solution.pdf). Clearer answers to each question are detailed below.
 
 ### Question 1:
 Calculate the risk premium and willingness to pay based on a probability of illness of 0.1.<br>
