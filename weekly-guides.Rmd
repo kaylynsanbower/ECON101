@@ -87,3 +87,25 @@ Welcome back! This week we'll finish our discussion of risk premiums and apply t
 - Kaiser Family Foundation, February 2017, ["High-Risk Pools for Uninsurable Individuals"](https://www.kff.org/health-reform/issue-brief/high-risk-pools-for-uninsurable-individuals/)
 - ESPN, January 2019, ["A New Threat: An Evaporating Insurance Market"](https://www.espn.com/espn/story/_/id/25776964/insurance-market-football-evaporating-causing-major-threat-nfl-pop-warner-colleges-espn)
  
+
+# Week 4: Adverse selection
+Welcome back! This week we'll broaden our study of insurance purchasing to the market level and study how the presence of adverse selection can affect insurance markets and premiums.
+
+### Objectives for this week
+- Explain and draw graphically a simplified insurance market with adverse selection
+- Calculate the insurer loss or profit at a given price
+- Calculate the equilibrium price in the market under some assumptions on insurer profitability
+- Solve for the subsidy amount or penalty amount that would ensure full insurance in a market
+ 
+
+### Activities
+- In-class problem (adverse selection)
+- Case study of New Jersey
+
+ 
+### Resources
+- Textbook: Pindyk and Rubinfeld, Section 17.1
+- Sloan and Hsieh, Sections 4.8-4.10 (Chapter 4 available on [Canvas](https://canvas.emory.edu/courses/70035))
+- Einav, L. and A. Finkelstein. 2011. ["Selection in Insurance Markets: Theory and Empirics in Pictures,"](https://www.aeaweb.org/articles?id=10.1257/jep.25.1.115) 25(1):115-138.
+- NPR, December 2018, ["Short-Term Health Plans Boost Profits for Brokers and Insurers."](https://www.npr.org/sections/health-shots/2018/12/21/678605152/short-term-health-plans-boost-profits-for-brokers-and-insurers)
+ 
