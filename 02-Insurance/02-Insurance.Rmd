@@ -405,8 +405,8 @@ In practice, people know more about their health than insurers. This is a form o
 \draw[thick,->] (0,0) -- (0,6) node[anchor=north west] {$p$};
 \draw[thick,->] (0,0) -- (8,0) node[anchor=south east] {$q$};
 \draw (0,5) node[anchor=north east]{Demand} -- (6,1);
-\draw (0,3) node[anchor=north east]{AC} -- (6,2);
-\draw (0,3) node[anchor=south west]{MC} -- (6,0.5);
+\draw (0,3) node[anchor=north east]{MC} -- (6,2);
+\draw (0,3) node[anchor=south west]{AC} -- (6,0.5);
 \draw (6,0) -- (6,6) node[anchor=north east] {$\bar{q}$};
 \end{tikzpicture}
 ```
@@ -414,9 +414,9 @@ In practice, people know more about their health than insurers. This is a form o
 ---
 # Possible outcomes
 
-1. Demand above MC: full insurance and no problems from adverse selection
-2. Demand intersects MC at some point: underinsurance from people willing and able but ultimately not purchasing
-3. Demand below MC: death spiral! (or, less dramatic, unraveling)<br>
+1. Demand above AC: full insurance and no problems from adverse selection
+2. Demand intersects AC at some point: underinsurance from people willing and able but ultimately not purchasing
+3. Demand below AC: death spiral! (or, less dramatic, unraveling)<br>
 
 --
 
@@ -427,7 +427,7 @@ Show this on your own with three different graphs.
 # Example
 Assume the insurer's cost function is $C=100q - 2q^{2}$, where $q$ denotes the number of people enrolled in the plan. Further assume that demand is given by $D=140-4q$. Assuming the insurer enters the market with $p_{1}=40$,<br>
 
-1. what is the next year's price (if profits are <span>&#36;</span>0)? 
+1. What is the next year's price (if profits are <span>&#36;</span>0 based on period 1)? 
 2. What is the equilibrium price?
 
 ---
@@ -437,11 +437,19 @@ To solve this, we need to first calculate the marginal cost curve, $mc=100-4q$, 
 
 ---
 # In-class Problem: Adverse selection
-Assume that the insurer's cost function is given by $C=100q - 2q^{2}$, where $q$ denotes the number of people enrolled in the plan. Further assume that the inverse demand function takes the form, $D=110 - 3q$. 
+Assume that the insurer's cost function is given by $C=100q - 2q^{2}$, where $q$ denotes the number of people enrolled in the plan. Further assume that the inverse demand function takes the form, $D=110 - 3q$, and that there are 20 individuals total in this market.
 
 1. If the insurer enters the market at a price of <span>&#36;</span>65, what is the insurer's profit (or loss)?
 2. What price does the insurer set next year if they set price equal to average cost in the prior year?
 3. What is the equilibrium price in this market?
+4. What if there is a <span>&#36;</span>10 penalty imposed for those that do not purchase health insurance?
+
+---
+# Death spiral!
+
+.center[
+<iframe width="560" height="400" src="https://www.washingtonpost.com/videonational/ryan-obamacare-is-in-death-spiral/2017/01/05/375a49da-d366-11e6-9651-54a0154cf5b3_video.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+]
 
 
 

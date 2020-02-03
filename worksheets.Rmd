@@ -132,7 +132,7 @@ We see from these examples that the risk premium is increasing as the amount of 
 
 
 # Adverse selection {.tabset}
-Assume that the insurer's cost function is given by $C=100q - 2q^{2}$, where $q$ denotes the number of people enrolled in the plan. Further assume that the inverse demand function takes the form, $D=110 - 3q$. 
+Assume that the insurer's cost function is given by $C=100q - 2q^{2}$, where $q$ denotes the number of people enrolled in the plan. Further assume that the inverse demand function takes the form, $D=110 - 3q$, and that there are 20 individuals total in this market.
 
 ## Problems
 
@@ -144,6 +144,9 @@ What price does the insurer set next year if they set price equal to average cos
 
 ### Question 3:
 What is the equilibrium price in this market?
+
+### Question 4:
+What if there is a <span>&#36;</span>10 penalty imposed for those that do not purchase health insurance?
 
 
 ## Solutions
@@ -179,6 +182,12 @@ Average cost at $p=65$ is `r ac(q.demand(65))`. So this is next period's price.
 What is the equilibrium price in this market?<br>
 
 The equlibrium price is such that insurers earn zero profits (under our assumptions). We can find that price by finding the quantity such that $AC=p$. This occurs at $110 - 3q = 100 - 2q$, or $q=10$. The price at this quantity is `r demand(10)`. Note that the zero profit condition isn't necessary to find an equilibrium in this way. We could easily incorporate some minimum "profit" per person by increasing the per unit costs in the cost function.
+
+
+### Question 4:
+What if there is a <span>&#36;</span>10 penalty imposed for those that do not purchase health insurance?<br>
+
+The penalty will effectively shift the demand curve out, as each individual is now willing to spend <span>&#36;</span>10 more on health insurance. The new demand curve is then $120 - 3q$. Setting this equal to the average cost curve yields $q=20$. So a <span>&#36;</span>10 penalty facilitates full insurance in this market.
 
 
 
