@@ -453,11 +453,20 @@ Assume that the insurer's cost function is given by $C=100q - 2q^{2}$, where $q$
 # Death spiral!
 
 .center[
-  ![:scale 450px](pics/aca-premiums.png)
+  ![:scale 500px](pics/aca-premiums.png)
 ]
 
 <div class="smalltext">Source: <a href="https://www.kff.org/health-costs/issue-brief/how-aca-marketplace-premiums-are-changing-by-county-in-2020/">Kaiser Family Foundation</a></div>
 
+
+---
+# Death spiral!
+So, are the exchanges in a "death spiral"?<br>
+
+--
+<br>
+
+Standard & Poor's writes: “The ACA individual market is not in a 'death spiral.' However, every time something new (and potentially disruptive) is thrown into the works, it impedes the individual market’s path to stability.”
 
 
 ---
