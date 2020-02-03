@@ -452,6 +452,16 @@ Assume that the insurer's cost function is given by $C=100q - 2q^{2}$, where $q$
 ]
 
 
+---
+# Death spiral!
+
+.center[
+  ![:scale 450px](pics/aca-premiums.png)
+]
+
+<div class="smalltext">Source: <a href="https://www.kff.org/health-costs/issue-brief/how-aca-marketplace-premiums-are-changing-by-county-in-2020/">Kaiser Family Foundation</a></div>
+
+
 
 ---
 # Some potential policy solutions
