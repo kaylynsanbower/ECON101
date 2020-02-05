@@ -13,7 +13,7 @@ Below are all of the slides that I'll use throughout the class. The slides will 
 
 2. Health Insurance and Adverse Selection, [slides](02-Insurance/02-slides.html) and [simplified view](02-Insurance/02-simple.html).<br>
     + [Risk premium graph](notes/risk_premium.pdf)
-    + [Demand for health insurance calculations](notes/health_insurance_solution.pdf)
+    + [Deriving insurance market graphs](notes/insurance_market.pdf)
     + [Adverse selection graphs](notes/adverse_selection.pdf)
     + [Recorded notes on hospital bills](https://drive.google.com/open?id=1Fh9jy0PAtYeGgOzdHygZXL9eLm5ge0lD)
     + [Recorded notes on expected value](https://drive.google.com/open?id=1JP2mpVfXpJ8H3muEFQkbRuiIXOQw8Ibl)

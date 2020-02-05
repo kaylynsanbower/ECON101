@@ -150,6 +150,8 @@ What if there is a <span>&#36;</span>10 penalty imposed for those that do not pu
 
 
 ## Solutions
+The work we did in-class on the "white board" can be found [here](notes/adverse_selection_solution.pdf). Clearer answers to each question are detailed below.
+
 ```{r, include=FALSE}
 demand <- function(q){
   110 - 3*q
