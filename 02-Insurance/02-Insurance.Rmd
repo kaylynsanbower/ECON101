@@ -528,16 +528,12 @@ Only developed country to rely on employer provided insurance market - why?<br>
 ---
 # Current policy
 1. Increasingly reliant on private market, even for public insurance programs, where adverse selection is most salient
-
 2. [Health insurance exchanges](https://www.cms.gov/CCIIO/Programs-and-Initiatives/Health-Insurance-Marketplaces/index.html)
-
 3. [Individual mandate](https://www.healthcare.gov/fees/fee-for-not-being-covered/)
-
 4. [Premium and cost-sharing subsidies](http://www.kff.org/health-reform/issue-brief/explaining-health-care-reform-questions-about-health/)
-
 5. [Insurer subsidies](http://www.kff.org/health-reform/issue-brief/explaining-health-care-reform-risk-adjustment-reinsurance-and-risk-corridors/)
-
-6. [Risk adjustment](https://www.cms.gov/Medicare/Health-Plans/MedicareAdvtgSpecRateStats/Downloads/RTC-Dec2018.pdf)
+6. Medicaid expansion
+7. [Risk adjustment](https://www.cms.gov/Medicare/Health-Plans/MedicareAdvtgSpecRateStats/Downloads/RTC-Dec2018.pdf)
 
 
 ---
@@ -548,6 +544,24 @@ Only developed country to rely on employer provided insurance market - why?<br>
 2. Penalty for individual mandate has since been reduced to $0 (so really no mandate anymore). 
 
 3. Trump administration refused to pay cost-sharing subsidies
+
+---
+# Your questions
+1. Why so much opposition to the ACA?
+2. Why repeal the existing provisions in the ACA that cover pre-existing conditions?
+3. What does open enrollment entail and what qualifies someone for open enrollment?
+4. What are the differences between employer-provided healthcare and healthcare provided by the ACA?
+5. I’m wondering if the ACA affects Medicaid in any way
+6. Other than insurance, in what ways does the ACA affect the healthcare market?
+
+---
+# Questions cont.
+7. How does the government advertise and support the ACA?
+8. How do differential subsidies of Medicaid negatively impact our economy?
+9. How does the ACA address free preventative care options and preventative mental health safety?
+10. Why hasn't the ACA experienced a death spiral yet?
+11. How might the ACA affect healthcare demand and the healthcare job market?
+12. What are the problems with the ACA and what are the replacement options?
 
 ---
 # In context
