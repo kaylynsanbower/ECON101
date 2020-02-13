@@ -127,4 +127,26 @@ This week concludes our study of health insurance. We'll finish this module with
 
 ### Resources
 - Commonwealth Fund, July 2018, ["The Effect of Eliminating the Individual Mandate Penalty."](https://www.commonwealthfund.org/publications/fund-reports/2018/jul/eliminating-individual-mandate-penalty-behavioral-factors)
+
+
+# Week 6: Agency problems
+ 
+We're starting a new module this week related to physician treatment decisions. Just as asymmetric information between patients and insurance companies was a big part of the adverse selection problem, this module will show how asymmetric information between physicians and patients can also create some interesting dynamics and incentives.
+
+### Objectives for this week
+
+- Explain the principal-agent problem in the context of medical care
+- Define fee-for-service and capitated payment models
+- Solve for treatment levels under fee-for-service and capitated payments
+ 
+
+### Activities
+- In-class problem (physician agency)
+
+### Resources
+- Textbook: Pindyk and Rubinfeld, Section 17.4
+- McGuire, Thomas. 2000. ["Physician Agency,"](https://www.sciencedirect.com/science/article/abs/pii/S1574006400801687) Handbook of Health Economics, Volume 1.
+- [The Dartmouth Atlas](https://www.dartmouthatlas.org/interactive-apps/)
+- The Atlantic, December 2013, ["You're Getting Too Much Healthcare](https://www.theatlantic.com/health/archive/2013/12/youre-getting-too-much-healthcare/281896/)
+- MIT News Office, June 2018, ["The value of late-in-life health care spending"](http://news.mit.edu/2018/value-late-life-health-care-spending-medicare-0628)
  
