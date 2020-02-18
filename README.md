@@ -19,7 +19,8 @@ Below are all of the slides that I'll use throughout the class. The slides will 
     + [Recorded notes on expected value](https://drive.google.com/open?id=1JP2mpVfXpJ8H3muEFQkbRuiIXOQw8Ibl)
     + [Recorded notes on expected value and expected utility](https://drive.google.com/file/d/1A68I7BhufZdGdiubUOS9JP3LqIP8jc8E/view)
 
-3. Physicians and Treatment Decisions, [slides](03-Agency/03-slides.html) and [simplified view](03-Agency/03-simple.html)
+3. Physicians and Treatment Decisions, [slides](03-Agency/03-slides.html) and [simplified view](03-Agency/03-simple.html)<br>
+    + [Physician agency graph](notes/physician_agency.pdf)
 
 4. Hospital Pricing and Payments, [slides](04-Pricing/04-slides.html) and [simplified view](04-Pricing/04-simple.html)
 
