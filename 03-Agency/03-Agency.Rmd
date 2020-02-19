@@ -240,7 +240,7 @@ Assume $B(x)=4x^{1/2}$, $NB^{0}=0$, anc $c=1$. Further assume that prices are fi
 ---
 # Solution with capitated payments
 Maximizing the profit function yields:<br>
-$ n'(NB)(B'(x) - p_{d}) \left[R + (p_{s} - c)x \right] + n(NB)(p_{s}-c) = 0$.<br>
+$n'(NB)(B'(x) - p_{d}) \left[R + (p_{s} - c)x \right] + n(NB)(p_{s}-c) = 0$.<br>
 
 Rearranging terms and multiplying both sides by $\frac{1}{NB}$, we get:<br>
 $\frac{B'(x) - p_{d}}{NB} \frac{R + (p_{s} - c)x}{p_{s}-c} = - \frac{1}{\varepsilon_{n,NB}}$
