@@ -268,7 +268,7 @@ Add the physician's optimal $x$ to your graph and interpret the difference.<br>
 # Agency and fixed prices {.tabset}
 
 ## Problems
-Assume $B(x)=4x^{1/2}$, $NB^{0}=0$, anc $c=1$. Further assume that prices are fixed administratively at, $\bar{p}=2$.
+Assume $B(x)=4x^{1/2}$, $NB^{0}=0$, anc $c=1$. Further assume that prices are fixed administratively at, $\bar{p}=2$. Note that, in this case, we work only off of the patient's net benefit constraint.
 
 ### Question 1:
 What is the physician's and patient's optimal amount of care provided?
