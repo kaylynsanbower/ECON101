@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -1423,6 +1422,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -1451,6 +1451,12 @@ summary {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -1534,9 +1540,9 @@ div.tocify {
 </div>
 <div id="analysis" class="section level1">
 <h1><span class="header-section-number">2</span> Analysis</h1>
-<p>Your analysis should proceed in the following steps:</p>
+<p>Your analysis will first assess the current “fee-for-service” environment. This will serve as a baseline for the rest of the case study. Your analysis of bundled payments should proceed in the following steps:</p>
 <ol style="list-style-type: decimal">
-<li><p>Calculate the average 60-day cost of care</p></li>
+<li><p>Calculate the average 60-day cost of care.</p></li>
 <li><p>Assess the potential profitability of a new care model designed to reduce the costs of this patient population by 10% <strong>in your hospitals</strong>. In other words, this new care model will save your hospital money, but it will have no impact on the cost structure of other hospitals that your patients may visit.</p></li>
 <li><p>What if we could adopt policies to ensure people only visit our hospitals and not other hospitals in the area (i.e., increase patient loyalty). How much would we be willing to spend on this effort?</p></li>
 </ol>
@@ -1556,9 +1562,9 @@ div.tocify {
 <h1><span class="header-section-number">4</span> Data</h1>
 <p>The accompanying datasets are organized as follows:</p>
 <ol style="list-style-type: decimal">
-<li><p><a href="data/bene_data.rds">Beneficiary dataset</a>: Unique beneficiaries and some basic demographic variables such as gender, race, ethnicity, and age.</p></li>
-<li><p><a href="data/hosp_util_data.rds">Inpatient utilization and cost dataset</a>: Hospital admissions among the beneficiaries, along with the dates, costs, and Medicare payments for each inpatient stay.</p></li>
-<li><p><a href="data/phy_util_data.rds">Physician (outpatient) utilization and cost dataset</a>: Physician visits among beneficiaries, along with the dates, costs, and Medicare payments for each visit.</p></li>
+<li><p><a href="data/bene_data.rds">Beneficiary dataset</a>: Unique beneficiaries and some basic demographic variables such as gender, race, ethnicity, and age. The embedded link is for an R data set. A link to a tab delimited text file is <a href="data/bene_data.txt">here</a>.</p></li>
+<li><p><a href="data/hosp_util_data.rds">Inpatient utilization and cost dataset</a>: Hospital admissions among the beneficiaries, along with the dates, costs, and Medicare payments for each inpatient stay. The embedded link is for an R data set. A link to a tab delimited text file is <a href="data/hosp_util_data.txt">here</a>.</p></li>
+<li><p><a href="data/phy_util_data.rds">Physician (outpatient) utilization and cost dataset</a>: Physician visits among beneficiaries, along with the dates, costs, and Medicare payments for each visit. The embedded link is for an R data set. A link to a tab delimited text file is <a href="data/phy_util_data.txt">here</a>.</p></li>
 </ol>
 <p>The beneficiary IDs in the utilization and cost datasets match to the IDs in the beneficiary dataset. This is a highly simplified structure based on the type of data you might actually see from a hospital. In these data, there are 10 hospitals. Your system operates hospital IDs 1-5, while the remaining hospital IDs represent other hospitals in the area. Your patients can of course visit those other hospitals, but you cannot control the costs of the care received at those institutions.</p>
 </div>
