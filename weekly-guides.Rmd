@@ -150,3 +150,20 @@ We're starting a new module this week related to physician treatment decisions. 
 - The Atlantic, December 2013, ["You're Getting Too Much Healthcare](https://www.theatlantic.com/health/archive/2013/12/youre-getting-too-much-healthcare/281896/)
 - MIT News Office, June 2018, ["The value of late-in-life health care spending"](http://news.mit.edu/2018/value-late-life-health-care-spending-medicare-0628)
  
+
+# Week 7: Agency and payments
+ 
+This week we'll continue our study of physician agency and treatment decisions, focusing in particular on fee-for-service versus "capitated" payments.
+
+### Objectives for this week
+
+- Define fee-for-service and capitated payment models
+- Compare treatment levels under fee-for-service and capitated payments
+ 
+### Activities
+- In-class problem (agency and fixed prices)
+- Discussion forum on [Canvas](https://canvas.emory.edu/courses/70035)
+
+### Resources
+- Textbook: Pindyk and Rubinfeld, Section 17.4
+- McGuire, Thomas. 2000. ["Physician Agency,"](https://www.sciencedirect.com/science/article/abs/pii/S1574006400801687) Handbook of Health Economics, Volume 1.
