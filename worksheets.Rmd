@@ -213,6 +213,8 @@ Add the physician's optimal $x$ to your graph and interpret the difference.
 
 ## Solutions
 
+The work we did in-class on the "white board" can be found [here](notes/agency_solution.pdf). Clearer answers to each question are detailed below.
+
 ### Question 1:
 Find the patient’s optimal $x$.<br>
 
