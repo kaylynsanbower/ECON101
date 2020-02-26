@@ -271,11 +271,11 @@ name: policy
 
 ---
 # Current policy
-1. [Value-based Purchasing](https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-Instruments/hospital-value-based-purchasing/index.html)
+1. [Value-based Purchasing](https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-Instruments/Value-Based-Programs/HVBP/Hospital-Value-Based-Purchasing)
 
 2. [Bundled Payments](https://innovation.cms.gov/initiatives/bundled-payments/)
 
 3. [Accountable Care Organizations](https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/ACO/)
 
-4. [Information and Consumer Choice](https://www.medicare.gov/hospitalcompare/search.html?)
+4. Information and Consumer Choice: Examples include [Hospital Compare](https://www.medicare.gov/hospitalcompare/search.html?) and [Penalty Information](https://khn.org/news/hospital-penalties/)
 
