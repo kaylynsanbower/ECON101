@@ -283,7 +283,7 @@ How would the price change affect the difference between the patient and physici
 
 
 ## Solutions
-Assume $B(x)=4x^{1/2}$, $NB^{0}=0$, anc $c=1$. Further assume that prices are fixed administratively at, $\bar{p}=2$.
+The work we did in-class on the "white board" can be found [here](notes/agency_fixedp_solution.pdf). Clearer answers to each question are detailed below.
 
 ### Question 1:
 What is the physician's and patient's optimal amount of care provided?<br>

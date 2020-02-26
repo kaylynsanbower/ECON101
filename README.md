@@ -21,6 +21,7 @@ Below are all of the slides that I'll use throughout the class. The slides will 
 
 3. Physicians and Treatment Decisions, [slides](03-Agency/03-slides.html) and [simplified view](03-Agency/03-simple.html)<br>
     + [Physician agency graph](notes/physician_agency.pdf)
+    + [Physician agency with capitated payments](notes/agency_capitation.pdf)
 
 4. Hospital Pricing and Payments, [slides](04-Pricing/04-slides.html) and [simplified view](04-Pricing/04-simple.html)
 
