@@ -30,7 +30,7 @@ Below are all of the slides that I'll use throughout the class. The slides will 
 
 2. [Homework 2](homework/hwk-2/hwk2-instructions.html): Due on Wednesday, 2/26.
 
-3. Mid-term Exam: Take in-class, 3/4.
+3. Mid-term Exam: Take in-class, 3/4. [Review Sheet](exams/exam1-review.html)
 
 4. [Homework 3](homework/hwk-3/hwk3-instructions.html): Due on Wednesday, 4/15.
 
