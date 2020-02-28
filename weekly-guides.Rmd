@@ -167,3 +167,15 @@ This week we'll continue our study of physician agency and treatment decisions, 
 ### Resources
 - Textbook: Pindyk and Rubinfeld, Section 17.4
 - McGuire, Thomas. 2000. ["Physician Agency,"](https://www.sciencedirect.com/science/article/abs/pii/S1574006400801687) Handbook of Health Economics, Volume 1.
+
+
+# Week 8: Exam week!
+
+We have our exam this week on Wednesday, 3/4, and the exam will cover all material to date. We'll review and discuss the exam on Monday. 
+
+Resources to prepare fo the exam include:
+
+1. [Homework 1](homework/hwk-1/hwk1-instructions.html), with the answer key available on Canvas.
+2. [Homework 2](homework/hwk-2/hwk2-instructions.html), with the answer key available on Canvas.
+3. [Exam review sheet](exams/exam1-review.html)
+4. [In-class problems](worksheets.html)
