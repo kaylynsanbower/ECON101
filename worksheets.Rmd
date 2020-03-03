@@ -301,3 +301,34 @@ At this new price, the physician would choose $x$ such that $4x^{1/2} = 3x \long
 How would the price change affect the difference between the patient and physician's optimal amounts?<br>
 
 First, note that the amount of care decreases as the administrative price increases (opposite of the standard supply curve). Similarly, the deviation between the patient and physician optimal amounts decreases.
+
+
+# Unilateral pricing {.tabset}
+
+## Problems
+Consider the firm's demand curve, $d=40-2q$, and cost curve, $c(q)=5q+\frac{1}{2}q^{2}$. 
+
+### Question 1
+What is the firm's profit maximizing price and quantity? 
+
+### Question 2
+What is the firm's markup over marginal cost?
+
+## Solutions
+
+### Question 1
+What is the firm's profit maximizing price and quantity?<br>
+
+To solve this, we just need to maximize the firm's profit with respect to quantity, $q$. Then we substitute the optimal quantity into the demand function to find the optimal $p$.
+
+The profit function in this case is $\pi=d(q)*q - c(q) = (40-2q)q - 5q - \frac{1}{2}q^{2}$. Differentiating and setting equal to 0 yields $$-2q + 40 - 2q - 5 - q = -5q + 35 = 0.$$ This holds for $q=7$.
+
+Plugging $q=7$ into the demand function then yields $p=40-14=26$. So the firm optimally sets a price of $p=26$ and sells a quantity of $q=7$. 
+
+
+
+### Question 2
+What is the firm's markup over marginal cost?<br>
+
+We can find the marginal cost at $q=7$ by plugging this quantity into the marginal cost function, $c'(q) = 5 + q = 12$. Since the firm's price is $p=26$, we know the markup over marginal cost is 14. We usually think of this in percentage terms, where we calculate the markup relative to marginal cost, $\frac{p-c}{c} = \frac{14}{12}$. So the markup is more than 100% of the cost.
+

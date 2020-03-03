@@ -323,6 +323,16 @@ In general, we can't solve this directly without knowing the hospital's utility 
 
 Consider the firm's demand curve, $d=16-q$, and cost curve, $c(q)=5+q^{2}$. Where will the firm produce and at what price? What is the firm's markup over marginal cost?
 
+--
+The profit function is, $\pi = (16-q)q - 5 - q^{2}$. Differentiating with respect to quantity yields $-q + 16 - q - 2q= 16-4q=0$, or $q=4$. At this quantity, the price is $p=12$, which is a markup of 4 over the marginal cost (or 50% markup).
+
+---
+# In-class problem (unilateral pricing)
+
+Consider the firm's demand curve, $d=40-2q$, and cost curve, $c(q)=5q+\frac{1}{2}q^{2}$. 
+
+1. What is the firm's profit maximizing choice of quantity and price? 
+2. What is the markup over marginal cost?
 
 ---
 # Negotiating with insurers
@@ -338,6 +348,10 @@ Key part of understanding effect on price is to understand the "outside option".
 --
 
 Outside option in this case is the profit to the hospital or insurer if a negotiation "breaks down". What is the outside option to an insurer if they are in a monopoly hospital market?
+
+---
+# Nash Bargaining problem
+We model this bargaining problem as a "Nash bargaining" problem. 
 
 
 ---
