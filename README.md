@@ -33,7 +33,7 @@ Below are all of the slides that I'll use throughout the class. The slides will 
 
 3. Mid-term Exam: Take in-class, 3/4. [Review Sheet](exams/exam1-review.html)
 
-4. [Homework 3](homework/hwk-3/hwk3-instructions.html): Due on Wednesday, 4/15.
+4. [Homework 3](homework/hwk-3/hwk3-instructions.html): Due on Monday, 4/20.
 
 5. [Case Study](case-study/instructions.html): Due on the date of our scheduled final exam (Wednesday, May 6th). But to reiterate...this is a semester-long project. Please start as early as possible!
 
