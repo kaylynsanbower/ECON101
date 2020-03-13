@@ -75,7 +75,7 @@ pacman::p_load(tidyverse, ggplot2, dplyr, lubridate, readr, readxl, hrbrthemes,
 
 5. [Two Prices](#twoprice)
 
-5. [Current Policy Issues](#policy)
+6. [Current Policy Issues](#policy)
 
 
 <!-- New Section -->
@@ -351,7 +351,20 @@ Outside option in this case is the profit to the hospital or insurer if a negoti
 
 ---
 # Nash Bargaining problem
-We model this bargaining problem as a "Nash bargaining" problem. 
+We model this bargaining problem as a "Nash bargaining" problem.
+- Two people are faced with a negotiation
+- If they agree, each gets payoffs $u_{1}$ $u_{2}$, respectively
+- If they disagree, each gets some other payoff, $t_{1}$ and $t_{2}$, with $u_{1} > t_{1}$ and $u_{2} > t_{2}$ 
+- Nash showed that the solution is $\max (u_{1}- t_{1})(u_{2} - t_{2})$
+
+
+---
+# In-class problem (Nash bargaining)
+Assume that two agents are negotiating over how best to divide their quantity of good x, which is normalized to 1. If the players reach an agreement, player 1 receives utility $u_{1} = x$, and player 2 receives utility $u_{2} = (1-x)$. If the players do not reach an agreement, player 1 receives a payoff of $t1 = 0$, and
+player 2 receives payoff $t_{2} = a > 0$.<br>
+
+1. Find the Nash bargaining solution to this game.
+2. Explain how this solution varies with $a$.
 
 
 ---
@@ -589,8 +602,12 @@ $$\frac{\mathrm{d}p_{i}}{\mathrm{d}p_{j}} = - \frac{U_{11}\pi_{1}^{i}\pi_{1}^{j}
 ]
 
 ---
-# Two price market example
-Consider the firm's demand curve in the private insurance market, $d=16-q$, and costs, $c(q)=5+q^{2}$. Assume that there exists a public insurer that pays a fixed price of $\bar{p}=10$. How many private patients will the provider serve? How many public patients? What if $\bar{p}$ drops to <span>&#36;</span>9.
+# In-class problem (two-price market)
+Consider the firm's demand curve in the private insurance market, $d=16-q$, and costs, $c(q)=5+q^{2}$. Assume that there exists a public insurer that pays a fixed price of $\bar{p}=10$.<br>
+
+1. How many private patients will the provider serve? 
+2. How many public patients? 
+3. What if $\bar{p}$ drops to <span>&#36;</span>9.
 
 ---
 # Cost-shifting

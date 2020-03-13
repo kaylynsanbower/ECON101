@@ -332,3 +332,65 @@ What is the firm's markup over marginal cost?<br>
 
 We can find the marginal cost at $q=7$ by plugging this quantity into the marginal cost function, $c'(q) = 5 + q = 12$. Since the firm's price is $p=26$, we know the markup over marginal cost is 14. We usually think of this in percentage terms, where we calculate the markup relative to marginal cost, $\frac{p-c}{c} = \frac{14}{12}$. So the markup is more than 100% of the cost.
 
+
+
+# Bargaining {.tabset}
+
+## Problems
+Assume that two agents are negotiating over how best to divide their quantity of good x, which is normalized to 1. If the players reach an agreement, player 1 receives utility $u_{1} = x$, and player 2 receives utility $u_{2} = (1-x)$. If the players do not reach an agreement, player 1 receives a payoff of $t1 = 0$, and
+player 2 receives payoff $t_{2} = a > 0$.<br>
+
+### Question 1
+Find the Nash bargaining solution to this game.
+
+### Question 2
+Explain how this solution varies with $a$.
+
+## Solutions
+
+### Question 1
+Find the Nash bargaining solution to this game.<br>
+
+The Nash bargaining solution is to maximize $x(1-x-a)$ (i.e., the product of each person's payoff under agreement less their payoff under disagreement). We can find the solution by differentiating with respect to $x$ and setting equal to 0, which yields $1-2x - a = 0$, or $x=\frac{1}{2}(1-a)$.
+
+
+### Question 2
+Explain how this solution varies with $a$.<br>
+
+As $a$ increases, $x$ decreases. Intuitively, this means that as player 2's outside option improves, less of the total amount $x$ goes to player 1. In other words, if player 2 has the least to lose in the negotiation, then player 2 will extract a larger share of the joint surplus.
+
+
+# Two-price market {.tabset}
+
+## Problems
+Consider the firm's demand curve in the private insurance market, $d=16-q$, and costs, $c(q)=5+q^{2}$. Assume that there exists a public insurer that pays a fixed price of $\bar{p}=10$.<br>
+
+### Question 1
+How many private patients will the provider serve? 
+
+### Question 2
+How many public patients? 
+
+### Question 3
+What if $\bar{p}$ drops to <span>&#36;</span>9.
+
+## Solutions
+
+### Question 1
+How many private patients will the provider serve?<br>
+
+The practice will serve private insurance patients until the marginal revenue from those patients falls below the marginal revenue of a public patient. In this case, the marginal revenue of a public patient is $\bar{p}=10$. The Marginal revenue of a private practice is $16-2q$. These are equal at $q=3$. So the practice will see 3 private insurance patients.
+
+Note, we should check first that the practice will see **any** public patients. The way to do this is to make sure that the marginal revenue from a public patient is above the marginal revenue of $MR=MC$ in the private market. In this case, $MR=MC$ at $q=4$ and $MR=8$. This is below $\bar{p}=10$, so the practice will servce some portion of the public market whenever $\bar{p}>8$. 
+
+
+### Question 2
+How many public patients?<br>
+
+The practice will see patients to the point where $MR=\bar{p}=MC$, which holds for $2q=10$, or $q=5$. Combined with our answer in part 1, the practice will see 3 private insurance patients and 2 public insurance patients.
+
+
+### Question 3
+What if $\bar{p}$ drops to <span>&#36;</span>9.<br>
+
+In this case, the practice will again see total patients to the point where $MC=\bar{p}$. This holds for $2q=9$, or $q=4.5$. The practice will switch to the public market at $MR=\bar{p}$. This holds for $16-2q=9$, or $q=3.5$. So the drop in the fixed payment rate will lead to an increase in the number of private insurance patients seen (from 3 to 3.5), and a decrease in the number of public patients seen (from 2 to 1). The total number of patients seen in this case also decreases (from 5 to 4.5).
