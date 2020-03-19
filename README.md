@@ -41,6 +41,9 @@ Below are all of the slides that I'll use throughout the class. The slides will 
     + [Physician agency with capitated payments](notes/agency_capitation.pdf)
 
 4. Hospital Pricing and Payments, [slides](04-Pricing/04-slides.html) and [simplified view](04-Pricing/04-simple.html)
+    + [3/23, Part I - What is a price?](https://youtu.be/XLmYOYL2MyE)
+    + [3/23, Part II - Price variation](https://youtu.be/8QSQc9s2VeY)
+
 
 
 ## Assignments
