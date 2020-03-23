@@ -43,6 +43,9 @@ Below are all of the slides that I'll use throughout the class. The slides will 
 4. Hospital Pricing and Payments, [slides](04-Pricing/04-slides.html) and [simplified view](04-Pricing/04-simple.html)
     + [3/23, Part I - What is a hospital price?](https://youtu.be/Y7v3HnFmhdo)
     + [3/23, Part II - Price variation](https://youtu.be/8QSQc9s2VeY)
+    + [3/25, Part I - Defining not-for-profit](https://youtu.be/kXdDQa89Uks)
+    + [3/25, Part II - Community benefits](https://youtu.be/cninWUmm6Iw)
+    
 
 
 
