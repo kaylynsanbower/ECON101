@@ -277,3 +277,82 @@ These activities are intended to facilitate an engaged "virtual" classroom on Zo
 - ["Making healthcare markets work: Competition policy for health care"](https://www.brookings.edu/research/making-health-care-markets-work-competition-policy-for-health-care/)
 - [Hearing on health care consolidation and anticompetitive conduct](https://www.youtube.com/watch?v=c2rLy4FWn_g). Please focus just on the testimony of Martin Gaynor, as this is most relevant for our class. But if you're interested in pharmaceuticals, there is some great content in this video from other members of the panel as well.
 
+
+# Week 11: Fixed Prices
+
+This week we continue our coverage of hospital pricing, where we'll introduce Medicare and Medicaid and discuss the role of competition with fixed prices.
+
+### Objectives for this week
+The broad goal for this week is to finish the **Fixed Prices** section of the [hospital pricing slides](04-Pricing/04-slides.html). By the end of this week everone should be able to:<br>
+
+1. Describe the Medicare program and its components
+2. Differentiate between how Medicare Part A and Medicare Part B are funded
+3. Describe Medicaid and distinguish it from Medicare
+4. List and explain two ways in which the ACA changed Medicaid
+
+
+### Activities and materials
+These activities are intended to facilitate an engaged "virtual" classroom on Zoom. Each activity or set of activities will align with pre-recorded materials. The goal is to watch the pre-recorded materials, spend 10-20 minutes on the relevant activities, and then join the live Zoom classroom to participate in the group discussion.<br>
+
+**Monday, April 6**<br>
+
+- Pre-recorded material:
+  - In addition to these resources, please consider listening to some of the Medicare podcast linked below.
+- Virtual class questions:
+  - What is the difference between Medicare Parts A and B?
+  - What are some benefits and potential costs of relying on private insurers in the Medicare Advantage program?
+  - True or false: Medicare pays for health care in a nursing home or skilled nursing facility.
+- Recorded Zoom class (link pending)<br>
+
+
+**Wednesday, April 8**<br>
+
+- Pre-recorded material
+  - In addition to these resources, please consider listening to some of the Medicaid podcast linked below.
+- Virtual class questions:
+  - What do people mean when they say "Medicaid Expansion" in the context of the ACA?
+  - True or false: Medicaid is insurance for low income people and Medicare is insurance for senior citizens.
+- Recorded Zoom class (link pending)
+
+
+### Supplemental resources
+- [All About Medicare, Podcast](https://open.spotify.com/episode/11QshS7vlTptfBVkV8WkTG?si=sCnpjaDNT5mF3lDC6obB4g)
+- [All Aboud Medicaid, Podcast](https://open.spotify.com/episode/5wV95SFHGv9trpZrXACELP?si=DFnzeWj7R1eIv9w2Xr3PtQ)
+
+
+# Week 12: Two-price Market
+
+This week we continue our coverage of hospital pricing to a model of a for-profit hospital that sets their own price in the private market and receives a fixed price in the public insurance market.
+
+### Objectives for this week
+The broad goal for this week is to finish the **Two-price Market** section of the [hospital pricing slides](04-Pricing/04-slides.html). By the end of this week everone should be able to:<br>
+
+1. Use our two-price model to predict the effect of a change in public (e.g. Medicare or Medicaid) prices
+2. Identify the minimum price at which public insurance patients lose access to care
+3. Define cost-shifting and summarize the key aspects of the cost-shifting debate
+
+
+### Activities and materials
+These activities are intended to facilitate an engaged "virtual" classroom on Zoom. Each activity or set of activities will align with pre-recorded materials. The goal is to watch the pre-recorded materials, spend 10-20 minutes on the relevant activities, and then join the live Zoom classroom to participate in the group discussion. We also have a new discussion forum (Discussion 5) this week on [Canvas](https://canvas.emory.edu/courses/70035).<br>
+
+**Monday, April 13**<br>
+
+- Pre-recorded material:
+- Virtual class questions:
+  - Solve the practice problem on the [two-price model](worksheets.html)
+- Recorded Zoom class (link pending)<br>
+
+
+**Wednesday, April 15**<br>
+
+- Pre-recorded material
+- Virtual class questions:
+  - What is cost-shifting and how does it differ from price discrimination? 
+  - Why are some researchers skeptical that cost-shifting occurs?
+- Recorded Zoom class (link pending)
+
+
+### Supplemental resources
+- Textbook: Sloan and Hsieh, Section 5.4
+- ["History of Cost Shifting"](https://theincidentaleconomist.com/wordpress/hospital-cost-shifting-brief-history-and-possible-future/)
+
