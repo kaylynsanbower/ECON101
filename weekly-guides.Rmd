@@ -254,7 +254,9 @@ These activities are intended to facilitate an engaged "virtual" classroom on Zo
 
 **Monday, March 30**<br>
 
-- Pre-recorded material
+- Pre-recorded material:
+  - [3/30 Part I - Pricing basics](https://youtu.be/RKNZOlXqbI0)
+  - [3/30 Part II - Negotiated prices](https://youtu.be/E9htrWZv9z0)
 - Virtual class questions:
   - Solve for the profit maximizing price and quantity for a monopolistically competitive firm, [practice problem on unilateral pricing](worksheets.html)
   - Solve for a [Nash bargaining problem](worksheets.html)
