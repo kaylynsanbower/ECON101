@@ -45,6 +45,9 @@ Below are all of the slides that I'll use throughout the class. The slides will 
     + [3/23, Part II - Price variation](https://youtu.be/8QSQc9s2VeY)
     + [3/25, Part I - Defining not-for-profit](https://youtu.be/kXdDQa89Uks)
     + [3/25, Part II - Community benefits](https://youtu.be/cninWUmm6Iw)
+    + [3/30 Part I - Pricing basics](https://youtu.be/RKNZOlXqbI0)
+    + [3/30 Part II - Negotiated prices](https://youtu.be/E9htrWZv9z0)
+    
     
 
 
