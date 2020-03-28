@@ -1,0 +1,229 @@
+---
+title: "Exam Review Sheet"
+author: "Econ 372: Economics of Health Care Markets"
+date: "Mid-term on 3/4/2020"
+output: 
+  html_document:
+    toc: TRUE
+    toc_float: TRUE
+    toc_depth: 1
+    theme: darkly
+    number_sections: FALSE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(tidyverse, ggplot2, dplyr, lubridate, readr, readxl, hrbrthemes,
+               scales, gganimate, gapminder, gifski, png, tufte, plotly, OECD,
+               ggrepel)
+
+```
+
+# Overview 
+This is a review sheet for our first exame, which will take place in class on March 4. This material mirrors that of our homeworks and in-class problems, but this is just for some extra practice. Answers are included in the "tabbed" section of each question.
+
+
+
+# Math Problems 
+
+## Question 1
+
+Assume your utility function is $u(w)=\sqrt{w}$, and you begin with wealth of $w=$ <span>&#36;</span>100. I propose a lottery in which I flip a coin. If the coin turns up heads, you win <span>&#36;</span>30. If the coin turns up tails, you lose <span>&#36;</span>30. <br>
+
+
+## {.tabset} 
+
+### Q1(a)
+What's the expected monetary value of this lottery?
+
+### Answer
+Expected wealth is $\frac{1}{2}\times 70 + \frac{1}{2} \times 130 = 100$.
+
+## {.tabset}
+
+### Q1(b) 
+What is your utility at this expected value?
+
+### Answer
+At the wealth value of <span>&#36;</span>100, $u(100)=\sqrt{100}=10$.
+
+## {.tabset}
+
+### Q1(c)
+What's the expected utility from this lottery?
+
+### Answer
+Expected utility is $\frac{1}{2} \times \sqrt{70} + \frac{1}{2}\times \sqrt{130} = 9.88.$
+
+## {.tabset}
+
+### Q1(d)
+In one sentence, explain why your answer in part (c) differs from part (b).
+
+### Answer
+If you choose this lottery, you are entering into a risky scenario, and so your expected utility is lower than if you were to receive the same expected monetary value of the lottery (<span>&#36;</span>100) with certainty.
+
+
+## Question 2
+
+Consider the utility function, $u(w)=\ln(w)$. Assume an individual starts with wealth of <span>&#36;</span>50,000. With probability 0.6, this person will get sick and incur a cost of <span>&#36;</span>10,000.
+
+
+## {.tabset} 
+
+### Q2(a)
+What is the expected utility and expected wealth in this situation?
+
+### Answer
+Expected utility is $E[u(w)]=0.6 \times \ln (40000) + 0.4 \times \ln (50000) = 10.686$ and expected wealth is $E[w]=0.6 \times 40000 + 0.4 \times 50000 = 44,000$.
+
+
+
+## {.tabset}
+
+### Q2(b)
+What is the risk premium?
+
+### Answer
+The monetary value that provides a level of utility equal to expected utility in this case is $u^{-1}\left(E[u(w)]\right) = u^{-1}(10.686) = e^{10.686} \approx 43,740.$ The risk premium is then $\pi = 44000-43740=260$.
+
+
+
+## {.tabset}
+
+### Q2(c)
+What is the maximum amount this person is willing to pay for health insurance?
+
+### Answer
+This is just the risk premium (<span>&#36;</span>260) plus the expected cost of care (<span>&#36;</span>6,000). So they are willing to pay up to <span>&#36;</span>6,260 for health insurance (i.e., this is the price at which they would be indifferent between purchasing or not purchasing health insurance).
+
+
+## {.tabset}
+
+### Q2(d)
+What happens to the risk premium if the probability of illness decreases by 0.05? Explain in one sentence.
+
+### Answer
+In this case, a decrease in the probability of illness will *increase* the uncertainty since we're starting at a probability of 0.6. So this would lead to an increase in the risk premium and a decrease in the maximum willingness to pay for health insurance.
+
+
+
+## Question 3
+
+Assume an insurer's cost function is given by $C=100q - 2q^{2}$, where $q$ denotes the number of people enrolled in the plan. Further assume that demand is given by $D=120-3q$. The total size of the population is $N=40$.
+
+## {.tabset}
+
+### Q3(a)
+What is the equilibrium price if the insurer earns <span>&#36;</span>0 profit?
+
+### Answer
+The equilibrium price will be at the point were $p=D=AC$. In this case, $AC=\frac{100q - 2q^{2}}{q} = 100-2q.$ Setting this equal to demand, $120-3q = 100-2q$, so $q=20$. Plugging this back into the demand function shows that $q=20$ will occur at a $p=120-3q=120-3\times 20=60$.
+
+
+## {.tabset}
+
+### Q3(b)
+At this equilibrium price, how many people in this market are uninsured?
+
+### Answer
+We know that the equilibrium quantity is $q=20$, and that the total number of people in the market is $N=40$. So 20 individuals remain uninsured.
+
+
+## {.tabset}
+
+### Q3(c)
+The government is considering providing a fixed dollar subsidy per person. Find the smallest possible subsidy such that all individuals purchase health insurance.
+
+### Answer
+The key here is to start with the graph and recognize what a fixed dollar subsidy per person amounts to just a shift in the demand curve (i.e., a change in the intercept and not a change in the slope). If we are trying to have everyone insured, then this fixed subsidy must be such that the demand curve intersects with the AC curve only at $N=40$. At $q=40$, we know that $AC=100-2q=20$. So we need to provide a subsidy such that quantity demanded is 40 and a price of <span>&#36;</span>20. Turning back to the demand curve, and denoting the subsidy by $s$, we need to find $s$ such that $20=120+s-3\times 40$ (this tells us $s$ to satisfy $D=40$ at $p=20$). This means that $s=20$, so we need to give everyone a <span>&#36;</span>20 subsidy to buy health insurance if we want everyone in this market to be insured.
+
+
+## Question 4
+Consider a physician or physician practice that sets quantity of care, $x$, and price, $p$, to maximize profits subject to providing at least enough net benefit to meet a patient's best outside option. Assume that the patient receives benefit from care according to the benefit function, $B(x)=20x-\frac{1}{2}x^{2}$. Further assume that $NB^{0}=36$ and $c=2$, and that the patient pays the full price of care.
+
+
+## {.tabset}
+
+### Q4(a)
+Find the physician's optimal $x$ and $p$.
+
+### Answer
+The physician's problem is to maximize $px - cx$ subject to the constraint that $B(x)-px=NB^{0}$. Rewriting the constraint as $px=B(x)-NB^{0}$, we can first find the physician's optimal choice of $x$ as that which maximizes $B(x)-NB^{0}-cx = 20x - \frac{1}{2}x^{2} - 36 - 2x$. Taking the derivative with respect to $x$ and setting equal to 0 yields, $20-x-2=0$, or $x^{*}=18$. We can then find the price by substituting this level of $x$ into the constraint, so that $p=\frac{1}{x} \times \left( B(x) - NB^{0}\right) = \frac{1}{x} \times \left(20x - \frac{1}{2}x^{2} - 36 \right) = 20-9-2=9$. So the physician sets $p^{*}=9$ and $x^{*}=18$.
+
+
+## {.tabset}
+
+### Q4(b)
+Find the patient's optimal level of care, $x$.
+
+### Answer
+The patient simply wants to maximize their net benefit, $B(x)-px=20x-\frac{1}{2}x^{2}-px$. Again taking the derivative with respect to $x$ and setting equal to 0 yields $20-x-p=0$ or $x=20-p$. At $p^{*}=9$, the patient's optimal level of care is then $\bar{x}=11$.
+
+
+## {.tabset}
+
+### Q4(c)
+What happens to the amount of overtreatment if $NB^{0}$ decreases from 36 to 18 (i.e., the patient has a less viable outside option)?
+
+### Answer
+A decrease in $NB^{0}$ doesn't change the physician's first order conditions, and so the physician's optimal level of care is the same at $x^{*}=18$. But the price now changes because the physician can increase price and still maintain a net benefit equal to the patient's best outside option. Specifically, the price now increases to $p=20-\frac{1}{2}x - \frac{18}{x} = 10$. At this price, the patient's optimal level of care is $\bar{x}=20-p=10$. So the amount of overtreatment increased, from 7 units of care to 8.
+
+
+## Question 5
+Assume that the physician instead faces an administratively set price of $\bar{p}$ and that the best outside option is $NB^{0}=0$. Maintain the assumption that $B(x)=20x - \frac{1}{2}x^{2}$.
+
+## {.tabset}
+
+### Q5(a)
+Find the physician's optimal quantity of care as a function of $\bar{p}$.
+
+### Answer
+In this case, the physician simply sets $x$ as high as possible (assuming $\bar{p}>c$). The only thing restricting the physician from increasing $x$ is the constraint on net benefit, so to find $x$ we just rewrite the net benefit constraint $\bar{p}x = 20x - \frac{1}{2}x^{2} - NB^{0} = 20x - \frac{1}{2}x^{2}.$ We can rewrite this further such that $\bar{p} = \frac{1}{x}\times \left(20x - \frac{1}{2}x^{2} \right) = 20-\frac{1}{2}x$. Finally, solving for $x$ instead of $\bar{p}$, yields $x^{*} = 2 (20-\bar{p})$.
+
+
+## {.tabset}
+
+### Q5(b)
+How does the physician's choice of $x$ change with $\bar{p}$? If we think of physician services as just a supply curve, is the direction of this relationship surprising or as expected?
+
+### Answer
+An increase in $\bar{p}$ will lead to a **decrease** in $x^{*}$, which is surprising compared to a traditional supply curve but not surprising in the context of this model where physicians set the choice of care. Note that this result only applies because we assume that patients pay $\bar{p}$ for each unit of care received. If physicians received a higher price and the patient's out of pocket costs were unchanged, then this would lead to no change in the quantity of care and higher profits for the physician. Essentially, the physician is only restricted by the patient's net benefit, so if the price to the patient increases, the physician must provide less care otherwise the patient would leave the practice and take their outside option.
+
+
+## Question 6
+Assume a physician is operating with the profit function, $$\pi = NB \left[R + (p_{s}-c)x \right],$$ where $NB=B(x) - p_{d}x$, $p_{s}$ denotes the (fixed) price paid by the insurer to the physician, $p_{d}$ denotes the (fixed) price paid by the patient, $R$ denotes the capitated payment per patient, $NB$ denotes the net benefit to the patient, and $x$ denotes the quantity of care per patient. 
+
+## {.tabset}
+
+### Q6(a)
+Assuming $B(x) = 5x - \frac{1}{2}x^{2}$, $p_{d}=0$, $p_{s}-c=1$, and $R=2$, find the physician's optimal level of $x$.
+
+### Answer
+In this setup, the profit function is $\pi = (5x - \frac{1}{2}x^{2})(2+x)$. Differentiating with respect to $x$ yields $(5 - x)(2 + x) + (5x - \frac{1}{2}x^{2})$. Expanding the first term, we get $$10 + 5x - 2x - x^{2} + 5x - \frac{1}{2}x^{2}=0.$$ 
+
+Rearranging and combining terms then gives us $-\frac{3}{2}x^{2} + 8x + 10=0$. We can solve this using the quadratic formula, $x=\frac{-8 \pm \sqrt{64 + 4 (3/2) (10)}}{-3} \approx \left( \frac{8-11.1}{3}, \frac{8+11.1}{3}\right)$.  The positive solution is approximately $x^{*} \approx 6.4$.
+
+
+## {.tabset}
+
+### Q6(b)
+Compare the amount in part (a) with the patient's optimal. Is this a scenario of overtreatment or undertreatment?
+
+### Answer
+The patient wants to maximize their net benefit, which in this case is $B'(x)=0$, or $5 - x = 0$. So the patient would choose $\bar{x}=5$. The physician's choice of $x^{*}\approx 6.4$ therefore represents overtreatment.
+
+
+## {.tabset}
+
+### Q6(c)
+Assume instead that the government sets $R=3$. Does this increase or decrease the amount of overtreatment? Show your answer.
+
+### Answer
+At $R=3$, the first order condition becomes $-\frac{3}{2}x^{2} + 7x + 15 = 0$. We can again solve this using the quadratic formula, $x=\frac{-7 \pm \sqrt{49 + 4 (3/2) (15)}}{-3} \approx \left( \frac{7-11.8}{3}, \frac{7+11.8}{3}\right)$.  The positive solution is approximately $x^{*} \approx 6.3$. Overtreatment has therefore decreased, which should be the case as we shift the incentive more toward the capitated payment and away from the fee-for-service payment.
+
+
+
+# Graphs
+Finally, I expect you to be able to draw a graph supporting many of the calculations (e.g., a graph reflecting the risk premium, adverse selection and unravelling, or the physician's choice of $x$ relative to the patient's optimum). The graph doesn't need to necessarily fit any specific functional forms - it just needs to reflect the structure of the problem. For example, I don't care if you correctly draw the square root function versus the natural log - just that you can show how the expected utility line differs from the utility curve and where the risk premium is reflected in such a graph.
