@@ -1,7 +1,7 @@
 ---
 title: "Weekly Guides"
 author: "Econ 372: Economics of Health Care Markets"
-date: "Last Update: 1/15/2020"
+date: "Last Update: 4/1/2020"
 output: 
   bookdown::html_document2:
     toc: TRUE
@@ -271,7 +271,7 @@ These activities are intended to facilitate an engaged "virtual" classroom on Zo
 - Virtual class questions:
   - Why do we use the HHI? Are there any benefits or problems with its use as a measure of hospital competitiveness?
   - How has hospital concentration changed over time and what have been the effects on pricing and quality?
-- Recorded Zoom class (link pending)
+- [Recorded Zoom class](https://drive.google.com/open?id=1fngrl41fxLhFhqsg9KYr7Iu81fnByRMy)
 
 
 ### Supplemental resources
