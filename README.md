@@ -47,6 +47,9 @@ Below are all of the slides that I'll use throughout the class. The slides will 
     + [3/25, Part II - Community benefits](https://youtu.be/cninWUmm6Iw)
     + [3/30 Part I - Pricing basics](https://youtu.be/RKNZOlXqbI0)
     + [3/30 Part II - Negotiated prices](https://youtu.be/E9htrWZv9z0)
+    + [4/1 Part I - Measuring competition](https://youtu.be/y2nMEOcMxeI)
+    + [4/1 Part II - Competition trends](https://youtu.be/8T04Q1yA550)
+    
     
     
 

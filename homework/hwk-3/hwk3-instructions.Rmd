@@ -1,7 +1,7 @@
 ---
 title: "Homework 3: Hospital Pricing"
 author: "Econ 372: Economics of Health Care Markets"
-date: "Due: Wednesday, April 15, 2020"
+date: "Due: Monday, April 20, 2020"
 output: 
   bookdown::html_document2:
     toc: FALSE
@@ -25,7 +25,7 @@ This is our third and final homework assignment of the semester. It covers quest
     
     + Now assume that there is also a public market (e.g., Medicaid) where the price is set to $\bar{p}=\$40$ for each patient. Calculate the total number of patients that will be seen by this practice. How many of these patients are private insurance patients and how many are Medicaid patients?<br>
     
-    + Medicaid is considering lowering their payments to \$30 per visit. What is the new number of patients seen by this practice? How many of these patients are privately insured versus Medicaid?<br>
+    + Medicaid is considering lowering their payments to $30 per visit. What is the new number of patients seen by this practice? How many of these patients are privately insured versus Medicaid?<br>
     
     + Find the price at which this practice would exit the Medicaid market altogether and serve only private insurance patients.<br>
 
