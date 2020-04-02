@@ -311,7 +311,8 @@ These activities are intended to facilitate an engaged "virtual" classroom on Zo
 **Wednesday, April 8**<br>
 
 - Pre-recorded material
-  - In addition to these resources, please consider listening to some of the Medicaid podcast linked below.
+  - [4/8 Medicaid](https://youtu.be/z235X8R5RT8)
+  - In addition to these resources, please try to listen to the [All About Medicaid](https://open.spotify.com/episode/5wV95SFHGv9trpZrXACELP?si=DFnzeWj7R1eIv9w2Xr3PtQ) Podcast from Kaiser Health News.
 - Virtual class questions:
   - What do people mean when they say "Medicaid Expansion" in the context of the ACA?
   - True or false: Medicaid is insurance for low income people and Medicare is insurance for senior citizens.
@@ -359,3 +360,51 @@ These activities are intended to facilitate an engaged "virtual" classroom on Zo
 - Textbook: Sloan and Hsieh, Section 5.4
 - ["History of Cost Shifting"](https://theincidentaleconomist.com/wordpress/hospital-cost-shifting-brief-history-and-possible-future/)
 
+
+# Week 13: Payment Policies
+
+This week we will conclude our discussions of hospital pricing and payments, focusing on recent policy events including pay-for-performance and capitated payment models. We discussed these briefly in our physician agency models but now we will talk about them in the context of hospital prices. 
+
+### Objectives for this week
+The broad goal for this week is to finish the **Current Policy Issues** section of the [hospital pricing slides](04-Pricing/04-slides.html). By the end of this week everone should be able to:<br>
+
+1. Explain at least one recent hospital pay for performance program
+2. Identify and explain two pros and two cons from healthcare pay for performance models
+3. Define a capitated payment and describe at least one type of capitated payment currently in the U.S.
+4. Discuss the merits and drawbacks of a capitated payment model
+
+
+### Activities and materials
+These activities are intended to facilitate an engaged "virtual" classroom on Zoom. Each activity or set of activities will align with pre-recorded materials. The goal is to watch the pre-recorded materials, spend 10-20 minutes on the relevant activities, and then join the live Zoom classroom to participate in the group discussion. Note that my slides for this material just list a few of the programs, so there are no pre-recorded "lectures" for this week. Instead, I've posted a couple of specific resources (videos, papers, etc.) that will help to facilitate a good class disucssion.
+
+**Monday, April 20**<br>
+
+- Pre-recorded material and resources:
+  - [Healthcare Triage, Pay for Performance](https://www.youtube.com/watch?v=SFNuztrgQY0)
+  - [NEJM Report, What is Pay for Performance](https://catalyst.nejm.org/doi/full/10.1056/CAT.18.0245)
+- Virtual class questions:
+  - List two questions regarding the implementation of the value-based purchasing program
+  - Summarize the effects of the value-based purchasing program and the hospital readmission reduction program on hospital spending
+  - Identify how your local hospital is affected by the readmission reduction program using the Kaiser Health News tool [here](https://khn.org/paying-for-hospital-quality/).
+- Recorded Zoom class (link pending)<br>
+
+
+**Wednesday, April 22**<br>
+
+- Pre-recorded material and resources:
+  - [Unlocking Accountable Care Podcast](https://www.healthcarenowradio.com/programs/unlocking-accountable-care/)
+  - [NEJM Report, What Are Bundled Payments](https://catalyst.nejm.org/doi/full/10.1056/CAT.18.0247)
+  - [The Incidental Economist](https://theincidentaleconomist.com/wordpress/can-paying-for-a-health-problem-as-a-whole-not-piece-by-piece-save-medicare-money/)
+- Virtual class questions:
+  - What do we mean by "accountable care" in the context of U.S. health policy?
+  - What effects have bundled payments had on hospital outcomes?
+- Recorded Zoom class (link pending)
+
+
+# Week 14: Case Study
+
+We made it! This is the final week of class (and the last day of the semester). Today (4/27) is an opportunity for you to ask some questions about your case study. I'll start our zoom class as usual around 9:00am eastern, but please come with any questions ready. You can either ask your questions directly or submit them through the zoom chat feature...whatever is your preference. 
+
+**Monday, April 27**<br>
+- One last video (link pending)
+- Recorded Zoom class (link pending)

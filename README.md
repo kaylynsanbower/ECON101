@@ -49,6 +49,8 @@ Below are all of the slides that I'll use throughout the class. The slides will 
     + [3/30 Part II - Negotiated prices](https://youtu.be/E9htrWZv9z0)
     + [4/1 Part I - Measuring competition](https://youtu.be/y2nMEOcMxeI)
     + [4/1 Part II - Competition trends](https://youtu.be/8T04Q1yA550)
+    + [4/6 Medicare](https://youtu.be/EORpeCrXnDU)
+    + [4/8 Medicaid](https://youtu.be/z235X8R5RT8)
     
     
     
