@@ -68,6 +68,7 @@ Below are all of the slides that I'll use throughout the class. The slides will 
 
 5. [Case Study](case-study/instructions.html): Due on the date of our scheduled final exam (Wednesday, May 6th). But to reiterate...this is a semester-long project. Please start as early as possible! Due to the move to online classes, I will also provide some tutorial videos to help everyone get started. We would typically devote some live classtime for this project, but since not everyone can log in online during our usual class time, hopefully these videos will help fill this gap.
     - [Introduction](https://youtu.be/XY6XDcvjKOo)
+    - [Creating Episodes in R and Excel](https://drive.google.com/file/d/1UyuUbXb9PmZ29Czax3VejWjHavW3tlmK/view?usp=sharing)
 
 
 ## Weekly guides

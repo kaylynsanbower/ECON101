@@ -20,6 +20,8 @@ In this case study, you will take the role of an analyst for a hospital system. 
 To aid in your analysis, below are the links to a few video tutorials highlighting some key aspects of the analysis.<br>
 
 - [Introduction](https://youtu.be/XY6XDcvjKOo)
+- [Creating Episodes in R and Excel](https://drive.google.com/file/d/1UyuUbXb9PmZ29Czax3VejWjHavW3tlmK/view?usp=sharing)
+
 
 # Analysis
 Your analysis will first assess the current "fee-for-service" environment. This will serve as a baseline for the rest of the case study. Your analysis of bundled payments should proceed in the following steps:
