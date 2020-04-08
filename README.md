@@ -51,6 +51,7 @@ Below are all of the slides that I'll use throughout the class. The slides will 
     + [4/1 Part II - Competition trends](https://youtu.be/8T04Q1yA550)
     + [4/6 Medicare](https://drive.google.com/open?id=1JAPl0dCe8k7ZJrcoZCUONEnCj7vW6TVU)
     + [4/8 Medicaid](https://youtu.be/z235X8R5RT8)
+    + [4/13 Two-price Market](https://youtu.be/US-LYZH5qp0)
     
     
     
