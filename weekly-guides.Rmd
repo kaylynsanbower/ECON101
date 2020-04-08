@@ -1,7 +1,7 @@
 ---
 title: "Weekly Guides"
 author: "Econ 372: Economics of Health Care Markets"
-date: "Last Update: 4/1/2020"
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
 output: 
   bookdown::html_document2:
     toc: TRUE
@@ -316,7 +316,7 @@ These activities are intended to facilitate an engaged "virtual" classroom on Zo
 - Virtual class questions:
   - What do people mean when they say "Medicaid Expansion" in the context of the ACA?
   - True or false: Medicaid is insurance for low income people and Medicare is insurance for senior citizens.
-- Recorded Zoom class (link pending)
+- [Recorded Zoom class](https://drive.google.com/open?id=1wqtKAnEA7cdzaQ5iOxsmfpwM3jV53GS2)
 
 
 ### Supplemental resources
