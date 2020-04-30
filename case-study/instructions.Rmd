@@ -44,7 +44,7 @@ In addition to the analysis, please address the following issues based on our di
 
 4. Describe at least one barrier to successfully implementing a bundled payment model.
 
-5. What effects should a bundled payment model have on quantity of care?
+5. What effects should a bundled payment model have on quantity of care? By "quantity", I mean total amount of care delivered to patients.
 
 
 # Data
