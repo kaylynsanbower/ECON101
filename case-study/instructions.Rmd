@@ -17,12 +17,6 @@ knitr::opts_chunk$set(echo = TRUE)
 # Overview
 In this case study, you will take the role of an analyst for a hospital system. You have been asked to examine the financial implications for a new bundled payment model your hospital is adopting. The bundled payment will apply to a specific patient population and is intended to cover the costs of the patient's care from the inpatient stay through 60 days post-operatively (i.e., a 60-day episode of care payment). This payment model therefore differs significantly from your hospital's existing payment environment.
 
-To aid in your analysis, below are the links to a few video tutorials highlighting some key aspects of the analysis.<br>
-
-- [Introduction](https://youtu.be/XY6XDcvjKOo)
-- [Creating Episodes in R and Excel](https://drive.google.com/file/d/1UyuUbXb9PmZ29Czax3VejWjHavW3tlmK/view?usp=sharing)
-- [Cost reduction and patient loyalty](https://youtu.be/J6ccw3OKtck)
-
 
 # Analysis
 Your analysis will first assess the current "fee-for-service" environment. This will serve as a baseline for the rest of the case study. Your analysis of bundled payments should proceed in the following steps:

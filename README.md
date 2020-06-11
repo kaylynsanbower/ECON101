@@ -29,34 +29,10 @@ Below are all of the slides that I'll use throughout the class. The slides will 
 1. Introduction: Motivation and background, [slides](01-Introduction/01-slides.html) and [simplified view](01-Introduction/01-simple.html)
 
 2. Health Insurance and Adverse Selection, [slides](02-Insurance/02-slides.html) and [simplified view](02-Insurance/02-simple.html).<br>
-    + [Risk premium graph](notes/risk_premium.pdf)
-    + [Deriving insurance market graphs](notes/insurance_market.pdf)
-    + [Adverse selection graphs](notes/adverse_selection.pdf)
-    + [Recorded notes on hospital bills](https://drive.google.com/open?id=1Fh9jy0PAtYeGgOzdHygZXL9eLm5ge0lD)
-    + [Recorded notes on expected value](https://drive.google.com/open?id=1JP2mpVfXpJ8H3muEFQkbRuiIXOQw8Ibl)
-    + [Recorded notes on expected value and expected utility](https://drive.google.com/file/d/1A68I7BhufZdGdiubUOS9JP3LqIP8jc8E/view)
 
 3. Physicians and Treatment Decisions, [slides](03-Agency/03-slides.html) and [simplified view](03-Agency/03-simple.html)<br>
-    + [Physician agency graph](notes/physician_agency.pdf)
-    + [Physician agency with capitated payments](notes/agency_capitation.pdf)
 
 4. Hospital Pricing and Payments, [slides](04-Pricing/04-slides.html) and [simplified view](04-Pricing/04-simple.html)
-    + [3/23, Part I - What is a hospital price?](https://youtu.be/Y7v3HnFmhdo)
-    + [3/23, Part II - Price variation](https://youtu.be/8QSQc9s2VeY)
-    + [3/25, Part I - Defining not-for-profit](https://youtu.be/kXdDQa89Uks)
-    + [3/25, Part II - Community benefits](https://youtu.be/cninWUmm6Iw)
-    + [3/30 Part I - Pricing basics](https://youtu.be/RKNZOlXqbI0)
-    + [3/30 Part II - Negotiated prices](https://youtu.be/E9htrWZv9z0)
-    + [4/1 Part I - Measuring competition](https://youtu.be/y2nMEOcMxeI)
-    + [4/1 Part II - Competition trends](https://youtu.be/8T04Q1yA550)
-    + [4/6 Medicare](https://drive.google.com/open?id=1JAPl0dCe8k7ZJrcoZCUONEnCj7vW6TVU)
-    + [4/8 Medicaid](https://youtu.be/z235X8R5RT8)
-    + [4/13 Two-price Market](https://youtu.be/US-LYZH5qp0)
-    + [4/15 Cost-shifting](https://youtu.be/Alsk1C34hSw)
-    
-    
-    
-
 
 
 ## Assignments
@@ -69,9 +45,6 @@ Below are all of the slides that I'll use throughout the class. The slides will 
 4. [Homework 3](homework/hwk-3/hwk3-instructions.html): Due on Monday, 4/20.
 
 5. [Case Study](case-study/instructions.html): Due on the date of our scheduled final exam (Wednesday, May 6th). But to reiterate...this is a semester-long project. Please start as early as possible! Due to the move to online classes, I will also provide some tutorial videos to help everyone get started. We would typically devote some live classtime for this project, but since not everyone can log in online during our usual class time, hopefully these videos will help fill this gap.
-    - [Introduction](https://youtu.be/XY6XDcvjKOo)
-    - [Creating Episodes in R and Excel](https://drive.google.com/file/d/1UyuUbXb9PmZ29Czax3VejWjHavW3tlmK/view?usp=sharing)
-    - [Cost reduction and patient loyalty](https://youtu.be/J6ccw3OKtck)
 
 
 ## Weekly guides

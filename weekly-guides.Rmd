@@ -201,28 +201,19 @@ These activities are intended to facilitate an engaged "virtual" classroom on Zo
 **Monday, March 23**<br>
 
 - Mid-term exam answer key on [Canvas](https://canvas.emory.edu/courses/70035)
-- Pre-recorded material: 
-  - [Exam review](https://drive.google.com/open?id=1I5-ndYPXVbapdiWwgER-M2AIpcRi2Un8)
-  - [3/23, Part I - What is a hospital price?](https://youtu.be/Y7v3HnFmhdo)
-  - [3/23, Part II - Price variation](https://youtu.be/8QSQc9s2VeY)
 - Virtual class questions:
   - Any questions about the mid-term?
   - What do we mean when we say hospital "price"?
   - What factors do you think can explain the differences in hospital prices (even for homogeneous products like MRIs)?
-- [Recorded Zoom class](https://drive.google.com/file/d/1Z-Mb-fPrqfM5jNmsYhBeqK63bH9M0Kly/view?usp=sharing)<br>
 
 
 **Wednesday, March 25**<br>
 
-- Pre-recorded material
-  - [3/25, Part I - Defining not-for-profit](https://youtu.be/kXdDQa89Uks)
-  - [3/25, Part II - Community benefits](https://youtu.be/cninWUmm6Iw)
 - Virtual class questions:
   - What does it mean to be a not-for-profit hospital?
   - What requirements are there to be a not-for-profit hospital?
   - Is our measure of "community benefit" for not-for-profit hospitals sufficient? 
   - How might the tax treatment of a not-for-profit allow those hospitals to set lower prices compared to for-profit hospitals?
-- [Recorded Zoom Class](https://drive.google.com/file/d/1qCzvIbdslImAnC2fSrq36S7XQnzwxf0M/view?usp=sharing)
 
 
 ### Supplemental resources
@@ -254,24 +245,16 @@ These activities are intended to facilitate an engaged "virtual" classroom on Zo
 
 **Monday, March 30**<br>
 
-- Pre-recorded material:
-  - [3/30 Part I - Pricing basics](https://youtu.be/RKNZOlXqbI0)
-  - [3/30 Part II - Negotiated prices](https://youtu.be/E9htrWZv9z0)
 - Virtual class questions:
   - Solve for the profit maximizing price and quantity for a monopolistically competitive firm, [practice problem on unilateral pricing](worksheets.html)
   - Solve for a [Nash bargaining problem](worksheets.html)
-- [Recorded Zoom class](https://drive.google.com/open?id=1As8XrN6Tic9NqPNid1VcwxwFEgpfTEYc)<br>
 
 
 **Wednesday, April 1**<br>
 
-- Pre-recorded material
-  - [4/1 Part I - Measuring competition](https://youtu.be/y2nMEOcMxeI)
-  - [4/1 Part II - Competition trends](https://youtu.be/8T04Q1yA550)
 - Virtual class questions:
   - Why do we use the HHI? Are there any benefits or problems with its use as a measure of hospital competitiveness?
   - How has hospital concentration changed over time and what have been the effects on pricing and quality?
-- [Recorded Zoom class](https://drive.google.com/open?id=1fngrl41fxLhFhqsg9KYr7Iu81fnByRMy)
 
 
 ### Supplemental resources
@@ -299,24 +282,20 @@ These activities are intended to facilitate an engaged "virtual" classroom on Zo
 **Monday, April 6**<br>
 
 - Pre-recorded material:
-  - [4/6 Medicare](https://drive.google.com/open?id=1JAPl0dCe8k7ZJrcoZCUONEnCj7vW6TVU)
-  - In addition to the video, please try to listen to the [All About Medicare](https://open.spotify.com/episode/11QshS7vlTptfBVkV8WkTG?si=sCnpjaDNT5mF3lDC6obB4g) Podcast from Kaiser Health News.
+  - Please try to listen to the [All About Medicare](https://open.spotify.com/episode/11QshS7vlTptfBVkV8WkTG?si=sCnpjaDNT5mF3lDC6obB4g) Podcast from Kaiser Health News.
 - Virtual class questions:
   - What is the difference between Medicare Parts A and B?
   - What are some benefits and potential costs of relying on private insurers in the Medicare Advantage program?
   - True or false: Medicare pays for health care in a nursing home or skilled nursing facility.
-- [Recorded Zoom class](https://drive.google.com/open?id=1nil95AyqBcv7lNMaqGqvxyJdjdTLC2tk)
 
 
 **Wednesday, April 8**<br>
 
 - Pre-recorded material
-  - [4/8 Medicaid](https://youtu.be/z235X8R5RT8)
-  - In addition to these resources, please try to listen to the [All About Medicaid](https://open.spotify.com/episode/5wV95SFHGv9trpZrXACELP?si=DFnzeWj7R1eIv9w2Xr3PtQ) Podcast from Kaiser Health News.
+  - Please try to listen to the [All About Medicaid](https://open.spotify.com/episode/5wV95SFHGv9trpZrXACELP?si=DFnzeWj7R1eIv9w2Xr3PtQ) Podcast from Kaiser Health News.
 - Virtual class questions:
   - What do people mean when they say "Medicaid Expansion" in the context of the ACA?
   - True or false: Medicaid is insurance for low income people and Medicare is insurance for senior citizens.
-- [Recorded Zoom class](https://drive.google.com/open?id=1wqtKAnEA7cdzaQ5iOxsmfpwM3jV53GS2)
 
 
 ### Supplemental resources
@@ -341,21 +320,14 @@ These activities are intended to facilitate an engaged "virtual" classroom on Zo
 
 **Monday, April 13**<br>
 
-- Pre-recorded material:
-  - [4/13 Two-price Market](https://youtu.be/US-LYZH5qp0)
 - Virtual class questions:
   - Solve the practice problem on the [two-price model](worksheets.html)
-- [Recorded Zoom class](https://drive.google.com/open?id=1tvPIdk5C8GsFxcPgHqVx_-Nuc57-SdYc)
-
 
 **Wednesday, April 15**<br>
 
-- Pre-recorded material:
-  - [4/15 Cost-shifting](https://youtu.be/Alsk1C34hSw)
 - Virtual class questions:
   - What is cost-shifting and how does it differ from price discrimination? 
   - Why are some researchers skeptical that cost-shifting occurs?
-- [Recorded Zoom class](https://drive.google.com/open?id=1QI1BJFO-6EFt5nw5PqnHE6UMS_E2qnMY)
 
 
 ### Supplemental resources
@@ -388,7 +360,6 @@ These activities are intended to facilitate an engaged "virtual" classroom on Zo
   - List two questions regarding the implementation of the value-based purchasing program
   - Summarize the effects of the value-based purchasing program and the hospital readmission reduction program on hospital spending
   - Identify how your local hospital is affected by the readmission reduction program using the Kaiser Health News tool [here](https://khn.org/paying-for-hospital-quality/).
-- [Recorded Zoom class](https://drive.google.com/open?id=1qO7Wgxkhvl-A7GNERqjLiI_ud4lm1Euj)
 
 
 **Wednesday, April 22**<br>
@@ -400,12 +371,8 @@ These activities are intended to facilitate an engaged "virtual" classroom on Zo
 - Virtual class questions:
   - What do we mean by "accountable care" in the context of U.S. health policy?
   - What effects have bundled payments had on hospital outcomes?
-- [Recorded Zoom class](https://drive.google.com/open?id=1HjLqG0lZEoKv2zE1yDIrWuJXrQIJYpTN)
 
 
 # Week 14: Case Study
 
 We made it! This is the final week of class (and the last day of the semester). Today (4/27) is an opportunity for you to ask some questions about your case study. I'll start our zoom class as usual around 9:00am eastern, but please come with any questions ready. You can either ask your questions directly or submit them through the zoom chat feature...whatever is your preference. 
-
-**Monday, April 27**<br>
-- [Recorded Zoom class](https://drive.google.com/open?id=1hF_bz-afstgtNtRBBVsfCzS17oR9Q893)
