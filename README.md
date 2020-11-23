@@ -51,3 +51,4 @@ Guides for each week are available [here](weekly-guides.html). This link is upda
 
 ## Class worksheets
 In-class problems and answers are available [here](worksheets.html). This link is updated regularly so that you have easy access to the in-class problems and solutions. This should be a handy resource for your homework and as a study guide for the mid-term.
+TEST FOR WRITING ON COMPUTER
