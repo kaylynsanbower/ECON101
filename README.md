@@ -1,7 +1,6 @@
-# Econ 372: Economics of Health Care Markets
+# ECON 101: Principles of Microeconomics
 
-This is an elective economics course focusing on "supply side" health economics issues taught by [Ian McCarthy](http://ianmccarthyecon.com) at Emory University. The course examines the industrial organization of health care markets in the U.S., including underlying theory,
-empirical findings, and related health care policy. We will study insurance markets, informational asymmetries between physicians and patients, as well as issues of hospital pricing and payments
+Introductory microeconomics course taught by [Kaylyn Sanbower](https://kaylynrsanbower.netlify.app/) at Emory University. 
 
 Before going much further, please be sure to read the [syllabus](Syllabus/Econ372-Syllabus.pdf). This will give you a sense of what to expect in the course as well as details of specific assignments and projects. Below are the lecture notes and underlying code files for the class. This site is very much a work in progress, so be sure to check back regularly for updates. 
 
